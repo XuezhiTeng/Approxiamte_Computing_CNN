@@ -1,0 +1,1 @@
+time -v lib1 2.FIFO.v fifotest.v

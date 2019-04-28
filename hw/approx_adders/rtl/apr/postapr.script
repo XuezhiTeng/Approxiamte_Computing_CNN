@@ -1,0 +1,4 @@
+set active_design alu
+read_parasitics $active_design.dspf
+report_timing
+quit

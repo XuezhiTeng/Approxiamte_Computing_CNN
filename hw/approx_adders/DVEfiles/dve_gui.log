@@ -1,0 +1,338 @@
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP1_Full64; Runtime version K-2015.09-SP1_Full64;  Apr 13 16:11 2019
+VCD+ Writer K-2015.09-SP1_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/ecelrc/students/xteng/vlsi1/lab3/inter.vpd' was opened successfully.
+100000 ps
+200000 ps
+300000 ps
+400000 ps
+500000 ps
+600000 ps
+700000 ps
+800000 ps
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 800000 ps
+CPU Time:      0.270 seconds;       Data structure size:   0.0Mb
+Sat Apr 13 16:13:35 2019
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS release 6.10 (Final)' is not supported on 'x86_64' 
+  officially, assuming linux compatibility by default. Set VCS_ARCH_OVERRIDE 
+  to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+                         Chronologic VCS (TM)
+       Version K-2015.09-SP1_Full64 -- Sat Apr 13 16:13:36 2019
+               Copyright (c) 1991-2015 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file 'time'
+Parsing design file '2.FIFO.v'
+Parsing design file 'fifotest.v'
+Top Level Modules:
+       timeunit
+       fifo_test
+TimeScale is 1 ns / 10 ps
+Starting vcs inline pass...
+2 modules and 0 UDP read.
+	However, due to incremental compilation, only 1 module needs to be compiled.
+recompiling module fifo_test because:
+	This module or some inlined child module(s) has/have been modified.
+rm -f _csrc*.so linux64_scvhdl_*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _71890_archive_1.so _prev_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libzerosoft_rt_stubs.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvirsim.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/liberrorinf.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libsnpsmalloc.so    /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvcsnew.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libsimprofile.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvcsucli.so -Wl,-no-whole-archive          /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/vcs_save_restore_new.o -ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+CPU time: .180 seconds to compile + .380 seconds to elab + .162 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP1_Full64; Runtime version K-2015.09-SP1_Full64;  Apr 13 16:13 2019
+VCD+ Writer K-2015.09-SP1_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/ecelrc/students/xteng/vlsi1/lab3/inter.vpd' was opened successfully.
+100000 ps
+200000 ps
+300000 ps
+400000 ps
+500000 ps
+600000 ps
+700000 ps
+800000 ps
+900000 ps
+1000000 ps
+1100000 ps
+1200000 ps
+1300000 ps
+1400000 ps
+1500000 ps
+1600000 ps
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1600000 ps
+CPU Time:      0.130 seconds;       Data structure size:   0.0Mb
+Sat Apr 13 16:19:20 2019
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS release 6.10 (Final)' is not supported on 'x86_64' 
+  officially, assuming linux compatibility by default. Set VCS_ARCH_OVERRIDE 
+  to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+                         Chronologic VCS (TM)
+       Version K-2015.09-SP1_Full64 -- Sat Apr 13 16:19:21 2019
+               Copyright (c) 1991-2015 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file 'time'
+Parsing design file '2.FIFO.v'
+Parsing design file 'fifotest.v'
+Top Level Modules:
+       timeunit
+       fifo_test
+TimeScale is 1 ns / 10 ps
+Starting vcs inline pass...
+2 modules and 0 UDP read.
+	However, due to incremental compilation, only 1 module needs to be compiled.
+recompiling module fifo_test because:
+	This module or some inlined child module(s) has/have been modified.
+rm -f _csrc*.so linux64_scvhdl_*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _34254_archive_1.so _prev_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libzerosoft_rt_stubs.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvirsim.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/liberrorinf.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libsnpsmalloc.so    /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvcsnew.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libsimprofile.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvcsucli.so -Wl,-no-whole-archive          /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/vcs_save_restore_new.o -ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+CPU time: .180 seconds to compile + .385 seconds to elab + .160 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP1_Full64; Runtime version K-2015.09-SP1_Full64;  Apr 13 16:19 2019
+VCD+ Writer K-2015.09-SP1_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/ecelrc/students/xteng/vlsi1/lab3/inter.vpd' was opened successfully.
+100000 ps
+200000 ps
+300000 ps
+400000 ps
+500000 ps
+600000 ps
+700000 ps
+800000 ps
+900000 ps
+1000000 ps
+1100000 ps
+1200000 ps
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1200000 ps
+CPU Time:      0.220 seconds;       Data structure size:   0.0Mb
+Sat Apr 13 16:21:35 2019
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS release 6.10 (Final)' is not supported on 'x86_64' 
+  officially, assuming linux compatibility by default. Set VCS_ARCH_OVERRIDE 
+  to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+                         Chronologic VCS (TM)
+       Version K-2015.09-SP1_Full64 -- Sat Apr 13 16:21:35 2019
+               Copyright (c) 1991-2015 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file 'time'
+Parsing design file '2.FIFO.v'
+Parsing design file 'fifotest.v'
+Top Level Modules:
+       timeunit
+       fifo_test
+TimeScale is 1 ns / 10 ps
+Starting vcs inline pass...
+2 modules and 0 UDP read.
+	However, due to incremental compilation, only 1 module needs to be compiled.
+recompiling module fifo_test because:
+	This module or some inlined child module(s) has/have been modified.
+rm -f _csrc*.so linux64_scvhdl_*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _2892_archive_1.so _prev_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libzerosoft_rt_stubs.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvirsim.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/liberrorinf.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libsnpsmalloc.so    /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvcsnew.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libsimprofile.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvcsucli.so -Wl,-no-whole-archive          /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/vcs_save_restore_new.o -ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+CPU time: .196 seconds to compile + .400 seconds to elab + .164 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP1_Full64; Runtime version K-2015.09-SP1_Full64;  Apr 13 16:21 2019
+VCD+ Writer K-2015.09-SP1_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/ecelrc/students/xteng/vlsi1/lab3/inter.vpd' was opened successfully.
+100000 ps
+200000 ps
+300000 ps
+400000 ps
+500000 ps
+600000 ps
+700000 ps
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 700000 ps
+CPU Time:      0.130 seconds;       Data structure size:   0.0Mb
+Sat Apr 13 16:26:52 2019
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS release 6.10 (Final)' is not supported on 'x86_64' 
+  officially, assuming linux compatibility by default. Set VCS_ARCH_OVERRIDE 
+  to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+                         Chronologic VCS (TM)
+       Version K-2015.09-SP1_Full64 -- Sat Apr 13 16:26:53 2019
+               Copyright (c) 1991-2015 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file 'time'
+Parsing design file '2.FIFO.v'
+Parsing design file 'fifotest.v'
+Top Level Modules:
+       timeunit
+       fifo_test
+TimeScale is 1 ns / 10 ps
+Starting vcs inline pass...
+2 modules and 0 UDP read.
+	However, due to incremental compilation, only 1 module needs to be compiled.
+recompiling module fifo_test because:
+	This module or some inlined child module(s) has/have been modified.
+rm -f _csrc*.so linux64_scvhdl_*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _38009_archive_1.so _prev_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libzerosoft_rt_stubs.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvirsim.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/liberrorinf.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libsnpsmalloc.so    /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvcsnew.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libsimprofile.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvcsucli.so -Wl,-no-whole-archive          /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/vcs_save_restore_new.o -ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+CPU time: .187 seconds to compile + .389 seconds to elab + .169 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP1_Full64; Runtime version K-2015.09-SP1_Full64;  Apr 13 16:26 2019
+VCD+ Writer K-2015.09-SP1_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/ecelrc/students/xteng/vlsi1/lab3/inter.vpd' was opened successfully.
+100000 ps
+200000 ps
+300000 ps
+400000 ps
+500000 ps
+600000 ps
+700000 ps
+800000 ps
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 800000 ps
+CPU Time:      0.450 seconds;       Data structure size:   0.0Mb
+Sat Apr 13 16:31:32 2019
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS release 6.10 (Final)' is not supported on 'x86_64' 
+  officially, assuming linux compatibility by default. Set VCS_ARCH_OVERRIDE 
+  to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+                         Chronologic VCS (TM)
+       Version K-2015.09-SP1_Full64 -- Sat Apr 13 16:31:33 2019
+               Copyright (c) 1991-2015 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file 'time'
+Parsing design file '2.FIFO.v'
+Parsing design file 'fifotest.v'
+Top Level Modules:
+       timeunit
+       fifo_test
+TimeScale is 1 ns / 10 ps
+Starting vcs inline pass...
+2 modules and 0 UDP read.
+	However, due to incremental compilation, only 1 module needs to be compiled.
+recompiling module fifo_test because:
+	This module or some inlined child module(s) has/have been modified.
+rm -f _csrc*.so linux64_scvhdl_*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _57911_archive_1.so _prev_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libzerosoft_rt_stubs.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvirsim.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/liberrorinf.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libsnpsmalloc.so    /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvcsnew.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libsimprofile.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvcsucli.so -Wl,-no-whole-archive          /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/vcs_save_restore_new.o -ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+CPU time: .192 seconds to compile + .381 seconds to elab + .158 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP1_Full64; Runtime version K-2015.09-SP1_Full64;  Apr 13 16:31 2019
+VCD+ Writer K-2015.09-SP1_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/ecelrc/students/xteng/vlsi1/lab3/inter.vpd' was opened successfully.
+100000 ps
+200000 ps
+300000 ps
+400000 ps
+500000 ps
+600000 ps
+700000 ps
+800000 ps
+900000 ps
+1000000 ps
+1100000 ps
+1200000 ps
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1200000 ps
+CPU Time:      0.200 seconds;       Data structure size:   0.0Mb
+Sat Apr 13 16:37:40 2019
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS release 6.10 (Final)' is not supported on 'x86_64' 
+  officially, assuming linux compatibility by default. Set VCS_ARCH_OVERRIDE 
+  to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+                         Chronologic VCS (TM)
+       Version K-2015.09-SP1_Full64 -- Sat Apr 13 16:37:41 2019
+               Copyright (c) 1991-2015 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file 'time'
+Parsing design file '2.FIFO.v'
+Parsing design file 'fifotest.v'
+Top Level Modules:
+       timeunit
+       fifo_test
+TimeScale is 1 ns / 10 ps
+Starting vcs inline pass...
+2 modules and 0 UDP read.
+	However, due to incremental compilation, only 1 module needs to be compiled.
+recompiling module fifo_test because:
+	This module or some inlined child module(s) has/have been modified.
+rm -f _csrc*.so linux64_scvhdl_*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _32022_archive_1.so _prev_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libzerosoft_rt_stubs.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvirsim.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/liberrorinf.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libsnpsmalloc.so    /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvcsnew.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libsimprofile.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvcsucli.so -Wl,-no-whole-archive          /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/vcs_save_restore_new.o -ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+CPU time: .185 seconds to compile + .401 seconds to elab + .166 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP1_Full64; Runtime version K-2015.09-SP1_Full64;  Apr 13 16:37 2019
+VCD+ Writer K-2015.09-SP1_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/ecelrc/students/xteng/vlsi1/lab3/inter.vpd' was opened successfully.
+100000 ps
+200000 ps
+300000 ps
+400000 ps
+500000 ps
+600000 ps
+700000 ps
+800000 ps
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 800000 ps
+CPU Time:      0.120 seconds;       Data structure size:   0.0Mb
+Sat Apr 13 16:47:12 2019

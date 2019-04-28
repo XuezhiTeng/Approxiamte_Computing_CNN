@@ -1,0 +1,227 @@
+{
+    "stdnor2": [
+        "stdnor2",
+        "Nyiwc",
+        "module"
+    ],
+    "mux2": [
+        "mux2",
+        "i3rNP",
+        "module"
+    ],
+    "arm_ctrl_comb": [
+        "arm_ctrl_comb",
+        "u3Jzp",
+        "module"
+    ],
+    "aop": [
+        "aop",
+        "wd193",
+        "module"
+    ],
+    "dff_generic_0000": [
+        "dff_generic_0000",
+        "uTrT9",
+        "module"
+    ],
+    "detect_skip": [
+        "detect_skip",
+        "GVb8I",
+        "module"
+    ],
+    "dff_generic": [
+        "dff_generic",
+        "hUnMK",
+        "module"
+    ],
+    "stdadd": [
+        "stdadd",
+        "i9tgy",
+        "module"
+    ],
+    "forward": [
+        "forward",
+        "Bqe3V",
+        "module"
+    ],
+    "mux2_0005": [
+        "mux2_0005",
+        "J2ypR",
+        "module"
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
+    ],
+    "exc": [
+        "exc",
+        "nzNTq",
+        "module"
+    ],
+    "bop": [
+        "bop",
+        "NfcN8",
+        "module"
+    ],
+    "din": [
+        "din",
+        "R7ijF",
+        "module"
+    ],
+    "ar": [
+        "ar",
+        "N3xBm",
+        "module"
+    ],
+    "ir": [
+        "ir",
+        "qFdzq",
+        "module"
+    ],
+    "memory": [
+        "memory",
+        "DhPSm",
+        "module"
+    ],
+    "latch_c": [
+        "latch_c",
+        "GBexk",
+        "module"
+    ],
+    "dff_generic_0001": [
+        "dff_generic_0001",
+        "LdgHB",
+        "module"
+    ],
+    "count": [
+        "count",
+        "J6DA9",
+        "module"
+    ],
+    "dffs_c_0004": [
+        "dffs_c_0004",
+        "pMi0W",
+        "module"
+    ],
+    "getreg": [
+        "getreg",
+        "P39Py",
+        "module"
+    ],
+    "mapaluops": [
+        "mapaluops",
+        "egEtn",
+        "module"
+    ],
+    "arm_ctrl": [
+        "arm_ctrl",
+        "p7dgU",
+        "module"
+    ],
+    "arm_alu": [
+        "arm_alu",
+        "v4309",
+        "module"
+    ],
+    "TOP": [
+        "TOP",
+        "ThQKx",
+        "module"
+    ],
+    "Clock": [
+        "Clock",
+        "TfMdv",
+        "module"
+    ],
+    "Master": [
+        "Master",
+        "ZjWBK",
+        "module"
+    ],
+    "Slave": [
+        "Slave",
+        "H0hRq",
+        "module"
+    ],
+    "stdinv": [
+        "stdinv",
+        "n1EpD",
+        "module"
+    ],
+    "dffs_c": [
+        "dffs_c",
+        "xQuV1",
+        "module"
+    ],
+    "mux2_0006": [
+        "mux2_0006",
+        "x7Idd",
+        "module"
+    ],
+    "dffs_c_0001": [
+        "dffs_c_0001",
+        "LHmTZ",
+        "module"
+    ],
+    "mux3_0000": [
+        "mux3_0000",
+        "pYk9H",
+        "module"
+    ],
+    "stdlatch_c": [
+        "stdlatch_c",
+        "ZmrJv",
+        "module"
+    ],
+    "dffs_c_0003": [
+        "dffs_c_0003",
+        "L5g3S",
+        "module"
+    ],
+    "latch_c_0001": [
+        "latch_c_0001",
+        "Ey5WQ",
+        "module"
+    ],
+    "mux4": [
+        "mux4",
+        "s6Cv4",
+        "module"
+    ],
+    "or2": [
+        "or2",
+        "DgZQS",
+        "module"
+    ],
+    "stdaddh": [
+        "stdaddh",
+        "mVamE",
+        "module"
+    ],
+    "stdand2": [
+        "stdand2",
+        "ZdMhD",
+        "module"
+    ],
+    "stdmux2": [
+        "stdmux2",
+        "tW4Tj",
+        "module"
+    ],
+    "stdmux4": [
+        "stdmux4",
+        "Wd2Cz",
+        "module"
+    ],
+    "stdor2": [
+        "stdor2",
+        "GZYEu",
+        "module"
+    ],
+    "dff_generic_0003": [
+        "dff_generic_0003",
+        "iW8Nm",
+        "module"
+    ]
+}

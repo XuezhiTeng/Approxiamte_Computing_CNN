@@ -1,0 +1,59 @@
+// 
+// master
+// 
+// 
+// 
+// David Van Campenhout
+// 
+//**********************************************************************
+
+// get password on DECstation
+// on sun, need: setenv LM_LICENSE_FILE /usr/caen/verilog/license.dat
+// in your .cshrc file.  Remove line below on suns.
+//-f /usr/eecs/verilog/auth.current_month
+
+// acceleration options
+//-a
+-caxl
++speedup
+
+// libraries
++libext+.v+
+// NOTE: should be the path below, but verilog has hardcoded maximum
+// path length restriction, need to make local link to $ACSCADE/models/verilog.
+-y models2
+detect_skip.v
+forward.v
+exc.v
+
+din.v
+dout.v
+ar.v
+ir.v
+aop.v
+bop.v
+
+count.v
+getregfromlist.v
+getreg.v
+
+regfile_struct.v
+decode_addresses.v
+regfile.v
+
+mapaluops.v 
+aluflags.v
+arm_alu.v
+
+shift_carry.v
+shift.v
+
+arm_ctrl_struct.v
+arm_ctrl_comb.v
+
+arm_dp.v
+
+arm.v
+
+main.v
+mem2.v
