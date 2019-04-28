@@ -1,0 +1,1 @@
+time -v /usr/local/packages/cadence_2007/FreePDK45/osu_soc/lib/files/gscl45nm.v fa.v rca.v rca_pg.v csa_16b.v csa_16b_tb.v
