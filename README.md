@@ -1,4 +1,6 @@
-# Approxiamte_Computing_CNN ##Akhila Bhat & Xuezhi Teng
+# Approxiamte_Computing_CNN 
+
+Akhila Bhat & Xuezhi Teng
 
 1. What is project about?
 
