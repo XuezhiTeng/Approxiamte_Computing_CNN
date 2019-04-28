@@ -18,5 +18,5 @@ Darknet is a CNN simulator written in C. What we need to do is changing the adde
 
   `% ./darknet detect cfg/yolov3-tiny.cfg yolov3-tiny.weights data/dog.jpg`
   
-  Here we are using the ####dog.jpg
+  Here we are using the "dog.jpg" to perform the detection
 
