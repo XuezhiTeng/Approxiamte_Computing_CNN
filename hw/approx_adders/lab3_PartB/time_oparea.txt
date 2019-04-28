@@ -1,0 +1,51 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : TOP
+Version: K-2015.06-SP4
+Date   : Wed Nov 28 17:59:01 2018
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: cmu/cnt_reg[1]
+              (rising edge-triggered flip-flop clocked by vclk)
+  Endpoint: cmu/phi2_reg
+            (rising edge-triggered flip-flop clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  cmu/cnt_reg[1]/CLK (DFFPOSX1)            0.00       0.00 r
+  cmu/cnt_reg[1]/Q (DFFPOSX1)              0.07       0.07 r
+  cmu/U20/Y (OR2X1)                        0.06       0.12 r
+  cmu/U21/Y (INVX1)                        0.02       0.15 f
+  cmu/U3/Y (AND2X1)                        0.04       0.19 f
+  cmu/U17/Y (AOI21X1)                      0.02       0.21 r
+  cmu/U4/Y (BUFX2)                         0.03       0.24 r
+  cmu/U27/Y (INVX1)                        0.01       0.25 f
+  cmu/U10/Y (AND2X1)                       0.04       0.30 f
+  cmu/U14/Y (INVX1)                        0.00       0.30 r
+  cmu/U15/Y (OAI21X1)                      0.01       0.31 f
+  cmu/phi2_reg/D (DFFPOSX1)                0.00       0.31 f
+  data arrival time                                   0.31
+
+  clock vclk (rise edge)                 200.00     200.00
+  clock network delay (ideal)              0.00     200.00
+  cmu/phi2_reg/CLK (DFFPOSX1)              0.00     200.00 r
+  library setup time                      -0.06     199.94
+  data required time                                199.94
+  -----------------------------------------------------------
+  data required time                                199.94
+  data arrival time                                  -0.31
+  -----------------------------------------------------------
+  slack (MET)                                       199.64
+
+

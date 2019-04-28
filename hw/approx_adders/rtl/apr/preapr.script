@@ -1,0 +1,8 @@
+set active_design alu
+read_verilog $active_design
+current_design $active_design
+link_design $active_design
+create_clock -name vclk -period 40 -waveform {0 20}
+set_input_delay 1 -clock vclk [all_inputs]
+
+report_timing -to [all_outputs]

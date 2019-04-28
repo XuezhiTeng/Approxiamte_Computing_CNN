@@ -1,0 +1,54 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : SSP
+Version: K-2015.06-SP4
+Date   : Sat Nov 24 18:01:47 2018
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: RxFIFO_tester/flag2_reg
+              (rising edge-triggered flip-flop clocked by vclk)
+  Endpoint: RxFIFO_tester/PRDATA_reg[0]
+            (rising edge-triggered flip-flop clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  RxFIFO_tester/flag2_reg/CLK (DFFPOSX1)                  0.00       0.00 r
+  RxFIFO_tester/flag2_reg/Q (DFFPOSX1)                    0.07       0.07 r
+  RxFIFO_tester/U296/Y (OR2X1)                            0.05       0.12 r
+  RxFIFO_tester/U297/Y (INVX1)                            0.02       0.14 f
+  RxFIFO_tester/U200/Y (NAND3X1)                          0.03       0.17 r
+  RxFIFO_tester/U295/Y (BUFX2)                            0.04       0.20 r
+  RxFIFO_tester/U198/Y (NAND3X1)                          0.02       0.22 f
+  RxFIFO_tester/U294/Y (BUFX2)                            0.04       0.26 f
+  RxFIFO_tester/U197/Y (INVX1)                            0.02       0.28 r
+  RxFIFO_tester/U310/Y (AND2X1)                           0.04       0.32 r
+  RxFIFO_tester/U311/Y (INVX1)                            0.04       0.37 f
+  RxFIFO_tester/U50/Y (AND2X1)                            0.05       0.41 f
+  RxFIFO_tester/U315/Y (INVX1)                            0.20       0.61 r
+  RxFIFO_tester/U180/Y (OAI21X1)                          0.08       0.69 f
+  RxFIFO_tester/PRDATA_reg[0]/D (DFFPOSX1)                0.00       0.69 f
+  data arrival time                                                  0.69
+
+  clock vclk (rise edge)                                200.00     200.00
+  clock network delay (ideal)                             0.00     200.00
+  RxFIFO_tester/PRDATA_reg[0]/CLK (DFFPOSX1)              0.00     200.00 r
+  library setup time                                     -0.06     199.94
+  data required time                                               199.94
+  --------------------------------------------------------------------------
+  data required time                                               199.94
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (MET)                                                      199.25
+
+

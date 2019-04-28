@@ -1,0 +1,1 @@
+time -v lib1 TxFIFO.v TxLogic.v RxFIFO.v RxLogic.v SSP.v  SSP_test.v

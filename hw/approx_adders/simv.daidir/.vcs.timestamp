@@ -1,0 +1,101 @@
+0 
+29
++cli+4
++itf+/usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/vcsd.tab
++memcbk
++vcsd
++vpi
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/usr/local/packages/synopsys_2015/vcs-mx/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvirsim.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/liberrorinf.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl -lm
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/usr/local/packages/synopsys_2015/vcs-mx/include
+-Xcbug=0x1
+-debug=3
+-f master
+-full64
+-gen_obj
+-picarchive
+/usr/local/packages/synopsys_2015/vcs-mx/linux64/bin/vcs1
+55
+sysc_uni_pwd=/home/ecelrc/students/xteng/vlsi1/lab3
+binpath=/usr/local/packages/synopsys_2015/vcs-mx//gui/dve/linux64/bin
+VMR_MODE_FLAG=64
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME_modshare=/usr/local/packages/synopsys_2015/vcs-mx/:1
+VCS_HOME=/usr/local/packages/synopsys_2015/vcs-mx/
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/usr/local/packages/synopsys_2015/vcs-mx/linux64
+TCLSH=/usr/bin/tclsh
+TCLLIBPATH=/usr/local/packages/synopsys_2015/vcs-mx//gui/dve/auxx/tcllib/lib/tcl8.4 /usr/local/packages/synopsys_2015/vcs-mx//gui/dve/auxx/tcllib/snps_tcl
+SSH_TTY=/dev/pts/58
+SSH_CONNECTION=172.29.217.34 6380 146.6.221.76 22
+SSH_CLIENT=172.29.217.34 6380 22
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SPECMAN_OUTPUT_TO_TTY=1
+SNPSLMD_LICENSE_FILE_modshare=/usr/local/packages/synopsys_2015/key:1
+SNPSLMD_LICENSE_FILE=/usr/local/packages/synopsys_2015/key
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+PATH_modshare=/usr/local/packages/synopsys_2015/vcs-mx/bin:1:/usr/sbin:1:/bin:1:/usr/bin:1:/usr/local/etc:1:/usr/X11R6/bin:1:/usr/local/packages/synopsys_2015/vcs-mx/amd64/bin:1:/sbin:1:/usr/local/packages/validation/bin:1:/usr/local/bin:1
+OVA_UUM=0
+MODULESHOME=/home/projects/Modules
+MODULEPATH_modshare=/home/projects/Modules/tools:1:/home/projects/Modules/projects:1:/home/projects/Modules/base:1
+MODULEPATH=/home/projects/Modules/projects:/home/projects/Modules/tools:/home/projects/Modules/base
+MDB_SIM_ARGS=-simwarn
+MAVEN_HOME=/usr/share/apache-maven
+MARCH=linux64
+MANPATH_modshare=/usr/man:2:/home/projects/Modules/man:1:/usr/X11R6/man:1:/usr/local/man:1:/usr/share/man:2
+MAILPATH=/var/spool/mail/xteng
+M2_HOME=/usr/share/apache-maven
+LOADEDMODULES_modshare=openwin:1:admin:1:system:1:modules:1:synopsys/vcs/2015:1:ece-defaults:1:aliases:1:local:1
+LOADEDMODULES=modules:system:openwin:aliases:local:admin:ece-defaults:synopsys/vcs/2015
+LM_LICENSE_FILE_modshare=/usr/local/packages/synopsys_2015/key:1
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LD_LIBRARY_PATH_modshare=/usr/lib64:1:/usr/local/packages/synopsys_2015/vcs-mx/amd64/lib:1:/usr/local/lib:1
+LC_ALL=C
+HISTCONTROL=ignoredups
+G_BROKEN_FILENAMES=1
+DVE_SIM_SELECT_LOOP=on
+DVE_PSTACK=/usr/bin/gstack
+DVE_AUXX_GUI=/usr/local/packages/synopsys_2015/vcs-mx//gui/dve/auxx/gui
+DVE=/usr/local/packages/synopsys_2015/vcs-mx//gui/dve
+CVS_RSH=ssh
+CMD=/usr/local/packages/synopsys_2015/vcs-mx//gui/dve/linux64/bin/dve.exe
+0
+6
+1555191086 fifotest.v
+1555191453 2.FIFO.v
+1286932616 lib1
+1286932627 time
+1555189234 master
+1448424285 /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/vcsd.tab
+4
+0 
+1448427877 /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvirsim.so
+1448427558 /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/liberrorinf.so
+1448427538 /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libsnpsmalloc.so
+1555191462 simv.daidir

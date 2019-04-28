@@ -1,0 +1,558 @@
+#!/bin/perl
+
+%bin2hex = (
+	    "0000", "0",
+	    "0001", "1",
+	    "0010", "2",
+	    "0011", "3",
+	    "0100", "4",
+	    "0101", "5",
+	    "0110", "6",
+	    "0111", "7",
+	    "1000", "8",
+	    "1001", "9",
+	    "1010", "a",
+	    "1011", "b",
+	    "1100", "c",
+	    "1101", "d",
+	    "1110", "e",
+	    "1111", "f",
+	    );	    
+
+%hex2bin = (
+	    '0', "0000", 
+	    '1', "0001", 
+	    '2', "0010", 
+	    '3', "0011", 
+	    '4', "0100", 
+	    '5', "0101", 
+	    '6', "0110", 
+	    '7', "0111", 
+	    '8', "1000", 
+	    '9', "1001", 
+	    'a', "1010", 
+	    'b', "1011", 
+	    'c', "1100", 
+	    'd', "1101", 
+	    'e', "1110", 
+	    'f', "1111", 
+	    );	    
+
+
+%bl = (
+       "B", '0',
+       "BL", '1',
+       );
+
+%alu = (
+	"AND", "0000",
+	"EOR", "0001",
+	"SUB", "0010",
+	"RSB", "0011",
+	"ADD", "0100",
+	"ADC", "0101",
+	"SBC", "0110",
+	"RSC", "0111",
+	"TST", "1000",
+	"TEQ", "1001",
+	"CMP", "1010",
+	"CMN", "1011",
+	"ORR", "1100",
+	"MOV", "1101",
+	"BIC", "1110",
+	"MVN", "1111",
+	);
+
+%ldst = (
+	 "LDR", "1",
+	 "STR", "0",
+	 );
+
+%ldstm = (
+	 "LDM", "1",
+	 "STM", "0",
+	 );
+
+
+
+%cond = (
+	 "AL", "1110",
+	 "CC", "0011",
+	 "CS", "0010",
+	 "EQ", "0000",
+	 "GE", "1010",
+	 "GT", "1100",
+	 "HI", "1000",
+	 "LE", "1101",
+	 "LS", "1001",
+	 "LT", "1011",
+	 "MI", "0100",
+	 "NE", "0001",
+	 "NV", "1111",
+	 "PL", "0101",
+	 "VC", "0111",
+	 "VS", "0110",
+	 );
+
+%reg = (
+	"R0",  "0000",
+	"R1",  "0001",
+	"R2",  "0010",
+	"R3",  "0011",
+	"R4",  "0100",
+	"R5",  "0101",
+	"R6",  "0110",
+	"R7",  "0111",
+	"R8",  "1000",
+	"R9",  "1001",
+	"R10", "1010",
+	"R11", "1011",
+	"R12", "1100",
+	"R13", "1101",
+	"R14", "1110",
+	"R15", "1111",
+	"FP",  "1100",
+	"SP",  "1101",
+	"LK",  "1110",
+	"PC",  "1111",
+	);
+
+
+%regb = (
+	"R0",  "0000000000000001",
+	"R1",  "0000000000000010",
+	"R2",  "0000000000000100",
+	"R3",  "0000000000001000",
+	"R4",  "0000000000010000",
+	"R5",  "0000000000100000",
+	"R6",  "0000000001000000",
+	"R7",  "0000000010000000",
+	"R8",  "0000000100000000",
+	"R9",  "0000001000000000",
+	"R10", "0000010000000000",
+	"R11", "0000100000000000",
+	"R12", "0001000000000000",
+	"R13", "0010000000000000",
+	"R14", "0100000000000000",
+	"R15", "1000000000000000",
+	"FP",  "0001000000000000",
+	"SP",  "0010000000000000",
+	"LK",  "0100000000000000",
+	"PC",  "1000000000000000",
+	);
+
+%shift = (
+	  "LSL", "00",
+	  "LSR", "01",
+	  "ASR", "10",
+	  "ROR", "11"
+	  );
+
+%up = (
+       '1', '0',
+       '0', '1',
+       );
+
+
+
+
+
+$dataseg = 0;
+
+while(<>){
+    if (/^\s*#.*$/) { 
+	next;					# skip comment lines
+    }						# 
+    elsif (/^([^\#]+)\#.*$/ ) { 		# remove comments
+	$_ = $1;  
+    }
+    $_ =~ s/,/ /g;
+    @_ = split(/\s+/, $_);
+    $_ =~ s/\s+/ /g;
+    $_ =~ s/\s+$//;
+    
+    if($dataseg == 1){
+	$_ =~ s/\s//g;
+	print $_."\n";
+    }
+    elsif (/\s*(\S+)\s+.*/) { 
+	@insta = split(//, $1);
+	@instb = split(//, $1);
+	$inst  = join(/\null/, splice(@insta, 0, 3));
+	$insta = join(/\null/, @insta);
+
+	#------------------------- Branch (B or BL)
+	if(($_[0] =~ /^B/  && ( $cond{$instb[1].$instb[2]} || $#instb==0)) ||
+	   ($_[0] =~ /^BL/ && ( $cond{$instb[2].$instb[3]} || $#instb==1))      ){
+	    $L = '0';
+	    $COND = $cond{'AL'};
+
+	    $L = '1' if ($_[0] =~ /^BL/);
+	    if($#instb == 2){ $COND = $cond{$instb[1].$instb[2]};}
+	    if($#instb == 3){ $COND = $cond{$instb[2].$instb[3]};}
+	    if($_[1] =~ /^0x(.+)/){
+		@off = split(//, $1);
+		$OFFSET = '';
+		for($i=0; $i<6; $i++){
+		    $item = join(/\null/, splice(@off, 0, 1));
+		    $OFFSET = $OFFSET.$hex2bin{$item};
+		}
+	    }
+	    else{ $OFFSET = $_[1];} 
+	    $line = $COND."101".$L.$OFFSET;
+	}
+        #--------------------------MULTIPLY(MUL or MLA)
+        #--------SIMD Saturated Arithmetic for Fall 2000(PSU or PAD)
+        if(($_[0] =~ /^PSU/  && ( $cond{$instb[3].$instb[4]} || $#instb==2 || 
+           $instb[3]=='S'|| $instb[5]=='S')) || 
+           ($_[0] =~ /^PAD/ && ( $cond{$instb[3].$instb[4]} || $#instb==2 ||
+           $instb[3]=='S'|| $instb =='S')) ){
+          
+          
+          $Rd=$reg{$_[1]};
+          $Rm=$reg{$_[2]};         
+          $Rs=$reg{$_[3]};
+          $Rn='0000';
+        
+          $A='0';
+          #------- if($_[0] =~ /^MLA/){ $A='1'; $Rn=$reg{$_[4]}; }
+          if($_[0] =~ /^PSU/){ $A='1'; }
+          
+          $S='0';
+          
+          $COND=$cond{'AL'};
+          
+          if($#instb ==3){$S='1';}
+          if($#instb == 4){ $COND = $cond{$instb[3].$instb[4]};}
+          if($#instb == 5){$COND = $cond{$instb[3].$instb[4]}; $S='1';} 
+          
+          $line=$COND."000000".$A.$S.$Rd.$Rn.$Rs."1001".$Rm ;
+ 
+
+        }     
+       	#------------------------- SWI
+	elsif($_[0] =~ /^SWI/){
+	    if($#insta == 1){ $COND = $cond{$insta}; }
+	    else{             $COND = $cond{'AL'}; }
+	    $line = $COND."111100000000000000000000000";
+	}
+	#------------------------- ALU operations
+	elsif($alu{$inst}){                        # ALU operations
+#print "$_\n";
+	    
+            if($#insta == -1){                       # default condition
+		$S = 0;
+		$COND = $cond{'AL'};
+	    }
+	    elsif($#insta == 0 && $insta eq "S"){    #Set only
+		$S = 1;
+		$COND = $cond{'AL'};
+	    }
+	    elsif($#insta == 1  && $cond{$insta}){   #two char condition only
+		$S = 0;
+		$COND = $cond{$insta};
+	    }
+	    elsif($#insta == 2  && $cond{$insta[0].$insta[1]} && $insta[2] eq 'S'){
+		$S = 1;                              #condition and Set
+		$COND = $cond{$insta[0].$insta[1]};
+	    }
+            elsif(($inst eq "CMN"||$inst eq "CMP"||$inst eq "TEQ"||$inst eq "TST") &&
+		  $#insta == 0 && $insta eq "P"){
+		$COND = $cond{'AL'};
+		$S = '1';
+	    }
+            elsif(($inst eq "CMN"||$inst eq "CMP"||$inst eq "TEQ"||$inst eq "TST") &&
+		  $#insta == 2 && $insta[2] eq "P"){
+		$COND = $cond{$insta[0].$insta[1]};
+		$S = '1';
+	    }
+	    else{
+		error("Unknown CONDITION/Set! $_");
+	    }
+            
+            if($inst eq "CMN" || $inst eq "CMP" || $inst eq "TEQ" || 
+               $inst eq "TST" || $inst eq "MOV" || $inst eq "MVN"){
+		if($inst eq "TST"||$inst eq "TEQ"||$inst eq "CMP"||$inst eq "CMN"){
+		    if($insta eq 'P' || $insta[2]) {	$RD = "1111";}
+		    else              { $RD = "0000";}
+		    $RN = $reg{$_[1]};
+		}
+		else{
+		    $RN = "0000";
+		    $RD = $reg{$_[1]};
+		}
+		    
+		if($#_ == 2 && (!$reg{$_[2]})){
+		    $I = 1;
+		    $OP2 = $_[2];
+		}
+		elsif($#_ == 2 && $reg{$_[2]}){
+		    $I = 0;
+		    $OP2 = "00000000".$reg{$_[2]};
+		}
+		else{
+		    $I = '0';
+		    $RM = $reg{$_[2]};
+		    if($#_ == 3 && $_[3] eq "RRX"){
+			$amt = "00000";
+			$shf = $shift{'ROR'};
+			$tp = '0';
+			$SF = $amt.$shf.$tp;			
+		    }
+		    elsif($#_ == 4 && !$reg{$_[4]}){
+			$amt = $_[4];
+			$shf = $shift{$_[3]};
+			$tp = '0';
+			$SF = $amt.$shf.$tp;
+		    }
+		    elsif($#_ == 4 && $reg{$_[4]}){
+			$RS = $reg{$_[4]};
+			$shf = $shift{$_[3]};
+			$tp = '1';
+			$SF = $RS.'0'.$shf.$tp;
+		    }
+		    else{
+			error("Unknow instruction! $_");
+		    }
+		    $OP2 = $SF.$RM;
+		}
+	    }
+            else{
+		$RD = $reg{$_[1]};
+		$RN = $reg{$_[2]};
+		
+		if($#_ == 3 && $_[3] !~ /^R/){
+		    $I = 1;
+		    $OP2 = $_[3];
+		}
+		elsif($#_ == 3 && $_[3] =~ /^R/){
+		    $I = 0;
+		    $OP2 = "00000000".$reg{$_[3]};
+		}
+		else{
+		    $I = '0';
+		    $RM = $reg{$_[3]};
+		    if($#_ == 4 && $_[4] eq "RRX"){
+			$amt = "00000";
+			$shf = $shift{'ROR'};
+			$tp = '0';
+			$SF = $amt.$shf.$tp;			
+		    }
+		    elsif($#_ == 5 && $_[5] !~ /^R/){
+			$amt = $_[5];
+			$shf = $shift{$_[4]};
+			$tp = '0';
+			$SF = $amt.$shf.$tp;
+		    }
+		    elsif($#_ == 5 && $_[5] =~ /^R/){
+			$RS = $reg{$_[5]};
+			$shf = $shift{$_[4]};
+			$tp = '1';
+			$SF = $RS.'0'.$shf.$tp;
+		    }
+		    else{
+			error("Unknow instruction! $_");
+		    }
+		    $OP2 = $SF.$RM;
+		}
+	    }
+            $line = $COND."00".$I.$alu{$inst}.$S.$RN.$RD.$OP2;
+	}
+        #------------------ Load/Store 
+	elsif($inst eq "LDR"|| $inst eq "STR"){
+	    $COND = $cond{'AL'};
+	    if($_ =~ /!$/){  $W = '1';}
+	    else          {  $W = '0';}
+	    $RD = $reg{$_[1]};
+	    $U = '1';
+	    $L = $ldst{$inst};
+	    $I = '1';
+	    
+
+            if($#insta == -1){                       
+		$B = '0';
+		$T = '0';
+	    }
+	    elsif($#insta == 0 && $insta eq "B"){    
+		$B = '1';
+		$T = '0';
+	    }
+	    elsif($#insta == 0 && $insta eq "T"){    
+		$B = '0';
+		$T = '1';
+	    }
+      	    elsif($#insta == 1  && $cond{$insta}){   #two char condition only
+		$B = '0';
+		$T = '0';
+		$COND = $cond{$insta};
+	    }
+      	    elsif($#insta == 2  && $cond{$insta[0].$insta[1]} && $insta[2] eq "B"){ 
+		$B = '1';
+		$T = '0';
+		$COND = $cond{$insta[0].$insta[1]};
+	    }
+      	    elsif($#insta == 2  && $cond{$insta[0].$insta[1]} && $insta[2] eq "T"){ 
+		$B = '0';
+		$T = '1';
+		$COND = $cond{$insta[0].$insta[1]};
+	    }
+      	    elsif($#insta == 3  && $cond{$insta[0].$insta[1]} && $insta[2] eq "B" && $insta[3] eq "T" ){ 
+		$B = '1';
+		$T = '1';
+		$COND = $cond{$insta[0].$insta[1]};
+	    }
+	    else{
+		error("Unknown CONDITION/B/T: $_");
+	    }
+
+    
+    
+	    if($_ =~ /\[(.+)\]/){
+		if($1 =~ /\S\s+\S/){ $P = '1';}
+		else{  $P = '0';}
+	    }
+	    else{
+		error("Missing pre/post-index format! $_");
+	    }
+
+	    for($f=0; $f<=$#_; $f++){
+		$_[$f] =~ s/!$//;
+		$_[$f] =~ s/\[//g;
+		$_[$f] =~ s/\]//g;
+	    }
+
+	    if($#_ == 3 && $reg{$_[2]} && !$reg{$_[3]}){     #rd, rn, expr
+		$I = 0;
+		$RN =  $reg{$_[2]};
+		@imm = split(//, $_[3]);
+                $U = join(/\null/, splice(@imm, 0, 1));
+		$U = $up{$U};
+		$OP2 = join(/\null/, @imm);
+	    }
+	    elsif($#_ == 2 && $reg{$_[2]}){                  #rd, rn
+		$I = '0';
+		$RN = $reg{$_[2]};
+		$OP2 = "000000000000";
+	    }
+	    elsif($#_ == 3 && $reg{$_[2]} && $reg{$_[3]}){   #rd, rn, rm 
+		$RN = $reg{$_[2]};
+		$OP2 = "00000000".$reg{$_[3]};
+	    }
+	                                           # rd, rn, rm shift count
+	    elsif($#_ == 5 && $reg{$_[2]} && $reg{$_[3]} && $shift{$_[4]}){
+		$RN = $reg{$_[2]};
+		$RM = $reg{$_[3]};
+		$sh = $shift{$_[4]};
+		$imm = $_[5];
+		@imm = split(//, $imm);
+		if($#imm != 4){
+		    error("Wrong immediate field bit $_");
+		}
+		$OP2 = $imm.$sh.'0'.$RM;
+	    }
+	    else{
+		error("Unknow instruction! $_");
+	    }
+
+#	    if($W == 1 && $P == 0){
+#		error("Post-index doesn't allow Offset Write Back! $_");
+#	    }
+
+	    $line = $COND."01".$I.$P.$U.$B.$W.$L.$RN.$RD.$OP2;
+#print "COND:$COND I:$I P:$P U:$U B:$B W:$W L:$L RN:$RN RD:$RD OP2:$OP2\n"; 
+	}
+        #------------------ LDM/STM 
+	elsif($inst eq "LDM"|| $inst eq "STM"){
+	    if($_ =~ /^$/){  $S = '1';}
+	    else          {  $S = '0';}
+
+	    if($_[1] =~ /!$/){ $W = '1';}
+	    else             { $W = '0'; }
+	    $_[1] =~ s/!$//;
+	    $RN = $reg{$_[1]};
+	    $L = $ldstm{$inst};
+	    
+	    if($insta =~ /IA/){
+		$P = '0';
+		$U = '1';
+	    }
+	    elsif($insta =~ /IB/){
+		$P = '1';
+		$U = '1';
+	    }
+	    elsif($insta =~ /DA/){
+		$P = '0';
+		$U = '0';
+	    }
+	    elsif($insta =~ /DB/){
+		$P = '1';
+		$U = '0';
+	    }
+
+            if($#insta == 1 && ($insta eq "IA" || $insta eq "IB" ||
+				$insta eq "DA" ||$insta eq "DB")){
+		$COND = $cond{'AL'};
+	    }
+	    elsif($#insta == 3 && $cond{$insta[0].$insta[1]}){    
+		$COND = $cond{$insta[0].$insta[1]};
+	    }
+	    else{
+		error("Unknown CONDITION/mode: $_");
+	    }
+
+	    if($#_ == 2 && $_ !~ /\{/ && $regb{$_[2]}){
+		$RLIST = $regb{$_[2]};
+	    }
+	    elsif($_ =~ /\{(.+)\}/){
+		$RLISt = "";
+		@ar = split(/\s+/, $1);
+		for($k=0; $k<= $#ar; $k++){
+		    if($ar[$k] !~ /-/){
+			$RLIST = $RLIST | $regb{$ar[$k]};
+		    }
+		    elsif($ar[$k] =~ /R(\d+)-R(\d+)/){
+			if($1 > $2){
+			    error("Wrong Reglist! $_\n");
+			}
+			for($kin=$1; $kin<=$2; $kin++){
+			    $RLIST = $RLIST | $regb{"R$kin"};
+			}
+		    }
+		       
+		}
+	    }
+
+	    $line = "$COND"."100".$P.$U.$S.$W.$L.$RN.$RLIST;
+	}
+        #------------- ILLEGLE Operations
+        else{
+	    error("Unknown instruction format!  $_");
+	}
+#    print "$line\n";
+    printlnhex($line, 8);
+    }
+    elsif(/DATA/){
+	$dataseg = 1;
+	print "eafffffe\n";
+    }
+    elsif($_ =~ /END:/ && $dataseg==0){
+	print "eafffffe\n";
+    }
+}
+
+
+sub error{
+    print "$_[0]\n";
+    exit 1;
+}
+
+sub printlnhex(){
+    @line = split(//, $_[0]);
+    for($i=0; $i<$_[1]; $i++){
+	$f  = join(/\null/, splice(@line, 0, 4));
+	$fh = $bin2hex{$f};
+	print $fh;
+    }
+    print "\n";
+}
+
