@@ -1,0 +1,247 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+gui_create_pref_category -category {schem_obj_name}
+gui_create_pref_key -category {schem_obj_name} -key {show_cell_and_pin_with_symbol_name} -value_type {bool} -value {false}
+gui_create_pref_key -category {schem_pin_hc} -key {textExtFont} -value_type {string} -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_sessions -value {{gui_load_session -ignore_errors -file /home/ecelrc/students/xteng/vlsi1/lab3/ssp.tcl -ignore_errors} {gui_load_session -ignore_errors -file /home/ecelrc/students/xteng/vlsi1/lab3/rtl/partb.tcl -ignore_errors} {gui_load_session -ignore_errors -file /home/ecelrc/students/xteng/vlsi1/lab3/rtl/partb.tcl} {gui_load_session -ignore_errors -file /home/ecelrc/students/xteng/vlsi1/lab3/rtl/DVEfiles//crash_11.27-22.45/dve_session11.27-22.45.tcl} {gui_load_session -ignore_errors -file /home/ecelrc/students/xteng/vlsi1/lab3/rtl/DVEfiles//crash_11.27-22.44/dve_session11.27-22.44.tcl}}
+gui_set_state_value -category Layout -key child_console_size_x -value 1534
+gui_set_state_value -category Layout -key child_console_size_y -value 165
+gui_set_state_value -category Layout -key child_data_size_x -value 198
+gui_set_state_value -category Layout -key child_data_size_y -value 535
+gui_set_state_value -category Layout -key child_driver_size_x -value 909
+gui_set_state_value -category Layout -key child_driver_size_y -value 179
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_size_x -value 120
+gui_set_state_value -category Layout -key child_hier_size_y -value 535
+gui_set_state_value -category Layout -key child_hier_sort_order -value 1
+gui_set_state_value -category Layout -key child_schematic_docknewline -value false
+gui_set_state_value -category Layout -key child_schematic_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_schematic_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_schematic_size_x -value 1214
+gui_set_state_value -category Layout -key child_schematic_size_y -value 527
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 1219
+gui_set_state_value -category Layout -key child_source_size_y -value 530
+gui_set_state_value -category Layout -key child_wave_colname -value 220
+gui_set_state_value -category Layout -key child_wave_colvalue -value 221
+gui_set_state_value -category Layout -key child_wave_left -value 445
+gui_set_state_value -category Layout -key child_wave_right -value 1085
+gui_set_state_value -category Layout -key main_pos_x -value 8
+gui_set_state_value -category Layout -key main_pos_y -value 31
+gui_set_state_value -category Layout -key main_size_x -value 1542
+gui_set_state_value -category Layout -key main_size_y -value 830
+gui_set_state_value -category Layout -key stand_schematic_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_schematic_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_schematic_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_schematic_child_size_x -value 1540
+gui_set_state_value -category Layout -key stand_schematic_child_size_y -value 696
+gui_set_state_value -category Layout -key stand_schematic_top_pos_x -value 0
+gui_set_state_value -category Layout -key stand_schematic_top_pos_y -value 23
+gui_set_state_value -category Layout -key stand_schematic_top_size_x -value 1535
+gui_set_state_value -category Layout -key stand_schematic_top_size_y -value 823
+gui_set_state_value -category Layout -key stand_source_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_source_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_source_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_source_child_size_x -value 914
+gui_set_state_value -category Layout -key stand_source_child_size_y -value 209
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1540
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 696
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 0
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 23
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1535
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 823
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_create_state_key -category Widget_History -key Find|m_pFindFrame|m_pFindCombo -value_type string -value recent
+gui_create_state_key -category Widget_History -key TopLevel.1|qt_top_dock|&Edit|FindCombo -value_type string -value recent
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_VPDCombo} -value_type string -value inter.vpd
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_argsCombo} -value_type string -value {{-ucligui } { -ucligui}}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value {/home/ecelrc/students/xteng/vlsi1/lab3 /home/ecelrc/students/xteng/vlsi1/lab3/rtl /home/ecelrc/students/xteng/vlsi1/lab3tutorial}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value {/home/ecelrc/students/xteng/vlsi1/lab3/simv ./simv /home/ecelrc/students/xteng/vlsi1/lab3/rtl/simv /home/ecelrc/students/xteng/vlsi1/lab3tutorial/simv}
+gui_state_default_create -off
+
+# Begin command logging
+gui_sim_run Ucli -exe ./simv -args {-ucligui  } -dir .
+gui_list_select -id Data.1 -selected  { {fifo_test.dout[7:0]}   }
+gui_list_select_all -id Data.1
+gui_list_expand -id  Hier.1   fifo_test
+gui_list_select -id Hier.1 -current_item_name fifo_test -current_item_type Scope  -selected  { fifo_test   }
+gui_list_select -id Hier.1 -current_item_name fifo_test.fifo1 -current_item_type Scope  -selected  { fifo_test.fifo1   }
+gui_list_select_all -id Hier.1
+gui_list_select -id Hier.1 -current_item_name timeunit -current_item_type Scope  -selected  { fifo_test.fifo1  timeunit  fifo_test   }
+gui_list_select -id Hier.1 -current_item_name fifo_test.fifo1 -current_item_type Scope  -selected  { fifo_test.fifo1   }
+gui_list_select -id Data.1 -selected  { fifo_test.fifo1.empty   }
+gui_list_select_all -id Data.1
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { fifo_test.fifo1.clk fifo_test.fifo1.rst fifo_test.fifo1.write fifo_test.fifo1.read {fifo_test.fifo1.din[7:0]} {fifo_test.fifo1.dout[7:0]} fifo_test.fifo1.full fifo_test.fifo1.empty fifo_test.fifo1.wr_en fifo_test.fifo1.rd_en {fifo_test.fifo1.wr_ptr[1:0]} {fifo_test.fifo1.rd_ptr[1:0]} {fifo_test.fifo1.state_counter[2:0]} {fifo_test.fifo1.array[3:0][7:0]} {fifo_test.fifo1.DATA_WIDTH[31:0]} {fifo_test.fifo1.ADDR_WIDTH[31:0]} {fifo_test.fifo1.FIFO_DEPTH[63:0]} } -insertionbar
+gui_wv_zoom_timerange -id  Wave.1 0 355
+gui_continuetime_set -value 10000
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_zoom -window Wave.1 -full
+gui_list_expand -id  Wave.1   {fifo_test.fifo1.array[3:0][7:0]}
+gui_list_select -id Wave.1 -selected  { {fifo_test.fifo1.dout[7:0]}   }
+gui_marker_move -id  Wave.1 C1 27600
+gui_marker_move -id  Wave.1 C1 22000
+gui_marker_move -id  Wave.1 C1 23600
+gui_set_env SIMSETUP::SIMCURRENTDIR /home/ecelrc/students/xteng/vlsi1/lab3
+gui_sim_restart -build /home/ecelrc/students/xteng/vlsi1/lab3/simv.daidir/vcs_rebuild
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_zoom -window Wave.1 -full
+gui_list_select -id Wave.1 -selected  { fifo_test.fifo1.empty   }
+gui_list_select -id Wave.1 -selected  { {fifo_test.fifo1.state_counter[2:0]}   }
+gui_list_select -id Wave.1 -selected  { {fifo_test.fifo1.wr_ptr[1:0]}   }
+gui_marker_move -id  Wave.1 C1 22000
+gui_list_select -id Wave.1 -selected  { fifo_test.fifo1.read   }
+gui_list_select -id Wave.1 -selected  { fifo_test.fifo1.write   }
+gui_marker_move -id  Wave.1 C1 23600
+gui_list_select -id Wave.1 -selected  { fifo_test.fifo1.read   }
+gui_marker_move -id  Wave.1 C1 30000
+gui_list_select -id Wave.1 -selected  { fifo_test.fifo1.wr_en   }
+gui_list_select -id Wave.1 -selected  { fifo_test.fifo1.full   }
+gui_marker_move -id  Wave.1 C1 23600
+gui_marker_move -id  Wave.1 C1 22000
+gui_sim_restart -build /home/ecelrc/students/xteng/vlsi1/lab3/simv.daidir/vcs_rebuild
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_list_select -id Wave.1 -selected  { {fifo_test.fifo1.dout[7:0]}   }
+gui_list_select -id Wave.1 -selected  { fifo_test.fifo1.full   }
+gui_marker_move -id  Wave.1 C1 25390
+gui_zoom -window Wave.1 -full
+gui_marker_move -id  Wave.1 C1 10000
+gui_marker_move -id  Wave.1 C1 14000
+gui_marker_move -id  Wave.1 C1 18000
+gui_marker_move -id  Wave.1 C1 22000
+gui_marker_move -id  Wave.1 C1 26000
+gui_list_select -id Wave.1 -selected  { fifo_test.fifo1.empty   }
+gui_list_select -id Wave.1 -selected  { fifo_test.fifo1.full   }
+gui_sim_restart -build /home/ecelrc/students/xteng/vlsi1/lab3/simv.daidir/vcs_rebuild
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_marker_move -id  Wave.1 C1 26000
+gui_marker_move -id  Wave.1 C1 22000
+gui_marker_move -id  Wave.1 C1 26000
+gui_marker_move -id  Wave.1 C1 22000
+gui_list_select -id Wave.1 -selected  { {fifo_test.fifo1.wr_ptr[1:0]}   }
+gui_list_select -id Wave.1 -selected  { fifo_test.fifo1.empty   }
+gui_list_select -id Wave.1 -selected  { fifo_test.fifo1.full   }
+gui_marker_move -id  Wave.1 C1 26000
+gui_list_select -id Wave.1 -selected  { {fifo_test.fifo1.state_counter[2:0]}   }
+gui_sim_restart -build /home/ecelrc/students/xteng/vlsi1/lab3/simv.daidir/vcs_rebuild
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_zoom -window Wave.1 -full
+gui_marker_move -id  Wave.1 C1 8779
+gui_zoom -window Wave.1 -full
+gui_marker_move -id  Wave.1 C1 22000
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_zoom -window Wave.1 -full
+gui_list_select -id Wave.1 -selected  { fifo_test.fifo1.full   }
+gui_marker_move -id  Wave.1 C1 22000
+gui_list_select -id Wave.1 -selected  { {fifo_test.fifo1.wr_ptr[1:0]}   }
+gui_list_select -id Wave.1 -selected  { fifo_test.fifo1.wr_en   }
+gui_list_select -id Wave.1 -selected  { fifo_test.fifo1.full   }
+gui_list_select -id Wave.1 -selected  { fifo_test.fifo1.read   }
+gui_marker_move -id  Wave.1 C1 27600
+gui_marker_move -id  Wave.1 C1 26000
+gui_marker_move -id  Wave.1 C1 30000
+gui_marker_move -id  Wave.1 C1 22000
+gui_list_select -id Wave.1 -selected  { {fifo_test.fifo1.state_counter[2:0]}   }
+gui_marker_move -id  Wave.1 C1 18000
+gui_sim_restart -build /home/ecelrc/students/xteng/vlsi1/lab3/simv.daidir/vcs_rebuild
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_zoom -window Wave.1 -full
+gui_list_select -id Wave.1 -selected  { fifo_test.fifo1.empty   }
+gui_marker_move -id  Wave.1 C1 28000
+gui_marker_move -id  Wave.1 C1 30000
+gui_marker_move -id  Wave.1 C1 34000
+gui_marker_move -id  Wave.1 C1 30000
+gui_marker_move -id  Wave.1 C1 22000
+gui_list_select -id Wave.1 -selected  { fifo_test.fifo1.full   }
+gui_marker_move -id  Wave.1 C1 26000
+gui_marker_move -id  Wave.1 C1 30000
+gui_list_select -id Wave.1 -selected  { {fifo_test.fifo1.array[0][7:0]}   }
+gui_sim_restart -build /home/ecelrc/students/xteng/vlsi1/lab3/simv.daidir/vcs_rebuild
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_sim_continue 10000 
+gui_marker_move -id  Wave.1 C1 31600
+gui_zoom -window Wave.1 -full
+gui_marker_move -id  Wave.1 C1 30047
+gui_marker_move -id  Wave.1 C1 34000
+gui_marker_move -id  Wave.1 C1 46047
+gui_marker_move -id  Wave.1 C1 27600
+gui_marker_move -id  Wave.1 C1 34000
+gui_marker_move -id  Wave.1 C1 46000
+gui_marker_move -id  Wave.1 C1 30000
+gui_list_select -id Wave.1 -selected  { fifo_test.fifo1.wr_en   }
+gui_list_select -id Wave.1 -selected  { fifo_test.fifo1.rd_en   }
+gui_close_window -window TopLevel.2

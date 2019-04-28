@@ -1,0 +1,207 @@
+0 
+29
++cli+4
++itf+/usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/vcsd.tab
++memcbk
++vcsd
++vpi
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/usr/local/packages/synopsys_2015/vcs-mx/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvirsim.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/liberrorinf.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl -lm
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/usr/local/packages/synopsys_2015/vcs-mx/include
+-Xcbug=0x1
+-debug=3
+-f master
+-full64
+-gen_obj
+-picarchive
+/usr/local/packages/synopsys_2015/vcs-mx/linux64/bin/vcs1
+81
+sysc_uni_pwd=/home/ecelrc/students/xteng/vlsi1/lab3/rtl
+binpath=/usr/local/packages/synopsys_2015/vcs-mx//gui/dve/linux64/bin
+VMR_MODE_FLAG=64
+VMANAGER_PATH_modshare=/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib:1:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/e_ex_lib/cdn_vm_ext/e:1
+VMANAGER_PATH=/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/e_ex_lib/cdn_vm_ext/e
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/usr/local/packages/synopsys_2015/vcs-mx/
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UVM_SEQ_DIR=/usr/local/packages/cadence_2015/incisiv13.2/specman/src
+UVM_HOME=/usr/local/packages/cadence_2015/incisiv13.2/tools/uvm
+USE_CALIBRE_VCO=aoi
+UNAME=/bin/uname
+TOOL_HOME=/usr/local/packages/synopsys_2015/vcs-mx/linux64
+TCLSH=/usr/bin/tclsh
+TCLLIBPATH=/usr/local/packages/synopsys_2015/vcs-mx//gui/dve/auxx/tcllib/lib/tcl8.4 /usr/local/packages/synopsys_2015/vcs-mx//gui/dve/auxx/tcllib/snps_tcl
+SSH_TTY=/dev/pts/35
+SSH_CONNECTION=10.145.73.231 7940 146.6.221.76 22
+SSH_CLIENT=10.145.73.231 7940 22
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SPECMAN_OUTPUT_TO_TTY=1
+SPECMAM_PATH_modshare=/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/e_ex_lib:1:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/util_lib:1:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/misc/links:1:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/misc:1:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/abv_formal:1:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/uvm_e_ex_lib/interface_uvc_lib:1:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/ovm_ex_lib/e_ex_lib:1:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/uvm_e_ex_lib/apb_subsystem:1:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/uvm_e_ex_lib:1
+SPECMAM_PATH=/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/abv_formal:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/e_ex_lib:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/util_lib:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/misc/links:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/ovm_ex_lib/e_ex_lib:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/misc:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/uvm_e_ex_lib/interface_uvc_lib:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/uvm_e_ex_lib/apb_subsystem:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/uvm_e_ex_lib
+SOCV_KIT_HOME=/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit
+SNPSLMD_LICENSE_FILE=/usr/local/packages/synopsys_2015/key
+SIMRC=/usr/local/packages/ncsu-cdk-1-6-0-beta/skill
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+PDK_DIR=/usr/local/packages/FreePDK45
+PATH_modshare=/usr/local/packages/cadence_2015/MMSIM131/tools/bin:1:/usr/bin:1:/usr/X11R6/bin:1:/usr/local/packages/cadence_2015/incisiv13.2/tools/bin:1:/usr/local/bin:1:/usr/local/packages/cadence_2015/IC616.1/tools/dfII/bin:1:/usr/local/packages/cadence_2015/PVE121/tools/K2/Viewer/bin:1:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/bin:1://usr/local/packages/cadence_2015/PVE121/tools/bin:1:/bin:1:/usr/local/packages/cadence_2015/IC616.1/bin:1:/usr/local/packages/mentor_2015/calibre/aoi_cal_2015.2_27.20/bin:1:/usr/local/packages/validation/bin:1:/sbin:1:/usr/sbin:1:/usr/local/packages/cadence_2015/incisiv13.2/tools/cdsgcc/gcc/bin:1:/usr/local/etc:1
+OVA_UUM=0
+NCPROTECT_KEYDB=/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/misc/ip_keys
+MODULESHOME=/home/projects/Modules
+MODULEPATH_modshare=/home/projects/Modules/tools:1:/home/projects/Modules/projects:1:/home/projects/Modules/base:1
+MODULEPATH=/home/projects/Modules/projects:/home/projects/Modules/tools:/home/projects/Modules/base
+ML_UVM=/usr/local/packages/cadence_2015/incisiv13.2/tool/uvm/uvm_lib/uvm_ml/sc/ml_uvm
+MDB_SIM_ARGS=-simwarn
+MAVEN_HOME=/usr/share/apache-maven
+MARCH=linux64
+MANPATH_modshare=/usr/man:2:/home/projects/Modules/man:1:/usr/X11R6/man:1:/usr/local/man:1:/usr/share/man:2
+MAILPATH=/var/spool/mail/xteng
+M2_HOME=/usr/share/apache-maven
+LOADEDMODULES_modshare=openwin:1:mentor/calibre/2015:1:admin:1:system:1:modules:1:cadence/2015:1:ece-defaults:1:aliases:1:local:1
+LOADEDMODULES=modules:system:openwin:aliases:local:admin:ece-defaults:cadence/2015:mentor/calibre/2015
+LM_LICENSE_FILE_modshare=/usr/local/packages/mentor_2015/license.dat:1:/usr/local/packages/cadence_2015/license.dat:1
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LD_LIBRARY_PATH_modshare=/usr/lib/X11:1:/usr/local/packages/cadence_2015/PVE121/tools/Qt/32bit/lib:1:/usr/local/lib:1:/lib/i686:1:/usr/local/packages/cadence_2015/PVE121/tools/Qt/64bit/lib:1:/usr/openwin/lib:1:/usr/dt/lib:1:/usr/lib:1
+LC_ALL=C
+KIT_SETUP_SAVE=/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit
+K2_VIEWER_HOME=/usr/local/packages/cadence_2015/PVE121/tools/K2/Viewer
+K2_MASKCOMPOSE_HOME=/usr/local/packages/cadence_2015/PVE121/tools/K2/MaskCompose
+K2_HOME=/usr/local/packages/cadence_2015/PVE121/tools/K2/
+HISTCONTROL=ignoredups
+G_BROKEN_FILENAMES=1
+DVE_SIM_SELECT_LOOP=on
+DVE_PSTACK=/usr/bin/gstack
+DVE_AUXX_GUI=/usr/local/packages/synopsys_2015/vcs-mx//gui/dve/auxx/gui
+DVE=/usr/local/packages/synopsys_2015/vcs-mx//gui/dve
+DMS_DESIGN=/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/designs/socv/ams
+CVS_RSH=ssh
+CMD=/usr/local/packages/synopsys_2015/vcs-mx//gui/dve/linux64/bin/dve.exe
+CLS_CDSD_COMPATIBILITY_LOCKING=NO
+CDS_SITE=/usr/local/packages/ncsu-cdk-1-6-0-beta
+CDS_ROOT=/usr/local/packages/cadence_2015/IC616.1
+CDS_Netlisting_Mode=Analog
+CDS_LIC_FILE=/usr/local/packages/cadence_2015/license.dat
+CDS_HOME=/usr/local/packages/cadence_2015
+CDS_AUTO_64BIT=ALL
+CDSPLOTINIT=/usr/local/packages/cadence_2015/IC616.1/tools/plot/etc/cdsplotinit
+CDSHOME=/usr/local/packages/cadence_2015/IC616.1
+CDK_DIR=/usr/local/packages/ncsu-cdk-1-6-0-beta
+CALIBRE_HOME=/usr/local/packages/mentor_2015/calibre/aoi_cal_2015.2_27.20
+0
+86
+1540512373 models2/dff_leaf_generic.v
+1540512373 models2/dff_generic.v
+1540512373 models2/alu_generic.v
+1540512374 models2/zero.v
+1540512374 models2/xor2.v
+1540512374 models2/tribuf.v
+1540512374 models2/stdxor2.v
+1540512374 models2/stdor2.v
+1540512374 models2/stdoa21.v
+1540512374 models2/stdnor3.v
+1540512374 models2/stdnor2.v
+1540512374 models2/stdnand2.v
+1540512374 models2/stdmux4.v
+1540512374 models2/stdmux3.v
+1540512374 models2/stdmux2.v
+1540512374 models2/stdlatch_c.v
+1540512374 models2/stdlatch.v
+1540512374 models2/stdinv.v
+1540512374 models2/stddff_p.v
+1540512374 models2/stddff_cq.v
+1540512374 models2/stddff_c.v
+1540512374 models2/stddff.v
+1540512374 models2/stdbufinv.v
+1540512374 models2/stdbuf.v
+1540512374 models2/stdao222.v
+1540512374 models2/stdand4.v
+1540512374 models2/stdand3.v
+1540512374 models2/stdand2.v
+1540512374 models2/stdaddh.v
+1540512374 models2/stdadd.v
+1540512374 models2/regfile2r.v
+1540512373 models2/or2.v
+1540512373 models2/nor2.v
+1540512373 models2/mux4.v
+1540512373 models2/mux3.v
+1540512373 models2/mux2.v
+1540512373 models2/latch_c.v
+1540512373 models2/incbar.v
+1540512373 models2/inc.v
+1540512373 models2/dffs_cq.v
+1540512373 models2/dffs_c.v
+1540512373 models2/dff_c.v
+1540512373 models2/compl.v
+1540512373 models2/buff.v
+1540512373 models2/barrelfun.v
+1540512373 models2/and2.v
+1540512373 models2/aluv.v
+1540512374 signals2.defs
+1540512374 signal.defs
+1540512374 test.config
+1543387397 w_slave.v
+1543384795 w_master.v
+1543446904 cmu.v
+1543445338 RxLogic.v
+1543357591 RxFIFO.v
+1543357596 TxLogic.v
+1543357596 TxFIFO.v
+1543357591 SSP.v
+1540512373 mem2.v
+1543386807 main.v
+1540512372 arm.v
+1540512372 arm_dp.v
+1540512372 arm_ctrl_comb.v
+1540512372 arm_ctrl_struct.v
+1540512374 shift.v
+1540512374 shift_carry.v
+1540512372 arm_alu.v
+1540512372 aluflags.v
+1540512373 mapaluops.v
+1540512374 regfile.v
+1540512372 decode_addresses.v
+1540512374 regfile_struct.v
+1540512373 getreg.v
+1540512373 getregfromlist.v
+1540512372 count.v
+1540512372 bop.v
+1540512372 aop.v
+1540512373 ir.v
+1540512372 ar.v
+1540512372 dout.v
+1540512372 din.v
+1540512372 exc.v
+1540512372 forward.v
+1540512372 detect_skip.v
+1543357740 master
+1448424285 /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/vcsd.tab
+4
+0 
+1448427877 /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvirsim.so
+1448427558 /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/liberrorinf.so
+1448427538 /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libsnpsmalloc.so
+1543603222 simv.daidir

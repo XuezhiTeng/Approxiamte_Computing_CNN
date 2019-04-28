@@ -1,0 +1,34 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /home/ecelrc/students/xteng/vlsi1/lab3/rtl/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp3X0wBE
+synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP1_Full64" -sync_file /tmp/vcs_dve_rpc.xteng.63052}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.xteng.63052}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+synopsys::dump -add {TOP.MEM.r } -aggregates  -fid VPD0
+synopsys::dump -add {TOP.MEM.w } -aggregates  -fid VPD0
+synopsys::dump -add {TOP.MEM.phi1 } -aggregates  -fid VPD0
+synopsys::dump -add {TOP.MEM.phi2 } -aggregates  -fid VPD0
+synopsys::dump -add {TOP.MEM.wordAddress } -aggregates  -fid VPD0
+synopsys::dump -add {TOP.MEM.value } -aggregates  -fid VPD0
+synopsys::dump -add {TOP.SLAVE.rst_i } -aggregates  -fid VPD0
+synopsys::dump -add {TOP.SLAVE.clk_i } -aggregates  -fid VPD0
+synopsys::dump -add {TOP.SLAVE.taga_i } -aggregates  -fid VPD0
+synopsys::dump -add {TOP.SLAVE.we_i } -aggregates  -fid VPD0
+synopsys::dump -add {TOP.SLAVE.stb_i } -aggregates  -fid VPD0
+synopsys::dump -add {TOP.SLAVE.cyc_i } -aggregates  -fid VPD0
+synopsys::dump -add {TOP.SLAVE.dat_i } -aggregates  -fid VPD0
+synopsys::dump -add {TOP.SLAVE.adr_i } -aggregates  -fid VPD0

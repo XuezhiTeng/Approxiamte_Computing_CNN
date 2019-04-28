@@ -1,0 +1,750 @@
+{
+    "CompileStatus": "Successful",
+    "MlibObjs": {},
+    "PrevCompiledModules": {
+        "stdnor2": {
+            "Nyiwc_d": {
+                "bytes": 7341,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "stdnor2",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "Nyiwc_d.o"
+            }
+        },
+        "mux2": {
+            "i3rNP_d": {
+                "bytes": 8665,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "mux2",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "i3rNP_d.o"
+            }
+        },
+        "arm_ctrl_comb": {
+            "u3Jzp_d": {
+                "bytes": 48500,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "arm_ctrl_comb",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "u3Jzp_d.o"
+            }
+        },
+        "detect_skip": {
+            "GVb8I_d": {
+                "bytes": 10056,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "detect_skip",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "GVb8I_d.o"
+            }
+        },
+        "dff_generic_0000": {
+            "uTrT9_d": {
+                "bytes": 9045,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "dff_generic_0000",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "uTrT9_d.o"
+            }
+        },
+        "aop": {
+            "wd193_d": {
+                "bytes": 13644,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "aop",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "wd193_d.o"
+            }
+        },
+        "dffs_c_0003": {
+            "L5g3S_d": {
+                "bytes": 9545,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "dffs_c_0003",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "L5g3S_d.o"
+            }
+        },
+        "stdlatch_c": {
+            "ZmrJv_d": {
+                "bytes": 7577,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "stdlatch_c",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "ZmrJv_d.o"
+            }
+        },
+        "mux3_0000": {
+            "pYk9H_d": {
+                "bytes": 9779,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "mux3_0000",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "pYk9H_d.o"
+            }
+        },
+        "Clock": {
+            "TfMdv_d": {
+                "bytes": 9904,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "Clock",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "TfMdv_d.o"
+            }
+        },
+        "stdor2": {
+            "GZYEu_d": {
+                "bytes": 7249,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "stdor2",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "GZYEu_d.o"
+            }
+        },
+        "count": {
+            "J6DA9_d": {
+                "bytes": 14441,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "count",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "J6DA9_d.o"
+            }
+        },
+        "dff_generic_0001": {
+            "LdgHB_d": {
+                "bytes": 9045,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "dff_generic_0001",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "LdgHB_d.o"
+            }
+        },
+        "latch_c": {
+            "GBexk_d": {
+                "bytes": 9023,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "latch_c",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "GBexk_d.o"
+            }
+        },
+        "mux4": {
+            "s6Cv4_d": {
+                "bytes": 10656,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "mux4",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "s6Cv4_d.o"
+            }
+        },
+        "ar": {
+            "N3xBm_d": {
+                "bytes": 27729,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "ar",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "N3xBm_d.o"
+            }
+        },
+        "forward": {
+            "Bqe3V_d": {
+                "bytes": 10072,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "forward",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "Bqe3V_d.o"
+            }
+        },
+        "dff_generic": {
+            "hUnMK_d": {
+                "bytes": 9001,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "dff_generic",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "hUnMK_d.o"
+            }
+        },
+        "stdadd": {
+            "i9tgy_d": {
+                "bytes": 8418,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "stdadd",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "i9tgy_d.o"
+            }
+        },
+        "bop": {
+            "NfcN8_d": {
+                "bytes": 31283,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "bop",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "NfcN8_d.o"
+            }
+        },
+        "din": {
+            "R7ijF_d": {
+                "bytes": 21392,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "din",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "R7ijF_d.o"
+            }
+        },
+        "stdaddh": {
+            "mVamE_d": {
+                "bytes": 7738,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "stdaddh",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "mVamE_d.o"
+            }
+        },
+        "stdand2": {
+            "ZdMhD_d": {
+                "bytes": 7205,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "stdand2",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "ZdMhD_d.o"
+            }
+        },
+        "mapaluops": {
+            "egEtn_d": {
+                "bytes": 16857,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "mapaluops",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "egEtn_d.o"
+            }
+        },
+        "arm_alu": {
+            "v4309_d": {
+                "bytes": 45972,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "arm_alu",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "v4309_d.o"
+            }
+        },
+        "arm_ctrl": {
+            "p7dgU_d": {
+                "bytes": 116393,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "arm_ctrl",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "p7dgU_d.o"
+            }
+        },
+        "ir": {
+            "qFdzq_d": {
+                "bytes": 21988,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "ir",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "qFdzq_d.o"
+            }
+        },
+        "TOP": {
+            "ThQKx_d": {
+                "bytes": 312899,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "TOP",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "ThQKx_d.o"
+            }
+        },
+        "dffs_c": {
+            "xQuV1_d": {
+                "bytes": 9531,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "dffs_c",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "xQuV1_d.o"
+            }
+        },
+        "stdinv": {
+            "n1EpD_d": {
+                "bytes": 7117,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "stdinv",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "n1EpD_d.o"
+            }
+        },
+        "stdmux2": {
+            "tW4Tj_d": {
+                "bytes": 7369,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "stdmux2",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "tW4Tj_d.o"
+            }
+        },
+        "stdmux4": {
+            "Wd2Cz_d": {
+                "bytes": 8194,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "stdmux4",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "Wd2Cz_d.o"
+            }
+        },
+        "memory": {
+            "DhPSm_d": {
+                "bytes": 13052,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "memory",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "DhPSm_d.o"
+            }
+        },
+        "dff_generic_0003": {
+            "iW8Nm_d": {
+                "bytes": 8974,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "dff_generic_0003",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "iW8Nm_d.o"
+            }
+        },
+        "or2": {
+            "DgZQS_d": {
+                "bytes": 8539,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "or2",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "DgZQS_d.o"
+            }
+        },
+        "Master": {
+            "ZjWBK_d": {
+                "bytes": 13877,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "Master",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "ZjWBK_d.o"
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "bytes": 7093,
+                "mod": "...MASTER...",
+                "out": "objs/amcQw_d.o",
+                "checksum": 4294967295,
+                "mode": 4
+            }
+        },
+        "exc": {
+            "nzNTq_d": {
+                "bytes": 8211,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "exc",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "nzNTq_d.o"
+            }
+        },
+        "latch_c_0001": {
+            "Ey5WQ_d": {
+                "bytes": 9343,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "latch_c_0001",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "Ey5WQ_d.o"
+            }
+        },
+        "dffs_c_0001": {
+            "LHmTZ_d": {
+                "bytes": 9545,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "dffs_c_0001",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "LHmTZ_d.o"
+            }
+        },
+        "dffs_c_0004": {
+            "pMi0W_d": {
+                "bytes": 9307,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "dffs_c_0004",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "pMi0W_d.o"
+            }
+        },
+        "getreg": {
+            "P39Py_d": {
+                "bytes": 25640,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "getreg",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "P39Py_d.o"
+            }
+        },
+        "mux2_0005": {
+            "J2ypR_d": {
+                "bytes": 9247,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "mux2_0005",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "J2ypR_d.o"
+            }
+        },
+        "Slave": {
+            "H0hRq_d": {
+                "bytes": 16439,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "Slave",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "H0hRq_d.o"
+            }
+        },
+        "mux2_0006": {
+            "x7Idd_d": {
+                "bytes": 8854,
+                "archive": "archive.76/_prev_archive_1.a",
+                "mod": "mux2_0006",
+                "checksum": 4294967295,
+                "mode": 4,
+                "out": "x7Idd_d.o"
+            }
+        }
+    },
+    "NameTable": {
+        "stdnor2": [
+            "stdnor2",
+            "Nyiwc",
+            "module"
+        ],
+        "mux2": [
+            "mux2",
+            "i3rNP",
+            "module"
+        ],
+        "arm_ctrl_comb": [
+            "arm_ctrl_comb",
+            "u3Jzp",
+            "module"
+        ],
+        "aop": [
+            "aop",
+            "wd193",
+            "module"
+        ],
+        "dff_generic_0000": [
+            "dff_generic_0000",
+            "uTrT9",
+            "module"
+        ],
+        "detect_skip": [
+            "detect_skip",
+            "GVb8I",
+            "module"
+        ],
+        "dff_generic": [
+            "dff_generic",
+            "hUnMK",
+            "module"
+        ],
+        "stdadd": [
+            "stdadd",
+            "i9tgy",
+            "module"
+        ],
+        "forward": [
+            "forward",
+            "Bqe3V",
+            "module"
+        ],
+        "mux2_0005": [
+            "mux2_0005",
+            "J2ypR",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ],
+        "exc": [
+            "exc",
+            "nzNTq",
+            "module"
+        ],
+        "bop": [
+            "bop",
+            "NfcN8",
+            "module"
+        ],
+        "din": [
+            "din",
+            "R7ijF",
+            "module"
+        ],
+        "ar": [
+            "ar",
+            "N3xBm",
+            "module"
+        ],
+        "ir": [
+            "ir",
+            "qFdzq",
+            "module"
+        ],
+        "memory": [
+            "memory",
+            "DhPSm",
+            "module"
+        ],
+        "latch_c": [
+            "latch_c",
+            "GBexk",
+            "module"
+        ],
+        "dff_generic_0001": [
+            "dff_generic_0001",
+            "LdgHB",
+            "module"
+        ],
+        "count": [
+            "count",
+            "J6DA9",
+            "module"
+        ],
+        "dffs_c_0004": [
+            "dffs_c_0004",
+            "pMi0W",
+            "module"
+        ],
+        "getreg": [
+            "getreg",
+            "P39Py",
+            "module"
+        ],
+        "mapaluops": [
+            "mapaluops",
+            "egEtn",
+            "module"
+        ],
+        "arm_ctrl": [
+            "arm_ctrl",
+            "p7dgU",
+            "module"
+        ],
+        "arm_alu": [
+            "arm_alu",
+            "v4309",
+            "module"
+        ],
+        "TOP": [
+            "TOP",
+            "ThQKx",
+            "module"
+        ],
+        "Clock": [
+            "Clock",
+            "TfMdv",
+            "module"
+        ],
+        "Master": [
+            "Master",
+            "ZjWBK",
+            "module"
+        ],
+        "Slave": [
+            "Slave",
+            "H0hRq",
+            "module"
+        ],
+        "stdinv": [
+            "stdinv",
+            "n1EpD",
+            "module"
+        ],
+        "dffs_c": [
+            "dffs_c",
+            "xQuV1",
+            "module"
+        ],
+        "mux2_0006": [
+            "mux2_0006",
+            "x7Idd",
+            "module"
+        ],
+        "dffs_c_0001": [
+            "dffs_c_0001",
+            "LHmTZ",
+            "module"
+        ],
+        "mux3_0000": [
+            "mux3_0000",
+            "pYk9H",
+            "module"
+        ],
+        "stdlatch_c": [
+            "stdlatch_c",
+            "ZmrJv",
+            "module"
+        ],
+        "dffs_c_0003": [
+            "dffs_c_0003",
+            "L5g3S",
+            "module"
+        ],
+        "latch_c_0001": [
+            "latch_c_0001",
+            "Ey5WQ",
+            "module"
+        ],
+        "mux4": [
+            "mux4",
+            "s6Cv4",
+            "module"
+        ],
+        "or2": [
+            "or2",
+            "DgZQS",
+            "module"
+        ],
+        "stdaddh": [
+            "stdaddh",
+            "mVamE",
+            "module"
+        ],
+        "stdand2": [
+            "stdand2",
+            "ZdMhD",
+            "module"
+        ],
+        "stdmux2": [
+            "stdmux2",
+            "tW4Tj",
+            "module"
+        ],
+        "stdmux4": [
+            "stdmux4",
+            "Wd2Cz",
+            "module"
+        ],
+        "stdor2": [
+            "stdor2",
+            "GZYEu",
+            "module"
+        ],
+        "dff_generic_0003": [
+            "dff_generic_0003",
+            "iW8Nm",
+            "module"
+        ]
+    },
+    "CompileStrategy": "fullobj",
+    "PEModules": [],
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_maxrss_kb": 62136,
+            "ru_utime_sec": 0.566913,
+            "ru_stime_sec": 0.094985,
+            "ru_minflt": 14080,
+            "ru_nvcsw": 588,
+            "ru_majflt": 0,
+            "ru_nivcsw": 51
+        },
+        "nQuads": 0,
+        "ru_self_end": {
+            "ru_maxrss_kb": 67568,
+            "ru_utime_sec": 0.57591199999999998,
+            "ru_stime_sec": 0.10298400000000001,
+            "ru_minflt": 15821,
+            "ru_nvcsw": 654,
+            "ru_majflt": 0,
+            "ru_nivcsw": 66
+        },
+        "ru_childs_end": {
+            "ru_maxrss_kb": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_minflt": 0,
+            "ru_nvcsw": 0,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0
+        },
+        "ru_childs_cgstart": {
+            "ru_maxrss_kb": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_minflt": 0,
+            "ru_nvcsw": 0,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0
+        },
+        "nMops": 0,
+        "totalObjSize": 105422,
+        "Frontend(%)": 98.437434885885338,
+        "CodeGen(%)": 1.5625651141146528
+    },
+    "CurCompileModules": [
+        "...MASTER..."
+    ],
+    "Misc": {
+        "cwd": "/home/ecelrc/students/xteng/vlsi1/lab3/rtl",
+        "csrc": "csrc",
+        "archive_dir": "archive.76",
+        "csrc_abs": "/home/ecelrc/students/xteng/vlsi1/lab3/rtl/csrc",
+        "default_output_dir": "csrc",
+        "daidir": "simv.daidir",
+        "daidir_abs": "/home/ecelrc/students/xteng/vlsi1/lab3/rtl/simv.daidir"
+    },
+    "CurCompileUdps": {},
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 98329
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "CompileProcesses": [
+        "cgproc.44889.json"
+    ]
+}
