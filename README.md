@@ -22,3 +22,9 @@ Darknet is a CNN simulator written in C. What we need to do is changing the adde
 
 ### 3. What does the result of detection look like?
 
+Besides the reports in the terminal, there is a picture called "prediction.png" which shows you the detection result.
+
+### 4. What do we need to do next?
+
+We need to modify the "gemm.c" file to replace the accurate adder and multiplier with approxiamte ones. And re-train the CNN model to get new weights. Finally, we do the detection again and compare the result with original model.
+
