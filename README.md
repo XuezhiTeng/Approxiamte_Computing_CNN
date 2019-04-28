@@ -15,5 +15,8 @@ Darknet is a CNN simulator written in C. What we need to do is changing the adde
   
    Of course, we can use other kinds of weights and models. Please see the README file inside the darknet to get more details. And finally, we need to be able to use the weights obtained by our own trainning.
 * To run the CNN detector, use the command line 
+
   `% ./darknet detect cfg/yolov3-tiny.cfg yolov3-tiny.weights data/dog.jpg`
+  
+  Here we are using the ####dog.jpg
 
