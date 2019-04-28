@@ -20,5 +20,5 @@ Darknet is a CNN simulator written in C. What we need to do is changing the adde
   
   Here we are using the "dog.jpg" to perform the detection. Also, there are some other pictures in the "/data" folder. change the name of picture that you want to test. You will see the results in the terminal.
 
-### 3. What is the result of detection look like?
+### 3. What does the result of detection look like?
 
