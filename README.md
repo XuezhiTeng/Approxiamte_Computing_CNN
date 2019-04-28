@@ -1,6 +1,6 @@
 # Approxiamte_Computing_CNN 
 
-Akhila Bhat & Xuezhi Teng
+EE382M - Low Power and Robustness Design - Akhila Bhat & Xuezhi Teng
 
 ### 1. What is project about?
 
