@@ -1,0 +1,106 @@
+{
+    "CompileProcesses": [
+        "cgproc.28798.json"
+    ],
+    "NameTable": {
+        "timeunit": [
+            "timeunit",
+            "H0Y6L",
+            "module"
+        ],
+        "DRUM4_16_u": [
+            "DRUM4_16_u",
+            "wDn84",
+            "module"
+        ],
+        "P_Encoder": [
+            "P_Encoder",
+            "VDTQM",
+            "module"
+        ],
+        "Mux_16_3": [
+            "Mux_16_3",
+            "er4aA",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "timeunit",
+        "DRUM4_16_u",
+        "P_Encoder",
+        "Mux_16_3"
+    ],
+    "CompileStrategy": "fullobj",
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 89106
+    },
+    "stat": {
+        "quadSpeed": 18032.063538755701,
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.061990000000000003,
+            "ru_stime_sec": 0.043992999999999997,
+            "ru_maxrss_kb": 50232,
+            "ru_minflt": 11925,
+            "ru_majflt": 4,
+            "ru_nvcsw": 204,
+            "ru_nivcsw": 56
+        },
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0009990000000000001,
+            "ru_stime_sec": 0.003999,
+            "ru_maxrss_kb": 15644,
+            "ru_minflt": 482,
+            "ru_majflt": 0,
+            "ru_nvcsw": 4,
+            "ru_nivcsw": 4
+        },
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.0009990000000000001,
+            "ru_stime_sec": 0.003999,
+            "ru_maxrss_kb": 15644,
+            "ru_minflt": 482,
+            "ru_majflt": 0,
+            "ru_nvcsw": 4,
+            "ru_nivcsw": 4
+        },
+        "mopSpeed": 62862.1856155317,
+        "CodeGen(%)": 35.416992238370575,
+        "nMops": 2137,
+        "ru_self_end": {
+            "ru_utime_sec": 0.095985000000000001,
+            "ru_stime_sec": 0.058991000000000002,
+            "ru_maxrss_kb": 58240,
+            "ru_minflt": 14405,
+            "ru_majflt": 7,
+            "ru_nvcsw": 298,
+            "ru_nivcsw": 113
+        },
+        "nQuads": 613,
+        "totalObjSize": 145449,
+        "mop/quad": 3.4861337683523654,
+        "outputSizePerQuad": 237.0,
+        "Frontend(%)": 64.583007761629432
+    },
+    "CurCompileUdps": {},
+    "PEModules": [],
+    "LVLData": [
+        "SIM"
+    ],
+    "CompileStatus": "Successful",
+    "Misc": {
+        "daidir": "simv.daidir",
+        "cwd": "/misc/scratch/abhat1/lowpower/project/Approxiamte_Computing_CNN/hw/multipliers/approx_multipliers",
+        "daidir_abs": "/misc/scratch/abhat1/lowpower/project/Approxiamte_Computing_CNN/hw/multipliers/approx_multipliers/simv.daidir",
+        "csrc": "csrc",
+        "default_output_dir": "csrc",
+        "csrc_abs": "/misc/scratch/abhat1/lowpower/project/Approxiamte_Computing_CNN/hw/multipliers/approx_multipliers/csrc",
+        "archive_dir": "archive.0"
+    }
+}
