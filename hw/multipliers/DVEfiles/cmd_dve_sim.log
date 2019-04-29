@@ -1,0 +1,104 @@
+ucliGUI::start /misc/scratch/abhat1/lowpower/project/Approxiamte_Computing_CNN/hw/multipliers/simv -ucligui 
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /misc/scratch/abhat1/lowpower/project/Approxiamte_Computing_CNN/hw/multipliers/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD2
+set ::dve_fid VPD2
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpCILuGz
+synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP1_Full64" -sync_file /tmp/vcs_dve_rpc.abhat1.15886}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.abhat1.15886}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+# Begin_DVE_Session_Save_Info
+# DVE restart session
+# Saved on Sun Apr 28 19:19:05 2019
+# Designs open: 1
+#   Sim: /misc/scratch/abhat1/lowpower/project/Approxiamte_Computing_CNN/hw/multipliers/simv
+# Toplevel windows open: 2
+# 	TopLevel.1
+# 	TopLevel.2
+#   Source.1: timeunit
+#   Wave.1: 3 signals
+#   Group count = 1
+#   Group Group1 signal count = 3
+# End_DVE_Session_Save_Info
+# DVE version: K-2015.09-SP1_Full64
+# DVE build date: Nov 24 2015 21:15:24
+#<Session mode="Restart" path=".restartSimSession.tcl" type="Debug">
+# Application preferences
+#<WindowLayout>
+# DVE top-level session
+# Create and position top-level window: TopLevel.1
+set TopLevel.1 TopLevel.1
+# Docked window settings
+set HSPane.1 HSPane.1
+set Hier.1 Hier.1
+set DLPane.1 DLPane.1
+set Data.1 Data.1
+set Console.1 Console.1
+# MDI window settings
+set Source.1 Source.1
+# End MDI window settings
+# Create and position top-level window: TopLevel.2
+set TopLevel.2 TopLevel.2
+# Docked window settings
+# MDI window settings
+set Wave.1 Wave.1
+# End MDI window settings
+#</WindowLayout>
+#<Database>
+#</Database>
+# DVE Global setting session:
+# Global: Breakpoints
+# Global: Bus
+# Global: Expressions
+# Global: Signal Time Shift
+# Global: Signal Compare
+# Global: Signal Groups
+synopsys::dump -add {wallace_16bit_tb} -scope "." -depth 1 -fid VPD2
+set _session_group_2 Group1
+set Group1 "$_session_group_2"
+# Global: Highlighting
+# Global: Stack
+# Post database loading setting...
+# Save global setting...
+# Wave/List view global setting
+# Close all empty TopLevel windows
+foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
+# DVE View/pane content session:
+# Hier 'Hier.1'
+catch {gui_list_select -id ${Hier.1} {wallace_16bit_tb}}
+# Data 'Data.1'
+catch { gui_list_select -id ${Data.1} {wallace_16bit_tb.A wallace_16bit_tb.B wallace_16bit_tb.Product_wall_16 }}
+# Source 'Source.1'
+# View 'Wave.1'
+set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+set origGroupCreationState [gui_list_create_group_when_add -wave]
+if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
+if { $groupExD } {  gui_msg_report -code DVWW028 }
+# Restore toplevel window zorder
+# The toplevel window could be closed if it has no view/pane
+if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${Source.1} 	gui_set_active_window -window ${DLPane.1} }
+if {[gui_exist_window -window ${TopLevel.2}]} { 	gui_set_active_window -window ${TopLevel.2} 	gui_set_active_window -window ${Wave.1} }
+#</Session>
+synopsys::run
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

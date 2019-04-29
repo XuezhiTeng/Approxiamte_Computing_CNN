@@ -1,0 +1,150 @@
+0 
+29
++cli+4
++itf+/usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/vcsd.tab
++memcbk
++vcsd
++vpi
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/usr/local/packages/synopsys_2015/vcs-mx/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvirsim.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/liberrorinf.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl -lm
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/usr/local/packages/synopsys_2015/vcs-mx/include
+-Xcbug=0x1
+-debug=3
+-f master
+-full64
+-gen_obj
+-picarchive
+/usr/local/packages/synopsys_2015/vcs-mx/linux64/bin/vcs1
+102
+sysc_uni_pwd=/misc/scratch/abhat1/lowpower/project/Approxiamte_Computing_CNN/hw/multipliers
+binpath=/usr/local/packages/synopsys_2015/vcs-mx//gui/dve/linux64/bin
+XSESSION_EXEC=xfce4-session
+XDG_SESSION_COOKIE=c6be52f051049e02eba73a5d0000001e-1556415705.176978-1934161271
+XAUTHORITY=/home/ecelrc/students/abhat1//.Xauthority
+X2GO_SESSION=abhat1-63-1556415698_stDXFCE_dp32
+X2GO_AGENT_PID=19507
+VMR_MODE_FLAG=64
+VMANAGER_PATH_modshare=/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib:2:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/e_ex_lib/cdn_vm_ext/e:2
+VMANAGER_PATH=/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/e_ex_lib/cdn_vm_ext/e
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME_modshare=/usr/local/packages/synopsys_2015/vcs-mx/:1
+VCS_HOME=/usr/local/packages/synopsys_2015/vcs-mx/
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UVM_SEQ_DIR=/usr/local/packages/cadence_2015/incisiv13.2/specman/src
+UVM_HOME=/usr/local/packages/cadence_2015/incisiv13.2/tools/uvm
+USE_CALIBRE_VCO=aoi
+UNAME=/bin/uname
+TOOL_HOME=/usr/local/packages/synopsys_2015/vcs-mx/linux64
+TCLSH=/usr/bin/tclsh
+TCLLIBPATH=/usr/local/packages/synopsys_2015/vcs-mx//gui/dve/auxx/tcllib/lib/tcl8.4 /usr/local/packages/synopsys_2015/vcs-mx//gui/dve/auxx/tcllib/snps_tcl
+SYNOPSYS_SYN_ROOT=/usr/local/packages/synopsys_2015/syn
+SYNOPSYS_LC_ROOT=/usr/local/packages/synopsys_2015/lib_compiler
+STARTUP=/usr/bin/env LD_LIBRARY_PATH=/usr/lib64/nx/X11/Xinerama:/usr/lib64/nx/X11:/usr/local/lib xfce4-session
+SSH_CONNECTION=172.29.248.162 59824 146.6.221.72 22
+SSH_CLIENT=172.29.248.162 59824 22
+SSH_AUTH_SOCK=/tmp/ssh-gfWST20336/agent.20336
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_AGENT_PID=20339
+SPECMAN_OUTPUT_TO_TTY=1
+SPECMAM_PATH_modshare=/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/e_ex_lib:2:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/util_lib:2:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/misc/links:2:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/misc:2:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/abv_formal:2:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/uvm_e_ex_lib/interface_uvc_lib:2:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/ovm_ex_lib/e_ex_lib:2:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/uvm_e_ex_lib/apb_subsystem:2:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/uvm_e_ex_lib:2
+SPECMAM_PATH=/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/abv_formal:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/e_ex_lib:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/util_lib:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/misc/links:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/ovm_ex_lib/e_ex_lib:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/misc:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/uvm_e_ex_lib/interface_uvc_lib:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/uvm_e_ex_lib/apb_subsystem:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/uvm_e_ex_lib
+SOCV_KIT_HOME=/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit
+SNPSLMD_LICENSE_FILE_modshare=/usr/local/packages/synopsys_2015/key:4
+SNPSLMD_LICENSE_FILE=/usr/local/packages/synopsys_2015/key
+SIMRC=/usr/local/packages/ncsu-cdk-1-6-0-beta/skill
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/20336,unix/unix:/tmp/.ICE-unix/20336
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_IM_MODULE=xim
+QT_GRAPHICSSYSTEM=native
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+PULSE_CLIENTCONFIG=/home/ecelrc/students/abhat1//.x2go/C-abhat1-63-1556415698_stDXFCE_dp32/.pulse-client.conf
+PDK_DIR=/usr/local/packages/FreePDK45
+PATH_modshare=/usr/local/packages/synopsys_2015/hspice/hspice/amd64:1:/usr/local/packages/synopsys_2015/lib_compiler/linux64/syn/bin:1:/usr/local/packages/cadence_2015/MMSIM131/tools/bin:2:/usr/bin:1:/usr/local/packages/synopsys_2015/syn/linux64/syn/bin:1:/usr/local/packages/synopsys_2015/cosmos/bin:1:/usr/X11R6/bin:1:/usr/local/packages/cadence_2015/incisiv13.2/tools/bin:2:/usr/local/packages/synopsys_2015/cosmos/ai_bin:1:/usr/local/bin:1:/usr/local/packages/synopsys_2015/vcs-mx/bin:1:/usr/local/packages/cadence_2015/IC616.1/tools/dfII/bin:2:/usr/local/packages/cadence_2015/PVE121/tools/K2/Viewer/bin:2:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/bin:2://usr/local/packages/cadence_2015/PVE121/tools/bin:2:/usr/local/packages/synopsys_2015/syn/bin:1:/bin:1:/usr/local/packages/cadence_2015/IC616.1/bin:2:/usr/local/packages/mentor_2015/calibre/aoi_cal_2015.2_27.20/bin:1:/usr/local/packages/validation/bin:1:/sbin:1:/usr/sbin:1:/usr/local/packages/cadence_2015/incisiv13.2/tools/cdsgcc/gcc/bin:2:/usr/local/packages/synopsys_2015/hspice/hspice/bin:1:/usr/local/etc:1:/usr/local/packages/synopsys_2015/vcs-mx/amd64/bin:1:/usr/local/packages/synopsys_2018/milkyway/mw/O-2018.06-SP2/bin/linux64/:1
+OVA_UUM=0
+NX_XINERAMA_CONF=/home/ecelrc/students/abhat1//.x2go/C-abhat1-63-1556415698_stDXFCE_dp32/xinerama.conf
+NCPROTECT_KEYDB=/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/misc/ip_keys
+MODULESHOME=/home/projects/Modules
+MODULEPATH_modshare=/home/projects/Modules/tools:5:/home/projects/Modules/projects:5:/home/projects/Modules/base:5
+MODULEPATH=/home/projects/Modules/projects:/home/projects/Modules/tools:/home/projects/Modules/base
+ML_UVM=/usr/local/packages/cadence_2015/incisiv13.2/tool/uvm/uvm_lib/uvm_ml/sc/ml_uvm
+MDB_SIM_ARGS=-simwarn
+MAVEN_HOME=/usr/share/apache-maven
+MARCH=linux64
+MANPATH_modshare=/usr/man:10:/home/projects/Modules/man:5:/usr/X11R6/man:5:/usr/local/man:5:/usr/share/man:10
+MAILPATH=/var/spool/mail/abhat1
+M2_HOME=/usr/share/apache-maven
+LOADEDMODULES_modshare=modules:5:admin:5:aliases:5:cadence/2015:2:synopsys/hspice/2015:1:syn/cosmos/2015:1:openwin:5:synopsys/syn/2015:1:synopsys/vcs/2015:1:ece-defaults:5:local:5:system:5:mentor/calibre/2015:1
+LOADEDMODULES=modules:system:openwin:aliases:local:admin:ece-defaults:cadence/2015:mentor/calibre/2015:synopsys/hspice/2015:syn/cosmos/2015:synopsys/syn/2015:synopsys/vcs/2015
+LM_LICENSE_FILE_modshare=/usr/local/packages/mentor_2015/license.dat:1:/usr/local/packages/synopsys_2015/key:4:/usr/local/packages/cadence_2015/license.dat:2
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LD_LIBRARY_PATH_modshare=/usr/local/lib:2:/usr/local/packages/cadence_2015/PVE121/tools/Qt/64bit/lib:2:/usr/lib64/nx/X11/Xinerama:999999999:/usr/lib/X11:2:/usr/lib64:1:/lib/i686:2:/usr/local/packages/cadence_2015/PVE121/tools/Qt/32bit/lib:2:/usr/local/packages/synopsys_2015/vcs-mx/amd64/lib:1:/usr/dt/lib:2:/usr/openwin/lib:2:/usr/lib64/nx/X11:999999999:/usr/lib:2
+LC_ALL=C
+KIT_SETUP_SAVE=/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit
+K2_VIEWER_HOME=/usr/local/packages/cadence_2015/PVE121/tools/K2/Viewer
+K2_MASKCOMPOSE_HOME=/usr/local/packages/cadence_2015/PVE121/tools/K2/MaskCompose
+K2_HOME=/usr/local/packages/cadence_2015/PVE121/tools/K2/
+IMSETTINGS_MODULE=none
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+HISTCONTROL=ignoredups
+G_BROKEN_FILENAMES=1
+GTK_IM_MODULE=gtk-im-context-simple
+DVE_SIM_SELECT_LOOP=on
+DVE_PSTACK=/usr/bin/gstack
+DVE_AUXX_GUI=/usr/local/packages/synopsys_2015/vcs-mx//gui/dve/auxx/gui
+DVE=/usr/local/packages/synopsys_2015/vcs-mx//gui/dve
+DMS_DESIGN=/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/designs/socv/ams
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-EOQneUCwtw,guid=b9c2791350a4932aff6a88f80086bfc5
+CVS_RSH=ssh
+COLORTERM=Terminal
+CMD=/usr/local/packages/synopsys_2015/vcs-mx//gui/dve/linux64/bin/dve.exe
+CLS_CDSD_COMPATIBILITY_LOCKING=NO
+CDS_SITE=/usr/local/packages/ncsu-cdk-1-6-0-beta
+CDS_ROOT=/usr/local/packages/cadence_2015/IC616.1
+CDS_Netlisting_Mode=Analog
+CDS_LIC_FILE=/usr/local/packages/cadence_2015/license.dat
+CDS_HOME=/usr/local/packages/cadence_2015
+CDS_AUTO_64BIT=ALL
+CDSPLOTINIT=/usr/local/packages/cadence_2015/IC616.1/tools/plot/etc/cdsplotinit
+CDSHOME=/usr/local/packages/cadence_2015/IC616.1
+CDK_DIR=/usr/local/packages/ncsu-cdk-1-6-0-beta
+CALIBRE_HOME=/usr/local/packages/mentor_2015/calibre/aoi_cal_2015.2_27.20
+0
+8
+1286932616 lib1
+1556497140 wallace_16bit_tb.v
+1556495297 wallace_16bit.v
+1556495153 adder.v
+1286932616 lib1
+1286932627 time
+1556495441 master
+1448424285 /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/vcsd.tab
+4
+0 
+1448427877 /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvirsim.so
+1448427558 /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/liberrorinf.so
+1448427538 /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libsnpsmalloc.so
+1556497147 simv.daidir
