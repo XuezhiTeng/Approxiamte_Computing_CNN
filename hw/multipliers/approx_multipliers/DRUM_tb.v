@@ -47,11 +47,13 @@ module DRUM_tb;
 	// Dump ALL waveforms	
 	initial
 		begin
-		$vcdplusfile("drum_16bit.dump.vpd");
-		$vcdpluson(0, DRUM4_16_u);
+		//$vcdplusfile("drum_16bit.dump.vpd");
+		$vcdplusfile("drumk_M_N_s.dump.vpd");
+		//$vcdpluson(0, DRUM4_16_u);
+		$vcdpluson(0, DRUMk_M_N_s);
 		end
 
 	// Instantiate modules 
-	DRUM4_16_u drum4_16 (.r(out),.a(A),.b(B));
-	
+	//DRUM4_16_u drum4_16 (.r(out),.a(A),.b(B));
+	DRUMk_M_N_s drum_kMN (.r(out),.a(A),.b(B));
 endmodule

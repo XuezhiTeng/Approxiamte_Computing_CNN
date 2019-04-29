@@ -1,6 +1,10 @@
 Chronologic VCS simulator copyright 1991-2015
 Contains Synopsys proprietary information.
-Compiler version K-2015.09-SP1_Full64; Runtime version K-2015.09-SP1_Full64;  Apr 29 00:18 2019
+Compiler version K-2015.09-SP1_Full64; Runtime version K-2015.09-SP1_Full64;  Apr 29 01:53 2019
 VCD+ Writer K-2015.09-SP1_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
 The file '/misc/scratch/abhat1/lowpower/project/Approxiamte_Computing_CNN/hw/multipliers/approx_multipliers/inter.vpd' was opened successfully.
 Simulation complete, time is 13500000 ps.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 13500000 ps
+CPU Time:      0.120 seconds;       Data structure size:   0.0Mb
+Mon Apr 29 01:55:37 2019

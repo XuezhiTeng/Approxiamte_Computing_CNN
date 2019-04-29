@@ -98,11 +98,13 @@ endmodule
 
 //------------------------------------------------------------
 module LOD_k (in_a, out_a);
-input [n_in-1:0]in_a;
-output reg [n_in-1:0]out_a;
 
 parameter k_in = 6;
 parameter n_in = 16;
+
+input [n_in-1:0]in_a;
+output reg [n_in-1:0]out_a;
+
 
 integer k,j;
 reg [n_in-1:0]w;
@@ -122,11 +124,13 @@ endmodule
 
 //--------------------------------
 module P_Encoder_k (in_a, out_a);
-input [n_in-1:0]in_a;
-output reg [$clog2(n_in)-1:0]out_a;
 
 parameter k_in = 6;
 parameter n_in = 16;
+
+input [n_in-1:0]in_a;
+output reg [$clog2(n_in)-1:0]out_a;
+
 
 integer i;
     always @* begin
@@ -138,13 +142,16 @@ endmodule
 
 //--------------------------------
 module Barrel_Shifter_k_mn (in_a, count, out_a);
-input [$clog2(m_in):0]count;
-input [(k_in*2)-1:0]in_a;
-output [(n_in+m_in)-1:0]out_a;
 
 parameter k_in = 6;
 parameter n_in = 16;
 parameter m_in = 16;
+
+input [$clog2(m_in):0]count;
+input [(k_in*2)-1:0]in_a;
+output [(n_in+m_in)-1:0]out_a;
+
+
 
 wire [(n_in + m_in)-1:0] tmp;
 assign tmp = {{((n_in + m_in)-(k_in*2)){1'b0}}, in_a};
@@ -154,12 +161,14 @@ endmodule
 
 //--------------------------------
 module Mux_16_3_k (in_a, select, out);
+
+parameter k_in = 6;
+parameter n_in = 16;
+
 input [$clog2(n_in)-1:0]select;
 input [n_in-1:0]in_a;
 output reg [k_in-3:0]out;
 
-parameter k_in = 6;
-parameter n_in = 16;
 
 integer i;
 always @(*) begin

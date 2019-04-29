@@ -1,1 +1,1 @@
-time -v lib1 DRUM4_16_u.v DRUM_tb.v
+time -v lib1 DRUMk_M_N_s.v DRUM_tb.v
