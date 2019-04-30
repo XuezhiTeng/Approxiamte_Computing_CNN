@@ -1,72 +1,86 @@
 {
-    "CompileStatus": "Successful",
+    "Misc": {
+        "archive_dir": "archive.8",
+        "cwd": "/misc/scratch/abhat1/lowpower/project/Approxiamte_Computing_CNN/hw/multipliers",
+        "csrc": "csrc",
+        "csrc_abs": "/misc/scratch/abhat1/lowpower/project/Approxiamte_Computing_CNN/hw/multipliers/csrc",
+        "default_output_dir": "csrc",
+        "daidir": "simv.daidir",
+        "daidir_abs": "/misc/scratch/abhat1/lowpower/project/Approxiamte_Computing_CNN/hw/multipliers/simv.daidir"
+    },
+    "MlibObjs": {},
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 88494
+    },
+    "CompileProcesses": [
+        "cgproc.32440.json"
+    ],
+    "LVLData": [
+        "SIM"
+    ],
     "PrevCompiledModules": {
-        "timeunit": {
-            "H0Y6L_d": {
-                "mod": "timeunit",
-                "bytes": 7559,
-                "archive": "archive.7/_prev_archive_1.a",
-                "mode": 4,
+        "wallace_16bit_tb": {
+            "crZJ2_d": {
+                "bytes": 11187,
                 "checksum": 4294967295,
-                "out": "H0Y6L_d.o"
+                "mod": "wallace_16bit_tb",
+                "out": "crZJ2_d.o",
+                "mode": 4,
+                "archive": "archive.8/_prev_archive_1.a"
             }
         },
         "halfAdder": {
             "fyVju_d": {
-                "mod": "halfAdder",
                 "bytes": 8661,
-                "archive": "archive.7/_prev_archive_1.a",
-                "mode": 4,
                 "checksum": 4294967295,
+                "mod": "halfAdder",
+                "mode": 4,
+                "archive": "archive.8/_prev_archive_1.a",
                 "out": "fyVju_d.o"
             }
         },
         "fullAdder": {
             "qG7YU_d": {
-                "mod": "fullAdder",
                 "bytes": 14545,
-                "archive": "archive.7/_prev_archive_1.a",
-                "mode": 4,
                 "checksum": 4294967295,
+                "mod": "fullAdder",
+                "mode": 4,
+                "archive": "archive.8/_prev_archive_1.a",
                 "out": "qG7YU_d.o"
             }
         },
         "...MASTER...": {
             "amcQw_d": {
-                "mod": "...MASTER...",
                 "bytes": 7247,
+                "checksum": 4294967295,
+                "mod": "...MASTER...",
                 "out": "objs/amcQw_d.o",
-                "mode": 4,
-                "checksum": 4294967295
-            }
-        },
-        "wallace_16bit_tb": {
-            "crZJ2_d": {
-                "mod": "wallace_16bit_tb",
-                "bytes": 9587,
-                "out": "crZJ2_d.o",
-                "archive": "archive.7/_15579_archive_1.a",
-                "mode": 4,
-                "checksum": 4294967295
+                "mode": 4
             }
         },
         "wallace_16bit": {
             "GRL31_d": {
-                "mod": "wallace_16bit",
                 "bytes": 98785,
-                "archive": "archive.7/_prev_archive_1.a",
-                "mode": 4,
                 "checksum": 4294967295,
+                "mod": "wallace_16bit",
+                "mode": 4,
+                "archive": "archive.8/_prev_archive_1.a",
                 "out": "GRL31_d.o"
+            }
+        },
+        "timeunit": {
+            "H0Y6L_d": {
+                "bytes": 7559,
+                "checksum": 4294967295,
+                "mod": "timeunit",
+                "mode": 4,
+                "archive": "archive.8/_prev_archive_1.a",
+                "out": "H0Y6L_d.o"
             }
         }
     },
     "NameTable": {
-        "halfAdder": [
-            "halfAdder",
-            "fyVju",
-            "module"
-        ],
         "timeunit": [
             "timeunit",
             "H0Y6L",
@@ -77,14 +91,19 @@
             "qG7YU",
             "module"
         ],
-        "wallace_16bit": [
-            "wallace_16bit",
-            "GRL31",
-            "module"
-        ],
         "wallace_16bit_tb": [
             "wallace_16bit_tb",
             "crZJ2",
+            "module"
+        ],
+        "halfAdder": [
+            "halfAdder",
+            "fyVju",
+            "module"
+        ],
+        "wallace_16bit": [
+            "wallace_16bit",
+            "GRL31",
             "module"
         ],
         "...MASTER...": [
@@ -93,78 +112,54 @@
             "module"
         ]
     },
-    "CurCompileUdps": {},
-    "MlibObjs": {},
     "CompileStrategy": "fullobj",
     "stat": {
         "ru_self_cgstart": {
-            "ru_nivcsw": 32,
-            "ru_nvcsw": 213,
-            "ru_utime_sec": 0.116982,
-            "ru_stime_sec": 0.032994000000000002,
+            "ru_nivcsw": 34,
+            "ru_nvcsw": 261,
             "ru_minflt": 11697,
-            "ru_maxrss_kb": 50604,
+            "ru_stime_sec": 0.039993000000000001,
+            "ru_utime_sec": 0.12398099999999999,
+            "ru_maxrss_kb": 50608,
             "ru_majflt": 0
         },
         "ru_childs_cgstart": {
             "ru_nivcsw": 0,
             "ru_nvcsw": 0,
-            "ru_utime_sec": 0.0,
-            "ru_stime_sec": 0.0,
             "ru_minflt": 0,
+            "ru_stime_sec": 0.0,
+            "ru_utime_sec": 0.0,
             "ru_maxrss_kb": 0,
             "ru_majflt": 0
         },
+        "nMops": 0,
+        "nQuads": 0,
+        "totalObjSize": 95741,
+        "Frontend(%)": 95.384674565317724,
+        "CodeGen(%)": 4.6153254346822727,
         "ru_self_end": {
             "ru_nivcsw": 50,
-            "ru_nvcsw": 299,
-            "ru_utime_sec": 0.12798000000000001,
-            "ru_stime_sec": 0.040993000000000002,
-            "ru_minflt": 13661,
-            "ru_maxrss_kb": 57152,
+            "ru_nvcsw": 334,
+            "ru_minflt": 12892,
+            "ru_stime_sec": 0.049992000000000002,
+            "ru_utime_sec": 0.12998000000000001,
+            "ru_maxrss_kb": 53812,
             "ru_majflt": 0
         },
-        "nMops": 276,
-        "nQuads": 108,
-        "totalObjSize": 107008,
-        "Frontend(%)": 91.406469760900137,
         "ru_childs_end": {
             "ru_nivcsw": 0,
             "ru_nvcsw": 0,
-            "ru_utime_sec": 0.0,
-            "ru_stime_sec": 0.0,
             "ru_minflt": 0,
+            "ru_stime_sec": 0.0,
+            "ru_utime_sec": 0.0,
             "ru_maxrss_kb": 0,
             "ru_majflt": 0
-        },
-        "mopSpeed": 25095.471903982525,
-        "outputSizePerQuad": 990.0,
-        "quadSpeed": 9819.9672667757713,
-        "mop/quad": 2.5555555555555554,
-        "CodeGen(%)": 8.5935302390998647
+        }
     },
+    "CurCompileUdps": {},
     "CurCompileModules": [
-        "...MASTER...",
-        "wallace_16bit_tb"
-    ],
-    "SIMBData": {
-        "out": "amcQwB.o",
-        "bytes": 88574
-    },
-    "Misc": {
-        "cwd": "/misc/scratch/abhat1/lowpower/project/Approxiamte_Computing_CNN/hw/multipliers",
-        "csrc": "csrc",
-        "daidir": "simv.daidir",
-        "csrc_abs": "/misc/scratch/abhat1/lowpower/project/Approxiamte_Computing_CNN/hw/multipliers/csrc",
-        "daidir_abs": "/misc/scratch/abhat1/lowpower/project/Approxiamte_Computing_CNN/hw/multipliers/simv.daidir",
-        "archive_dir": "archive.7",
-        "default_output_dir": "csrc"
-    },
-    "LVLData": [
-        "SIM"
+        "...MASTER..."
     ],
     "PEModules": [],
-    "CompileProcesses": [
-        "cgproc.15579.json"
-    ]
+    "CompileStatus": "Successful"
 }

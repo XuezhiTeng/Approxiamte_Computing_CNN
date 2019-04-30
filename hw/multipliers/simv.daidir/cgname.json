@@ -1,9 +1,4 @@
 {
-    "halfAdder": [
-        "halfAdder",
-        "fyVju",
-        "module"
-    ],
     "timeunit": [
         "timeunit",
         "H0Y6L",
@@ -14,14 +9,19 @@
         "qG7YU",
         "module"
     ],
-    "wallace_16bit": [
-        "wallace_16bit",
-        "GRL31",
-        "module"
-    ],
     "wallace_16bit_tb": [
         "wallace_16bit_tb",
         "crZJ2",
+        "module"
+    ],
+    "halfAdder": [
+        "halfAdder",
+        "fyVju",
+        "module"
+    ],
+    "wallace_16bit": [
+        "wallace_16bit",
+        "GRL31",
         "module"
     ],
     "...MASTER...": [
