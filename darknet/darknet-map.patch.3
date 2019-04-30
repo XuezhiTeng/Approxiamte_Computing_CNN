@@ -1,0 +1,49 @@
+diff --git a/src/detector.c b/src/detector.c
+index a816c74..ba78773 100644
+--- a/src/detector.c
++++ b/src/detector.c
+@@ -383,7 +383,7 @@ void validate_detector(char *datacfg, char *cfgfile, char *weightfile, char *out
+     float thresh = .005;
+     float nms = .45;
+ 
+-    int nthreads = 4;
++    int nthreads = 1;
+     image *val = calloc(nthreads, sizeof(image));
+     image *val_resized = calloc(nthreads, sizeof(image));
+     image *buf = calloc(nthreads, sizeof(image));
+@@ -592,7 +592,7 @@ void validate_detector_map(char *datacfg, char *cfgfile, char *weightfile, float
+     const float nms = .45;
+     const float iou_thresh = 0.5;
+ 
+-    int nthreads = 4;
++    int nthreads = 1;
+     image *val = calloc(nthreads, sizeof(image));
+     image *val_resized = calloc(nthreads, sizeof(image));
+     image *buf = calloc(nthreads, sizeof(image));
+@@ -829,6 +829,7 @@ void validate_detector_map(char *datacfg, char *cfgfile, char *weightfile, float
+ 
+     double mean_average_precision = 0;
+ 
++    int unique_classes = 0;
+     for (i = 0; i < classes; ++i) {
+         double avg_precision = 0;
+         int point;
+@@ -847,6 +848,7 @@ void validate_detector_map(char *datacfg, char *cfgfile, char *weightfile, float
+ 
+             avg_precision += cur_precision;
+         }
++        if(avg_precision) unique_classes++;
+         avg_precision = avg_precision / 11;
+         printf("class_id = %d, name = %s, \t ap = %2.2f %% \n", i, names[i], avg_precision*100);
+         mean_average_precision += avg_precision;
+@@ -861,8 +863,8 @@ void validate_detector_map(char *datacfg, char *cfgfile, char *weightfile, float
+     printf(" for thresh = %0.2f, TP = %d, FP = %d, FN = %d, average IoU = %2.2f %% \n",
+         thresh_calc_avg_iou, tp_for_thresh, fp_for_thresh, unique_truth_count - tp_for_thresh, avg_iou * 100);
+ 
+-    mean_average_precision = mean_average_precision / classes;
+-    printf("\n mean average precision (mAP) = %f, or %2.2f %% \n", mean_average_precision, mean_average_precision*100);
++    mean_average_precision = mean_average_precision / unique_classes;
++    printf("\n mean average precision (mAP) = %f, or %2.2f %% (%d classes)\n", mean_average_precision, mean_average_precision*100, unique_classes);
+ 
+ 
+     for (i = 0; i < classes; ++i) {
