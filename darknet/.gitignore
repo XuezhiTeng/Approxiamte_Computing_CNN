@@ -4,6 +4,7 @@
 *.out
 *.png
 *.so
+*.weights
 mnist/
 #data/
 caffe/
