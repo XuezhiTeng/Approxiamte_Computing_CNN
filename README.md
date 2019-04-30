@@ -67,3 +67,7 @@ We need to modify the "gemm.c" file to replace the accurate adder and multiplier
   `% gprof darknet gmon.out > darknet.perf`
 
 * Open the darknet.perf using any text editor that you like.
+
+### 6. How to measure the accuracy of our prediction?
+
+
