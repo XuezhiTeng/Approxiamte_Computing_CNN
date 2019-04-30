@@ -176,7 +176,7 @@ network make_network(int n)
 {
     network net = {0};
     net.n = n;
-    net.layers = calloc(net.n, sizeof(layer));
+    net.layers = calloc(net.n,sizeof(layer));
     net.seen = calloc(1, sizeof(int));
 #ifdef GPU
     net.input_gpu = calloc(1, sizeof(float *));

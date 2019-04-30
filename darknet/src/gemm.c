@@ -28,8 +28,7 @@ for (i = 0; i < M; ++i) {
 		C[i*ldc + j] += A_PART * B[k*ldb + j];
 			}
 		
-	}
-	//printf("%d\n", C[i*ldc]);
+		}
 	}
 }
 
@@ -53,46 +52,9 @@ void square_dgemm (int row,int lda, int ldb, int ldc,int* A, int* B, int* C)
   //printf("%d\n",k);
 	int K = min (BLOCK_2, lda-k);
 	int N = min (BLOCK_3, ldb-j);
-
-	/*if(lda!=27)
-{
-	int idxx;
-		printf("%d\t%d\t%d\t%d\t%d\t%d\n", lda, ldb,ldc, M, N, K);	
-	for (idxx = 0; idxx < 12; idxx++)
-	{
-		printf("index: %d\t", idxx);
-		printf("A= %d\tB=%d\tC=%d\n", A[idxx+i*lda+k], B[idxx+k*ldb+j], C[idxx+ i*ldc+j]);
-
-	}
-}*/
-	/* Perform individual block dgemm */
-	//printf("%d\n",C[i*ldc+j]);
+	
 	do_block(lda,ldb,ldc, M, N, K, A + i*lda + k, B + k*ldb + j, C + i*ldc + j);
-	//if(k == 0){
-	//w_flag = 1;
-	//}else{
-	//w_flag = 0;
-	//}
-	//if(k+BLOCK_2 >= lda){
-	//r_flag = 1;
-	//}else{
-	//r_flag = 0;
-	//}
-	//w_flag = 1;
-	//r_flag = 1;
-	//do_block_hal(lda,ldb,ldc, M, N, K, A + i*lda + k, B + k*ldb + j, C + i*ldc + j,w_flag,r_flag);
-/*	if(lda!=27)
-{
-	int idxx;	
-	for (idxx = 0; idxx < 12; idxx++)
-	{
-		printf("after do block index: %d\t", idxx);
-		printf("C=%d\n",C[idxx+ i*ldc+j]);
 
-	}
-} */       
-
-//printf("%d\n",C[i*ldc+j]);
       }
  
 
@@ -2224,27 +2186,9 @@ void gemm_cpu(int TA, int TB, int M, int N, int K, float ALPHA,
 		{
 			B_1[i] = (int)(B[i] * scale);
 	        }
-/*		for(kkkk=0;kkkk<12;kkkk++)
-  */             	//printf("C_1 = %d  A_1=%d   B_1=%d\n",C_1[kkkk],A_1[kkkk], B_1[kkkk]);
+		
 		square_dgemm(M,lda,ldb,ldc, A_1,B_1,C_1);
-		int t;
-    /*#pragma omp parallel for
-    for (t = 0; t < M; ++t) {
-        if (!TA && !TB){
-            gemm_nn(1, N, K, Alpha_1, A_1 + t*lda, lda, B_1, ldb, C_1 + t*ldc, ldc);}    
-        else if (TA && !TB)
-            gemm_tn(1, N, K, ALPHA, A + t, lda, B, ldb, C + t*ldc, ldc);
-        else if (!TA && TB)
-            gemm_nt(1, N, K, ALPHA, A + t*lda, lda, B, ldb, C + t*ldc, ldc);
-        else
-            gemm_tt(1, N, K, ALPHA, A + t, lda, B, ldb, C + t*ldc, ldc);
-    }*/
 
-                /*int test_i;
-		for(test_i=M*N-1;test_i>=0;test_i--)
-		{
-			printf("%d\n",C_1[i]);
-		}*/
 //for C
 		i = 0;
 		#pragma omp parallel for//notsure
@@ -2252,18 +2196,6 @@ void gemm_cpu(int TA, int TB, int M, int N, int K, float ALPHA,
 		{
 			C[i] = fix2float(C_1[i],2);
 		}
-//printf("layer done\n");
-//for(i=0;i<12;i++){
-//printf("index=%d    ",i);
-//	printf("C=%f   ",C[i]);
-//	printf("A=%f, B=%f\n",A[i],B[i]);
-//}
-//free(A_1);
-//free(B_1);
-//free(C_1);
-//A_1 = NULL;		
-//B_1 = NULL;
-//C_1 = NULL;
 }
 
 
