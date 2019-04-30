@@ -52,7 +52,7 @@ We need to modify the "gemm.c" file to replace the accurate adder and multiplier
 
   `% ./darknet detector test cfg/coco.data cfg/yolov3-tiny.cfg yolov3-tiny.weights data/dog.jpg`
 
-Or:
+  Or:
 
   `% ./darknet detector test cfg/coco.data cfg/yolov3.cfg yolov3.weights -thresh 0.25 data/dog.jpg`
   
