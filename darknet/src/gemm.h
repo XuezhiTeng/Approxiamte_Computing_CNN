@@ -1,8 +1,24 @@
 #ifndef GEMM_H
 #define GEMM_H
+#include <math.h>
 #include "activations.h"
 #include <stdint.h>
 #include <stddef.h>
+
+
+int roundup(float fp_number);
+/*{
+    int fx_number   =   (int)(fp_number);
+
+    if(fp_number-(fx_number)>=0.5)    fx_number++;
+
+    return  fx_number;
+}*/
+
+int float2fix(float FloatPointValue);
+
+float fix2float(int fixValue, int index);
+
 
 void convolution_2d(int w, int h, int ksize, int n, int c, int pad, int stride,
     float *weights, float *input, float *output, float *mean);

@@ -1,0 +1,1 @@
+cmd_/home/ubuntu/naive_test_copy/fpga_drv.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/ubuntu/naive_test_copy/fpga_drv.ko /home/ubuntu/naive_test_copy/fpga_drv.o /home/ubuntu/naive_test_copy/fpga_drv.mod.o ;  true

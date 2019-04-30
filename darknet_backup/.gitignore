@@ -4,8 +4,9 @@
 *.out
 *.png
 *.so
+*.weights
 mnist/
-data/
+#data/
 caffe/
 grasp/
 images/
@@ -13,7 +14,7 @@ opencv/
 convnet/
 decaf/
 submission/
-cfg/
+#cfg/
 build/darknet/*
 !build/darknet/YoloWrapper.cs
 .fuse*
