@@ -19,11 +19,16 @@ Darknet is a CNN simulator written in C. What we need to do is changing the adde
    
    ` % wget https://pjreddie.com/media/files/yolov3.weights`
    
-* To run the tiny CNN detector, use the command line: 
+* To run the **tiny** CNN detector, use the command line: 
 
   `% ./darknet detect cfg/yolov3-tiny.cfg yolov3-tiny.weights data/dog.jpg`
   
   Here we are using the "dog.jpg" to perform the detection. Also, there are some other pictures in the "/data" folder. change the name of picture that you want to test. You will see the results in the terminal.
+  
+  The following command line is used to run the bigger detector model:
+  
+  `% ./darknet detector test cfg/coco.data cfg/yolov3.cfg yolov3.weights -thresh 0.25 data/dog.jpg
+  
 
 ### 3. What does the result of detection look like?
 
