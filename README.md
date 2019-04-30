@@ -29,6 +29,8 @@ Darknet is a CNN simulator written in C. What we need to do is changing the adde
   
   `% ./darknet detector test cfg/coco.data cfg/yolov3.cfg yolov3.weights -thresh 0.25 data/dog.jpg`
   
+  ###### This only works in the /misc/srcatch
+  
 
 ### 3. What does the result of detection look like?
 
