@@ -42,7 +42,7 @@ We need to modify the "gemm.c" file to replace the accurate adder and multiplier
 
 ### 5. How do we identify the bottleneck of the codes?
 
-* Before you can profile your program, you must first recompile it specifically for profiling. To do so, add the -pg option the CFLAGS line in the Makefile. Then, recompile the code:
+* Before you can profile your program, you must first recompile it specifically for profiling. To do so, add the **-pg** option the CFLAGS line in the Makefile. Then, recompile the code:
 
   `% make clean`
 
