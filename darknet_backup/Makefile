@@ -51,7 +51,7 @@ NVCC=nvcc
 OPTS=-O2
 LDFLAGS= -lm -pthread 
 COMMON= 
-CFLAGS=-Wall -Wfatal-errors -Wno-unused-result -Wno-unknown-pragmas
+CFLAGS=-Wall -Wfatal-errors -Wno-unused-result -Wno-unknown-pragmas -pg
 
 ifeq ($(DEBUG), 1) 
 OPTS= -O0 -g
