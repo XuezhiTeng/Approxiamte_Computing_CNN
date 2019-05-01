@@ -70,4 +70,17 @@ We need to modify the "gemm.c" file to replace the accurate adder and multiplier
 
 ### 6. How to measure the accuracy of our prediction?
 
+* First, we need to generate the img.txt file, which contains the feature of original detection. Run this command line in darknet_backup:
+
+  `% ./darknet detect cfg/yolov3.cfg yolov3.weights -i 0 -thresh 0.25 data/dog.jpg`
+  
+* Then, copy the **dog.txt**, for example, to the /darknet/data.
+
+* Then use these commands lines to generate mAp information:
+  
+  `% echo "data/dog.jpg" > coco_testdev`
+  
+  `% ./darknet detector map cfg/coco.data cfg/yolov3.cfg yolov3.weights`
+  
+
 
