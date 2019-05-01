@@ -12,9 +12,6 @@
 #include <omp.h>
 #endif
 #define scale  256
-#define mask 4
-int r_flag = 0;
-int w_flag = 0;
 //subblock
 
 #define min(a,b) (((a)<(b))?(a):(b))
@@ -33,11 +30,11 @@ for (i = 0; i < M; ++i) {
 	}
 }
 
-int approx_adder (int A, int B)
+/*int approx_adder (int A, int B)
 {
 	int all1 = 0xFFFFFFFF;
 	int mask = all1 << mask;
-
+*/
 void square_dgemm (int row,int lda, int ldb, int ldc,int* A, int* B, int* C)
 {
 	int i,j,k;
