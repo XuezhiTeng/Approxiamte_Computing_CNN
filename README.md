@@ -86,11 +86,11 @@ We need to modify the "gemm.c" file to replace the accurate adder and multiplier
   
 ### 7. How to change the lable?
   
-   You can use this command line:
+* You can use this command line:
   
   `% perl -pi.back -e 's/Apple/ABCD/g;' *.txt`   (This conmand will go through all the .txt files and replace "Apple" with "ABCD")
   
-  Or, if you don't want to create the .backup file, you can just use:
+* Or, if you don't want to create the .backup file, you can just use:
   
   `% perl -pi -e 's/Apple/ABCD/g;' *.txt`
 
