@@ -84,5 +84,7 @@ We need to modify the "gemm.c" file to replace the accurate adder and multiplier
   
   `% ./darknet detector map cfg/coco.data cfg/yolov3.cfg yolov3.weights`
   
+### 7. How to change the lable?
+  
 
 
