@@ -12,9 +12,7 @@
 #include <omp.h>
 #endif
 #define scale  256
-#define mask 4
-int r_flag = 0;
-int w_flag = 0;
+#define maskbit 4
 //subblock
 
 #define min(a,b) (((a)<(b))?(a):(b))
@@ -27,6 +25,8 @@ for (i = 0; i < M; ++i) {
     		  register int A_PART = A[i*lda + k];
             for (j = 0; j < N; ++j) {
 		C[i*ldc + j] += A_PART * B[k*ldb + j];
+		// C[i*ldc + j] = C[i*ldc + j] + (A_PART * B[k*ldb + j]);
+		//C[i*ldc + j] = aprox_adder(C[i*ldc + j], approx_multiplier(A_PART,B[k*ldb + j]);
 			}
 		
 		}
@@ -35,17 +35,57 @@ for (i = 0; i < M; ++i) {
 
 int approx_adder (int A, int B)
 {
-	int all1 = 0xFFFFFFFF;
-	int mask = all1 << mask;
-
+	int all1 = -1;
+	int adder_mask1 = all1 << maskbit;
+	int adder_mask2 = ~adder_mask1;
+	
+	int masked_A_accu = A & adder_mask1;
+	int masked_B_accu = B & adder_mask1;
+	
+	int masked_A_approx = A & adder_mask2;
+	int masked_B_approx = B & adder_mask2;
+	
+	int C;
+	int accu_C;
+	int approx_C = 0;
+	
+	int ii;
+	
+	accu_C = masked_A_accu + masked_B_accu;
+	
+	for (ii = 0; ii < maskbit; ++ii)
+	{ 
+		if ((masked_A_approx >> (maskbit-1-ii) & 0x0001) && (masked_B_approx >> (maskbit-1-ii) & 0x0001))
+		{
+			approx_C = approx_C + (adder_mask2 >> ii);
+			break;
+		}
+		else
+		{   
+			approx_C =  approx_C + ((masked_A_approx & (1 << (maskbit-1-ii))) | (masked_B_approx & (1 << (maskbit-1-ii))));
+		}
+	}
+			
+	C = accu_C + approx_C;
+	
+	return(C);
+}
 void square_dgemm (int row,int lda, int ldb, int ldc,int* A, int* B, int* C)
 {
 	int i,j,k;
 	int index = 4;
 	int BLOCK_1 = 100;
   	int BLOCK_2 = 27; 
-	int BLOCK_3 = 500; 
+	int BLOCK_3 = 500;
+//	int all1 = -1;
+//	printf("all1 = 0x%x\n", all1);
+//	int mask = (all1 << adder_mask);
+//	printf("mask = 0x%x\n", mask);
   /* For each block-row of A */ 
+	int test_A = 146;
+	int test_B = 99;
+	int test_C = approx_adder(test_A, test_B);
+	printf("The result is %d\n", test_C);
   for (i = 0; i < row; i += BLOCK_1)
     /* For each block-column of B */
     for ( j = 0; j < ldb; j += BLOCK_3)
