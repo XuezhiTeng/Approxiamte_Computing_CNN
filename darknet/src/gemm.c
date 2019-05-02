@@ -24,9 +24,9 @@ for (i = 0; i < M; ++i) {
         for (k = 0; k < K; ++k) {
     		  register int A_PART = A[i*lda + k];
             for (j = 0; j < N; ++j) {
-		C[i*ldc + j] += A_PART * B[k*ldb + j];
+		//C[i*ldc + j] += A_PART * B[k*ldb + j];
 		// C[i*ldc + j] = C[i*ldc + j] + (A_PART * B[k*ldb + j]);
-		//C[i*ldc + j] = aprox_adder(C[i*ldc + j], approx_multiplier(A_PART,B[k*ldb + j]);
+		C[i*ldc + j] = approx_adder(C[i*ldc + j], (A_PART * B[k*ldb + j]));
 			}
 		
 		}
@@ -82,10 +82,10 @@ void square_dgemm (int row,int lda, int ldb, int ldc,int* A, int* B, int* C)
 //	int mask = (all1 << adder_mask);
 //	printf("mask = 0x%x\n", mask);
   /* For each block-row of A */ 
-	int test_A = 146;
-	int test_B = 99;
-	int test_C = approx_adder(test_A, test_B);
-	printf("The result is %d\n", test_C);
+//	int test_A = 8;
+//	int test_B = 8;
+//	int test_C = approx_adder(test_A, test_B);
+//	printf("The result is %d\n", test_C);
   for (i = 0; i < row; i += BLOCK_1)
     /* For each block-column of B */
     for ( j = 0; j < ldb; j += BLOCK_3)
