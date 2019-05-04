@@ -1,0 +1,14 @@
+Total BFLOPS 65.864 
+
+ seen 64 
+data/horses.jpg: Predicted in 770.911545 seconds.
+sheep: 51%
+horse: 50%
+sheep: 90%
+horse: 80%
+horse: 43%
+sheep: 32%
+horse: 57%
+sheep: 44%
+sheep: 39%
+horse: 45%

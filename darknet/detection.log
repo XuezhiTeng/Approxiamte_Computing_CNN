@@ -1,0 +1,6 @@
+Total BFLOPS 65.864 
+
+ seen 64 
+data/animals_hero_bald_eagle.jpg: Predicted in 927.239318 seconds.
+bird: 97%
+aeroplane: 25%
