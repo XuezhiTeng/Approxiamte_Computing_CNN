@@ -216,3 +216,5 @@ gui_schematic_select -id Schematic.1 -type {cell} -parent {wallace_16bit_tb.wall
 gui_schematic_clear_selection -id Schematic.1
 gui_zoom -window Schematic.1 -full
 gui_zoom -window Schematic.1 -rect { {-1522023 -1473195} {2347589 20057} }
+#gui_exit
+

@@ -1,12 +1,12 @@
 {
-    "...MASTER...": [
-        "SIM",
-        "amcQw",
-        "module"
-    ],
     "timeunit": [
         "timeunit",
         "H0Y6L",
+        "module"
+    ],
+    "DRUMk_M_N_s": [
+        "DRUMk_M_N_s",
+        "abyaB",
         "module"
     ],
     "DRUM_tb": [
@@ -14,9 +14,9 @@
         "mVaJS",
         "module"
     ],
-    "DRUMk_M_N_s": [
-        "DRUMk_M_N_s",
-        "abyaB",
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
         "module"
     ]
 }

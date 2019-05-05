@@ -33,3 +33,13 @@
 11:48:24    48 --> ...                                                                                              [tcl] tcl_source /usr/local/packages/synopsys_2015/vcs-mx/gui/dve/auxx/gui/common/dialogs/ObjectListInfo.tcl
 11:48:24    49 --> ...                                                                                                  [tcl] tcl_source /usr/local/packages/synopsys_2015/vcs-mx/gui/dve/auxx/gui/common/schematic/DialogPathSchematicFanInOut.tcl
 11:48:24    50 --> ...  [tcl] tcl_source /usr/local/packages/synopsys_2015/vcs-mx/gui/dve/auxx/gui/dve/driversloads.tcl
+00:39:58    51 --> ...      [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+00:39:58    52 --> ...          [tcl] synopsys::finish
+00:39:58    53 --> ...              [tcl] set ucliGUI::state
+00:39:58    54 --> ...                  [tcl] set ucliGUI::state
+00:39:58    55 --> ...                      [tcl] catch {senv activeDomain} dveMisc::result 
+00:39:58    56 --> ...                          [tcl] set dveMisc::result
+00:39:58    57 --> ...                              [tcl] gui_update_simulator_buttons
+00:39:58    58 --> ...                                  [tcl] catch {senv activeDomain} dveMisc::result 
+00:39:58    59 --> ...                                      [tcl] set dveMisc::result
+00:39:58    60 --> ...                                          [tcl] ucli_exit

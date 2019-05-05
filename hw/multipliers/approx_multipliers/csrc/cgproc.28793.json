@@ -1,0 +1,19 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "timeunit": {},
+        "DRUMk_M_N_s": {},
+        "DRUM_tb": {}
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "checksum": 4294967295,
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 7231,
+            "mode": 4
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": []
+}

@@ -12,7 +12,11 @@
 #include <omp.h>
 #endif
 #define scale  256
+//approx_adder
 #define maskbit 4
+//approx_multiplier
+#define NO_OF_BITS 16
+#define k 6
 //subblock
 
 #define min(a,b) (((a)<(b))?(a):(b))
@@ -69,6 +73,112 @@ int approx_adder (int A, int B)
 	C = accu_C + approx_C;
 	
 	return(C);
+}
+
+long int approx_multiplier(int A, int B)
+{
+	//unsigned int k = 6;
+	//unsigned int M = 16;	//no of bits of input A
+	//unsigned int N = 16;	//no of bits of input B
+	
+	long int C = 0;
+	bool C_sign = ((A & 0x8000)>>15) ^ ((B & 0x8000)>>15);
+
+	//LOD_A
+	//LOD_B
+	//Pri_Encoder
+	//Pri_Encoder
+	//MUX
+	//Barrel_Shifter	
+}
+
+//ceiling of log2(M)
+int clog2()
+{
+	
+}
+int LOD_k(int A)
+{
+	int C = 0;
+	int mask = 0x8000;
+	int temp = ((A & mask)>>15);
+	while()
+}
+
+int P_Encoder_k(int A)
+{
+	int result = 0;
+	if((A & 0x8000)>>15) 
+		result = 15;
+	else if((A & 0x4000)>>14)
+		result = 14;
+	else if((A & 0x2000)>>13)
+		result = 13;
+	else if((A & 0x1000)>>12)
+		result = 12;
+	else if((A & 0x0800)>>11)
+		result = 11;
+	else if((A & 0x0400)>>10)
+		result = 10;
+	else if((A & 0x0200)>>9)
+		result = 9;
+	else if((A & 0x0100)>>8)
+		result = 8;
+	else if((A & 0x0080)>>7)
+		result = 7;
+	else if((A & 0x0040)>>6)
+		result = 6;
+	else if((A & 0x0020)>>5)
+		result = 5;
+	else if((A & 0x0010)>>4)
+		result = 4;
+	else if((A & 0x0008>>3)
+		result = 3;
+	else if((A & 0x0004)>>2)
+		result = 2;
+	else if((A & 0x0002)>>1)
+		result = 1;
+	else 
+		result = 0;
+
+/*	if(A == 0)
+		return 0;
+	else 
+	{
+		if((A & 0x0001)) 
+			result = 1;
+		else if((A & 0x002)>>1)
+			result = 2;
+		else if((A & 0x0004)>>2)
+			result = 3;
+		else if((A & 0x0008)>>3)
+			result =4;
+		else if((A & 0x0010)>>4)
+			result = 5;
+		else if((A & 0x0020)>>5)
+			result = 6;
+		else if((A & 0x0040)>>6)
+			result = 7;
+		else if((A & 0x0080)>>7)
+			result = 8;
+		else if((A & 0x0100)>>8)
+			result = 9;
+		else if((A & 0x0200)>>9)
+			result = 10;
+		else if((A & 0x0400)>>10)
+			result = 11;
+		else if((A & 0x0800)>>11)
+			result = 12;
+		else if((A & 0x1000)>>12)
+			result = 13;
+		else if((A & 0x2000)>>13)
+			result = 14;
+		else if((A & 0x4000)>>14)
+			result = 15;
+		else 
+			result = 0;
+*/
+	return result;	
 }
 
 void square_dgemm (int row,int lda, int ldb, int ldc,int* A, int* B, int* C)

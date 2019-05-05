@@ -10,30 +10,30 @@ gui_set_state_value -category Globals -key recent_sessions -value {{gui_load_ses
 gui_set_state_value -category Layout -key child_assertion_size_x -value 1535
 gui_set_state_value -category Layout -key child_assertion_size_y -value 357
 gui_set_state_value -category Layout -key child_console_size_x -value 1535
-gui_set_state_value -category Layout -key child_console_size_y -value 176
+gui_set_state_value -category Layout -key child_console_size_y -value 175
 gui_set_state_value -category Layout -key child_data_coltype -value 67
 gui_set_state_value -category Layout -key child_data_colvalue -value 47
 gui_set_state_value -category Layout -key child_data_colvariable -value 209
-gui_set_state_value -category Layout -key child_data_size_x -value 284
-gui_set_state_value -category Layout -key child_data_size_y -value 422
+gui_set_state_value -category Layout -key child_data_size_x -value 283
+gui_set_state_value -category Layout -key child_data_size_y -value 423
 gui_set_state_value -category Layout -key child_driver_size_x -value 1215
 gui_set_state_value -category Layout -key child_driver_size_y -value 373
 gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
 gui_set_state_value -category Layout -key child_hier_colhier -value 253
 gui_set_state_value -category Layout -key child_hier_colpd -value 0
 gui_set_state_value -category Layout -key child_hier_coltype -value 54
-gui_set_state_value -category Layout -key child_hier_size_x -value 268
-gui_set_state_value -category Layout -key child_hier_size_y -value 422
+gui_set_state_value -category Layout -key child_hier_size_x -value 267
+gui_set_state_value -category Layout -key child_hier_size_y -value 423
 gui_set_state_value -category Layout -key child_schematic_docknewline -value false
 gui_set_state_value -category Layout -key child_schematic_pos_x -value {-2}
 gui_set_state_value -category Layout -key child_schematic_pos_y -value {-18}
-gui_set_state_value -category Layout -key child_schematic_size_x -value 972
-gui_set_state_value -category Layout -key child_schematic_size_y -value 418
+gui_set_state_value -category Layout -key child_schematic_size_x -value 988
+gui_set_state_value -category Layout -key child_schematic_size_y -value 419
 gui_set_state_value -category Layout -key child_source_docknewline -value false
 gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
 gui_set_state_value -category Layout -key child_source_pos_y -value {-18}
-gui_set_state_value -category Layout -key child_source_size_x -value 986
-gui_set_state_value -category Layout -key child_source_size_y -value 418
+gui_set_state_value -category Layout -key child_source_size_x -value 988
+gui_set_state_value -category Layout -key child_source_size_y -value 419
 gui_set_state_value -category Layout -key child_wave_colname -value 210
 gui_set_state_value -category Layout -key child_wave_colvalue -value 210
 gui_set_state_value -category Layout -key child_wave_left -value 424
@@ -67,28 +67,57 @@ gui_state_default_create -off
 # Begin command logging
 gui_sim_run Ucli -exe ./simv -args {-ucligui  } -dir .
 gui_list_select -id Hier.1 -current_item_name DRUM_tb -current_item_type Scope  -selected  { DRUM_tb   }
+gui_list_select -id Data.1 -selected  { {DRUM_tb.A[15:0]}   }
 gui_list_select -id Data.1 -selected  { {DRUM_tb.out[31:0]}   }
 gui_list_select_all -id Data.1
 gui_open_window Wave
 gui_list_add -id Wave.1 -from Data.1 { {DRUM_tb.out[31:0]} {DRUM_tb.A[15:0]} {DRUM_tb.B[15:0]} } -insertionbar
 gui_sim_continue  
-gui_marker_move -id  Wave.1 C1 13499847
-gui_list_select -id Hier.1 -current_item_name DRUM_tb -current_item_type Scope  -selected  {  }
-gui_list_select -id Hier.1 -current_item_name DRUM_tb -current_item_type Scope  -selected  { DRUM_tb   }
-gui_list_select -id Data.1 -selected  { {DRUM_tb.A[15:0]}   }
-gui_list_select -id Data.1 -selected  {  }
+gui_zoom -window Wave.1 -full
 gui_list_expand -id  Hier.1   DRUM_tb
+gui_list_expand -id  Hier.1   DRUM_tb.drum_kMN
+gui_list_expand -id  Hier.1   DRUM_tb.drum_kMN.U1
 gui_list_select -id Hier.1 -current_item_name DRUM_tb.drum_kMN -current_item_type Scope  -selected  { DRUM_tb.drum_kMN   }
-gui_use_schematics 
-gui_sch_show -name DRUM_tb.drum_kMN
-gui_zoom -window Schematic.1 -rect { {-18744 -4148} {28793 14196} }
-gui_zoom -window Schematic.1 -rect { {-5284 -16456} {48296 4220} }
-gui_zoom -window Schematic.1 -rect { {-5284 -16456} {48296 4220} }
-gui_zoom -window Schematic.1 -rect { {-5284 -16456} {48296 4220} }
-gui_schematic_select -id Schematic.1 -type {cell} -parent {DRUM_tb.drum_kMN} {DRUM_tb.drum_kMN.U1}
-gui_sch_viewport_backup -id Schematic.1 -type save
-gui_sch_show -window Schematic.1 -name DRUM_tb.drum_kMN.U1
-gui_zoom -window Schematic.1 -rect { {-3394 -28328} {81292 4352} }
-gui_zoom -window Schematic.1 -rect { {-3394 -28328} {81292 4352} }
-gui_sch_viewport_backup -id Schematic.1 -type restore -action in -pins {} -slct_targets global
-gui_schematic_clear_selection -id Schematic.1
+gui_list_select -id Data.1 -selected  { {DRUM_tb.drum_kMN.r_temp[31:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {DRUM_tb.drum_kMN.r_temp[31:0]} } -insertionbar
+gui_sim_restart
+gui_sim_continue  
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_list_expand -id  Hier.1   DRUM_tb.drum_kMN
+gui_list_expand -id  Hier.1   DRUM_tb.drum_kMN.U1
+gui_list_select -id Hier.1 -current_item_name DRUM_tb.drum_kMN.U1.u1 -current_item_type Scope  -selected  { DRUM_tb.drum_kMN.U1.u1   }
+gui_list_select -id Data.1 -selected  { {DRUM_tb.drum_kMN.U1.u1.in_a[15:0]}   }
+gui_list_select_all -id Data.1
+gui_open_window Wave
+gui_list_add -id Wave.2 -from Data.1 { {DRUM_tb.drum_kMN.U1.u1.in_a[15:0]} {DRUM_tb.drum_kMN.U1.u1.out_a[15:0]} {DRUM_tb.drum_kMN.U1.u1.k[31:0]} {DRUM_tb.drum_kMN.U1.u1.j[31:0]} {DRUM_tb.drum_kMN.U1.u1.w[15:0]} {DRUM_tb.drum_kMN.U1.u1.k_in[31:0]} {DRUM_tb.drum_kMN.U1.u1.n_in[31:0]} } -insertionbar
+gui_zoom -window Wave.2 -full
+gui_marker_move -id  Wave.1 C1 13353406
+gui_list_select -id Hier.1 -current_item_name DRUM_tb.drum_kMN.U1.u3 -current_item_type Scope  -selected  { DRUM_tb.drum_kMN.U1.u3   }
+gui_list_select -id Data.1 -selected  { {DRUM_tb.drum_kMN.U1.u3.in_a[15:0]}   }
+gui_list_select_all -id Data.1
+gui_open_window Wave
+gui_list_add -id Wave.3 -from Data.1 { {DRUM_tb.drum_kMN.U1.u3.in_a[15:0]} {DRUM_tb.drum_kMN.U1.u3.out_a[3:0]} {DRUM_tb.drum_kMN.U1.u3.i[31:0]} {DRUM_tb.drum_kMN.U1.u3.k_in[31:0]} {DRUM_tb.drum_kMN.U1.u3.n_in[31:0]} } -insertionbar
+gui_zoom -window Wave.3 -full
+gui_list_select -id Hier.1 -current_item_name DRUM_tb.drum_kMN.U1.u3 -current_item_type Scope  -selected  {  }
+gui_list_select -id Hier.1 -current_item_name DRUM_tb.drum_kMN.U1.u5 -current_item_type Scope  -selected  { DRUM_tb.drum_kMN.U1.u5   }
+gui_list_select -id Data.1 -selected  { {DRUM_tb.drum_kMN.U1.u5.select[3:0]}   }
+gui_list_select_all -id Data.1
+gui_open_window Wave
+gui_list_add -id Wave.4 -from Data.1 { {DRUM_tb.drum_kMN.U1.u5.select[3:0]} {DRUM_tb.drum_kMN.U1.u5.in_a[15:0]} {DRUM_tb.drum_kMN.U1.u5.out[3:0]} {DRUM_tb.drum_kMN.U1.u5.i[31:0]} {DRUM_tb.drum_kMN.U1.u5.k_in[31:0]} {DRUM_tb.drum_kMN.U1.u5.n_in[31:0]} } -insertionbar
+gui_zoom -window Wave.4 -full
+gui_list_select -id Hier.1 -current_item_name DRUM_tb.drum_kMN.U1.u5 -current_item_type Scope  -selected  {  }
+gui_list_select -id Hier.1 -current_item_name DRUM_tb.drum_kMN.U1.u4 -current_item_type Scope  -selected  { DRUM_tb.drum_kMN.U1.u4   }
+gui_list_select -id Hier.1 -current_item_name DRUM_tb.drum_kMN.U1.u5 -current_item_type Scope  -selected  { DRUM_tb.drum_kMN.U1.u5   }
+gui_list_expand -id  Hier.1   DRUM_tb.drum_kMN.U1.u5
+gui_list_collapse -id  Hier.1   DRUM_tb.drum_kMN.U1.u5
+gui_marker_move -id  Wave.1 C1 5370681
+gui_list_select -id Data.1 -selected  {  }
+gui_list_expand -id  Hier.1   DRUM_tb.drum_kMN.U1.u6
+gui_list_collapse -id  Hier.1   DRUM_tb.drum_kMN.U1.u6
+gui_list_expand -id  Hier.1   DRUM_tb.drum_kMN.U1.u5
+gui_list_collapse -id  Hier.1   DRUM_tb.drum_kMN.U1.u5
+gui_list_select -id Hier.1 -current_item_name DRUM_tb.drum_kMN -current_item_type Scope  -selected  { DRUM_tb.drum_kMN   }
+gui_list_select -id Hier.1 -current_item_name DRUM_tb.drum_kMN.U1 -current_item_type Scope  -selected  { DRUM_tb.drum_kMN.U1   }
+gui_list_select -id Data.1 -selected  { {DRUM_tb.drum_kMN.U1.mm[5:0]}   }
+gui_list_select -id Data.1 -selected  { {DRUM_tb.drum_kMN.U1.mm[5:0]}  {DRUM_tb.drum_kMN.U1.nn[5:0]}   }
