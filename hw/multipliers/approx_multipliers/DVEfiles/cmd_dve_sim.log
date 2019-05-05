@@ -1,4 +1,3 @@
-ucliGUI::start /misc/scratch/abhat1/lowpower/project/Approxiamte_Computing_CNN/hw/multipliers/approx_multipliers/simv -ucligui 
 set ucliGUI::state
 set ucliGUI::state
 ucliCore::getToolPID
@@ -6,155 +5,25 @@ synopsys::env hasTB
 trigger_hier_stack_context_switch 0
 synUtils::setDVEInitPhase 1
 synopsys::dump -type VPD -file /misc/scratch/abhat1/lowpower/project/Approxiamte_Computing_CNN/hw/multipliers/approx_multipliers/inter.vpd -locking
-synopsys::dump -autoflush on -fid VPD3
-set ::dve_fid VPD3
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
 synUtils::setDVEInitPhase 0
 ucliCore::getToolPID
-synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpFaa3yP
-synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP1_Full64" -sync_file /tmp/vcs_dve_rpc.abhat1.4884}
-synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.abhat1.4884}
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpa75zgv
+synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP1_Full64" -sync_file /tmp/vcs_dve_rpc.abhat1.448}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.abhat1.448}
 config endofsim noexit
 config onfail enable all
 config syscaddplainmembers
 config syscaddsourcenames
 config syscaddstructtypes
 synopsys::listing -disable
-# Begin_DVE_Session_Save_Info
-# DVE restart session
-# Saved on Sat May 4 22:09:00 2019
-# Designs open: 1
-#   Sim: /misc/scratch/abhat1/lowpower/project/Approxiamte_Computing_CNN/hw/multipliers/approx_multipliers/simv
-# Toplevel windows open: 5
-# 	TopLevel.1
-# 	TopLevel.2
-# 	TopLevel.3
-# 	TopLevel.4
-# 	TopLevel.5
-#   Source.1: timeunit
-#   Wave.1: 5 signals
-#   Wave.2: 7 signals
-#   Wave.3: 5 signals
-#   Wave.4: 6 signals
-#   Group count = 4
-#   Group Group1 signal count = 5
-#   Group Group2 signal count = 7
-#   Group Group3 signal count = 5
-#   Group Group4 signal count = 6
-# End_DVE_Session_Save_Info
-# DVE version: K-2015.09-SP1_Full64
-# DVE build date: Nov 24 2015 21:15:24
-#<Session mode="Restart" path=".restartSimSession.tcl" type="Debug">
-# Application preferences
-#<WindowLayout>
-# DVE top-level session
-# Create and position top-level window: TopLevel.1
-set TopLevel.1 TopLevel.1
-# Docked window settings
-set HSPane.1 HSPane.1
-set Hier.1 Hier.1
-set DLPane.1 DLPane.1
-set Data.1 Data.1
-set Console.1 Console.1
-# MDI window settings
-set Source.1 Source.1
-# End MDI window settings
-# Create and position top-level window: TopLevel.2
-set TopLevel.2 TopLevel.2
-# Docked window settings
-# MDI window settings
-set Wave.1 Wave.1
-# End MDI window settings
-# Create and position top-level window: TopLevel.3
-set TopLevel.3 TopLevel.3
-# Docked window settings
-# MDI window settings
-set Wave.2 Wave.2
-# End MDI window settings
-# Create and position top-level window: TopLevel.4
-set TopLevel.4 TopLevel.4
-# Docked window settings
-# MDI window settings
-set Wave.3 Wave.3
-# End MDI window settings
-# Create and position top-level window: TopLevel.5
-set TopLevel.5 TopLevel.5
-# Docked window settings
-# MDI window settings
-set Wave.4 Wave.4
-# End MDI window settings
-#</WindowLayout>
-#<Database>
-#</Database>
-# DVE Global setting session:
-# Global: Breakpoints
-# Global: Bus
-# Global: Expressions
-# Global: Signal Time Shift
-# Global: Signal Compare
-# Global: Signal Groups
-synopsys::dump -add {DRUM_tb} -scope "." -depth 1 -fid VPD3
-synopsys::dump -add {DRUM_tb.drum_kMN.U1.u1} -scope "." -depth 1 -fid VPD3
-synopsys::dump -add {DRUM_tb.drum_kMN.U1.u3} -scope "." -depth 1 -fid VPD3
-synopsys::dump -add {DRUM_tb.drum_kMN.U1.u5} -scope "." -depth 1 -fid VPD3
-synopsys::dump -add {DRUM_tb.drum_kMN} -scope "." -depth 1 -fid VPD3
-set _session_group_6 Group1
-set Group1 "$_session_group_6"
-set _session_group_7 Group2
-set Group2 "$_session_group_7"
-set _session_group_8 Group3
-set Group3 "$_session_group_8"
-set _session_group_9 Group4
-set Group4 "$_session_group_9"
-# Global: Highlighting
-# Global: Stack
-# Post database loading setting...
-# Save global setting...
-# Wave/List view global setting
-# Close all empty TopLevel windows
-foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
-# DVE View/pane content session:
-# Hier 'Hier.1'
-catch {gui_list_expand -id ${Hier.1} DRUM_tb}
-catch {gui_list_expand -id ${Hier.1} DRUM_tb.drum_kMN}
-catch {gui_list_select -id ${Hier.1} {DRUM_tb.drum_kMN.U1}}
-# Data 'Data.1'
-catch { gui_list_select -id ${Data.1} {DRUM_tb.drum_kMN.U1.k1 }}
-# Source 'Source.1'
-# View 'Wave.1'
-set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
-set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
-set origGroupCreationState [gui_list_create_group_when_add -wave]
-synopsys::dump -add {DRUM_tb.drum_kMN.U1.k1 } -aggregates  -fid VPD3
-if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
-if { $groupExD } {  gui_msg_report -code DVWW028 }
-# View 'Wave.2'
-set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
-set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
-set origGroupCreationState [gui_list_create_group_when_add -wave]
-if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
-if { $groupExD } {  gui_msg_report -code DVWW028 }
-# View 'Wave.3'
-set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
-set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
-set origGroupCreationState [gui_list_create_group_when_add -wave]
-if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
-if { $groupExD } {  gui_msg_report -code DVWW028 }
-# View 'Wave.4'
-set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
-set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
-set origGroupCreationState [gui_list_create_group_when_add -wave]
-if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
-if { $groupExD } {  gui_msg_report -code DVWW028 }
-# Restore toplevel window zorder
-# The toplevel window could be closed if it has no view/pane
-if {[gui_exist_window -window ${TopLevel.3}]} { 	gui_set_active_window -window ${TopLevel.3} 	gui_set_active_window -window ${Wave.2} }
-if {[gui_exist_window -window ${TopLevel.4}]} { 	gui_set_active_window -window ${TopLevel.4} 	gui_set_active_window -window ${Wave.3} }
-if {[gui_exist_window -window ${TopLevel.5}]} { 	gui_set_active_window -window ${TopLevel.5} 	gui_set_active_window -window ${Wave.4} }
-if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${Source.1} 	gui_set_active_window -window ${DLPane.1} }
-if {[gui_exist_window -window ${TopLevel.2}]} { 	gui_set_active_window -window ${TopLevel.2} 	gui_set_active_window -window ${Wave.1} }
-#</Session>
-synopsys::run
-set ucliGUI::state
-set ucliGUI::state
-set ucliGUI::state
-set ucliGUI::state
+tcl_source /usr/local/packages/synopsys_2015/vcs-mx/gui/dve/auxx/gui/dve/schematic.tcl
+tcl_source /usr/local/packages/synopsys_2015/vcs-mx/gui/dve/auxx/gui/common/schematic/base.tcl
+tcl_source /usr/local/packages/synopsys_2015/vcs-mx/gui/dve/auxx/gui/common/schematic/enable.tcl
+tcl_source /usr/local/packages/synopsys_2015/vcs-mx/gui/dve/auxx/gui/common/schematic/netlist.tcl
+tcl_source /usr/local/packages/synopsys_2015/vcs-mx/gui/dve/auxx/gui/common/schematic/method.tcl
+tcl_source /usr/local/packages/synopsys_2015/vcs-mx/gui/dve/auxx/gui/common/strokes/stroke_defaults.tcl
+tcl_source /usr/local/packages/synopsys_2015/vcs-mx/gui/dve/auxx/gui/common/dialogs/ObjectListInfo.tcl
+tcl_source /usr/local/packages/synopsys_2015/vcs-mx/gui/dve/auxx/gui/common/schematic/DialogPathSchematicFanInOut.tcl
+tcl_source /usr/local/packages/synopsys_2015/vcs-mx/gui/dve/auxx/gui/dve/driversloads.tcl
