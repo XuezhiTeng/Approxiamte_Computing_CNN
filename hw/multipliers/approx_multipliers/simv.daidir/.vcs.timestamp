@@ -29,8 +29,9 @@
 -gen_obj
 -picarchive
 /usr/local/packages/synopsys_2015/vcs-mx/linux64/bin/vcs1
-87
+98
 sysc_uni_pwd=/misc/scratch/abhat1/lowpower/project/Approxiamte_Computing_CNN/hw/multipliers/approx_multipliers
+binpath=/usr/local/packages/synopsys_2015/vcs-mx//gui/dve/linux64/bin
 XSESSION_EXEC=xfce4-session
 XDG_SESSION_COOKIE=f30b73ecd02cc5a3edfa0f9700000028-1556854932.236128-313454634
 XAUTHORITY=/home/ecelrc/students/abhat1//.Xauthority
@@ -39,6 +40,7 @@ X2GO_AGENT_PID=28090
 VMR_MODE_FLAG=64
 VMANAGER_PATH_modshare=/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib:2:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/e_ex_lib/cdn_vm_ext/e:2
 VMANAGER_PATH=/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/e_ex_lib/cdn_vm_ext/e
+VCS_PATHMAP_PRELOAD_DONE=1
 VCS_MX_HOME_INTERNAL=1
 VCS_MODE_FLAG=64
 VCS_HOME_modshare=/usr/local/packages/synopsys_2015/vcs-mx/:1
@@ -52,6 +54,7 @@ USE_CALIBRE_VCO=aoi
 UNAME=/bin/uname
 TOOL_HOME=/usr/local/packages/synopsys_2015/vcs-mx/linux64
 TCLSH=/usr/bin/tclsh
+TCLLIBPATH=/usr/local/packages/synopsys_2015/vcs-mx//gui/dve/auxx/tcllib/lib/tcl8.4 /usr/local/packages/synopsys_2015/vcs-mx//gui/dve/auxx/tcllib/snps_tcl
 SYNOPSYS_SYN_ROOT=/usr/local/packages/synopsys_2015/syn
 SYNOPSYS_LC_ROOT=/usr/local/packages/synopsys_2015/lib_compiler
 STARTUP=/usr/bin/env LD_LIBRARY_PATH=/usr/lib64/nx/X11/Xinerama:/usr/lib64/nx/X11:/usr/local/lib xfce4-session
@@ -60,6 +63,7 @@ SSH_CLIENT=10.145.195.40 50601 22
 SSH_AUTH_SOCK=/tmp/ssh-wNJWY28805/agent.28805
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
 SSH_AGENT_PID=28806
+SPECMAN_OUTPUT_TO_TTY=1
 SPECMAM_PATH_modshare=/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/e_ex_lib:2:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/util_lib:2:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/misc/links:2:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/misc:2:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/abv_formal:2:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/uvm_e_ex_lib/interface_uvc_lib:2:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/ovm_ex_lib/e_ex_lib:2:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/uvm_e_ex_lib/apb_subsystem:2:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/uvm_e_ex_lib:2
 SPECMAM_PATH=/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/abv_formal:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/e_ex_lib:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/util_lib:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/misc/links:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/ovm_ex_lib/e_ex_lib:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/misc:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/uvm_e_ex_lib/interface_uvc_lib:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/uvm_e_ex_lib/apb_subsystem:/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/soc_verification_lib/uvm_e_ex_lib
 SOCV_KIT_HOME=/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit
@@ -86,7 +90,9 @@ MODULESHOME=/home/projects/Modules
 MODULEPATH_modshare=/home/projects/Modules/tools:5:/home/projects/Modules/projects:5:/home/projects/Modules/base:5
 MODULEPATH=/home/projects/Modules/projects:/home/projects/Modules/tools:/home/projects/Modules/base
 ML_UVM=/usr/local/packages/cadence_2015/incisiv13.2/tool/uvm/uvm_lib/uvm_ml/sc/ml_uvm
+MDB_SIM_ARGS=-simwarn
 MAVEN_HOME=/usr/share/apache-maven
+MARCH=linux64
 MANPATH_modshare=/usr/man:10:/home/projects/Modules/man:5:/usr/X11R6/man:5:/usr/local/man:5:/usr/share/man:10
 MAILPATH=/var/spool/mail/abhat1
 M2_HOME=/usr/share/apache-maven
@@ -102,10 +108,15 @@ K2_MASKCOMPOSE_HOME=/usr/local/packages/cadence_2015/PVE121/tools/K2/MaskCompose
 K2_HOME=/usr/local/packages/cadence_2015/PVE121/tools/K2/
 HISTCONTROL=ignoredups
 G_BROKEN_FILENAMES=1
+DVE_SIM_SELECT_LOOP=on
+DVE_PSTACK=/usr/bin/gstack
+DVE_AUXX_GUI=/usr/local/packages/synopsys_2015/vcs-mx//gui/dve/auxx/gui
+DVE=/usr/local/packages/synopsys_2015/vcs-mx//gui/dve
 DMS_DESIGN=/usr/local/packages/cadence_2015/incisiv13.2/kits/VerificationKit/designs/socv/ams
 DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-NkNlaK0FAu,guid=dee75196452b94e7dc4ac022008d7564
 CVS_RSH=ssh
 COLORTERM=Terminal
+CMD=/usr/local/packages/synopsys_2015/vcs-mx//gui/dve/linux64/bin/dve.exe
 CLS_CDSD_COMPATIBILITY_LOCKING=NO
 CDS_SITE=/usr/local/packages/ncsu-cdk-1-6-0-beta
 CDS_ROOT=/usr/local/packages/cadence_2015/IC616.1
@@ -119,15 +130,15 @@ CDK_DIR=/usr/local/packages/ncsu-cdk-1-6-0-beta
 CALIBRE_HOME=/usr/local/packages/mentor_2015/calibre/aoi_cal_2015.2_27.20
 0
 6
-1556520825 DRUM_tb.v
-1556520985 DRUMk_M_N_s.v
+1557020697 DRUM_tb.v
+1557017718 DRUMk_M_N_s.v
 1286932616 lib1
 1286932627 time
-1556521217 master
+1557020335 master
 1448424285 /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/vcsd.tab
 4
 0 
 1448427877 /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvirsim.so
 1448427558 /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/liberrorinf.so
 1448427538 /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libsnpsmalloc.so
-1556856455 simv.daidir
+1557020717 simv.daidir

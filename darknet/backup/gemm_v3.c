@@ -7,6 +7,8 @@
 #include <math.h>
 #include <float.h>
 #include <string.h>
+#include <stdbool.h>
+
 //#include "do_block_hal.h"
 #if defined(_OPENMP)
 #include <omp.h>
@@ -30,7 +32,7 @@ for (i = 0; i < M; ++i) {
             for (j = 0; j < N; ++j) {
 		//C[i*ldc + j] += A_PART * B[k*ldb + j];
 		// C[i*ldc + j] = C[i*ldc + j] + (A_PART * B[k*ldb + j]);
-		C[i*ldc + j] = approx_adder(C[i*ldc + j], (A_PART * B[k*ldb + j]));
+		C[i*ldc + j] = approx_adder(C[i*ldc + j], approx_multiplier(A_PART,B[k*ldb + j]));
 			}
 		
 		}
@@ -77,35 +79,56 @@ int approx_adder (int A, int B)
 
 long int approx_multiplier(int A, int B)
 {
-	//unsigned int k = 6;
-	//unsigned int M = 16;	//no of bits of input A
-	//unsigned int N = 16;	//no of bits of input B
-	
-	long int C = 0;
+	long int C = 0, tempC = 0, result;
+	int resA_lod,resB_lod,resA_enc,resB_enc,resA_mux,resB_mux,shift_amt;
+	int A_neg,B_neg;
+	A_neg = ((A & 0x8000)>>15)?~A:A;
+	B_neg = ((B & 0x8000)>>15)?~B:B;
+
 	bool C_sign = ((A & 0x8000)>>15) ^ ((B & 0x8000)>>15);
+	resA_lod = LOD(A_neg);	
+	resB_lod = LOD(B_neg);
 
-	//LOD_A
-	//LOD_B
-	//Pri_Encoder
-	//Pri_Encoder
-	//MUX
-	//Barrel_Shifter	
-}
+	resA_enc = P_Encoder(resA_lod);
+	resB_enc = P_Encoder(resB_lod);
 
-//ceiling of log2(M)
-int clog2()
-{
+	resA_mux = MUX(resA_enc, A_neg);
+	resB_mux = MUX(resB_enc, B_neg);
+
+	int shift_amtA = (resA_enc > (k-1))?(resA_enc - (k-1)):0;
+	int shift_amtB = (resB_enc > (k-1))?(resB_enc - (k-1)):0;
+
+	shift_amt = shift_amtA + shift_amtB;
 	
+	tempC = resA_mux * resB_mux;
+	C = tempC << shift_amt;
+
+	result = C_sign?~C:C;
+	return result;
 }
-int LOD_k(int A)
+
+
+int LOD(int A)
 {
 	int C = 0;
-	int mask = 0x8000;
-	int temp = ((A & mask)>>15);
-	while()
+	unsigned int count = 0;
+	int mask;
+	if(A == 0)
+		return 0;
+	else 
+	{
+		mask = 0x8000;
+		for(count = 15; count >= 0; count--)
+		{
+			if((A & mask) >> count)
+				return mask;
+			else 
+				mask = mask >> 1;
+		}
+	}
 }
 
-int P_Encoder_k(int A)
+int P_Encoder(int A)
 {
 	int result = 0;
 	if((A & 0x8000)>>15) 
@@ -132,7 +155,7 @@ int P_Encoder_k(int A)
 		result = 5;
 	else if((A & 0x0010)>>4)
 		result = 4;
-	else if((A & 0x0008>>3)
+	else if((A & 0x0008)>>3)
 		result = 3;
 	else if((A & 0x0004)>>2)
 		result = 2;
@@ -141,25 +164,27 @@ int P_Encoder_k(int A)
 	else 
 		result = 0;
         
-
 	return result;	
 }
 
-int MUX (int sel, int A){
-
-	int mux_mask = (2^(k-2) - 1);
+int MUX (int sel, int A)
+{
+	int mux_mask = (pow(2,(k-2)) - 1);
 	
-	int out;
+	int tempOut,out;
 	
 	if (sel > (k-1))
-	out = (A >> (sel - k + 2) ) & mux_musk;
+	{
+		tempOut = (A >> (sel - k + 2) ) & mux_mask;
+		out = (tempOut << 1) + pow(2,(k-1)) + 1;
+	}
 	else
-	out = A;
-
-	return out;
+		out = A;
 
 	
+	return out;	
 }
+
 
 void square_dgemm (int row,int lda, int ldb, int ldc,int* A, int* B, int* C)
 {

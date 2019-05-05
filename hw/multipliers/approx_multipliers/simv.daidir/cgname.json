@@ -9,14 +9,14 @@
         "abyaB",
         "module"
     ],
-    "DRUM_tb": [
-        "DRUM_tb",
-        "mVaJS",
-        "module"
-    ],
     "...MASTER...": [
         "SIM",
         "amcQw",
+        "module"
+    ],
+    "DRUM_tb": [
+        "DRUM_tb",
+        "mVaJS",
         "module"
     ]
 }
