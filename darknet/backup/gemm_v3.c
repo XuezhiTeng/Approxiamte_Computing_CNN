@@ -140,45 +140,25 @@ int P_Encoder_k(int A)
 		result = 1;
 	else 
 		result = 0;
+        
 
-/*	if(A == 0)
-		return 0;
-	else 
-	{
-		if((A & 0x0001)) 
-			result = 1;
-		else if((A & 0x002)>>1)
-			result = 2;
-		else if((A & 0x0004)>>2)
-			result = 3;
-		else if((A & 0x0008)>>3)
-			result =4;
-		else if((A & 0x0010)>>4)
-			result = 5;
-		else if((A & 0x0020)>>5)
-			result = 6;
-		else if((A & 0x0040)>>6)
-			result = 7;
-		else if((A & 0x0080)>>7)
-			result = 8;
-		else if((A & 0x0100)>>8)
-			result = 9;
-		else if((A & 0x0200)>>9)
-			result = 10;
-		else if((A & 0x0400)>>10)
-			result = 11;
-		else if((A & 0x0800)>>11)
-			result = 12;
-		else if((A & 0x1000)>>12)
-			result = 13;
-		else if((A & 0x2000)>>13)
-			result = 14;
-		else if((A & 0x4000)>>14)
-			result = 15;
-		else 
-			result = 0;
-*/
 	return result;	
+}
+
+int MUX (int sel, int A){
+
+	int mux_mask = (2^(k-2) - 1);
+	
+	int out;
+	
+	if (sel > (k-1))
+	out = (A >> (sel - k + 2) ) & mux_musk;
+	else
+	out = A;
+
+	return out;
+
+	
 }
 
 void square_dgemm (int row,int lda, int ldb, int ldc,int* A, int* B, int* C)
