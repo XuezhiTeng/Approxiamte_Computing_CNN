@@ -1,9 +1,9 @@
-GPU=0
-CUDNN=0
+GPU=1
+CUDNN=1
 CUDNN_HALF=0
 OPENCV=0
 AVX=0
-OPENMP=1
+OPENMP=0
 LIBSO=0
 
 # set GPU=1 and CUDNN=1 to speedup on GPU
@@ -76,23 +76,23 @@ LDFLAGS+= -lgomp
 endif
 
 ifeq ($(GPU), 1)
-COMMON+= -DGPU -I/usr/local/cuda/include/
+COMMON+= -DGPU -I/opt/apps/cuda/9.2/include#-I/usr/local/cuda/include/
 CFLAGS+= -DGPU
 ifeq ($(OS),Darwin) #MAC
-LDFLAGS+= -L/usr/local/cuda/lib -lcuda -lcudart -lcublas -lcurand
+LDFLAGS+= -L/opt/apps/cuda/9.2/lib -L/opt/apps/cuda/9.2/lib/stubs/ -lcuda -lcudart -lcublas -lcurand #-L/usr/local/cuda/lib -lcuda -lcudart -lcublas -lcurand
 else
-LDFLAGS+= -L/usr/local/cuda/lib64 -lcuda -lcudart -lcublas -lcurand
+LDFLAGS+= -L/opt/apps/cuda/9.2/lib64 -L/opt/apps/cuda/9.2/lib64/stubs/ -lcuda -lcudart -lcublas -lcurand #-L/usr/local/cuda/lib64 -lcuda -lcudart -lcublas -lcurand
 endif
 endif
 
 ifeq ($(CUDNN), 1)
 COMMON+= -DCUDNN
 ifeq ($(OS),Darwin) #MAC
-CFLAGS+= -DCUDNN -I/usr/local/cuda/include
-LDFLAGS+= -L/usr/local/cuda/lib -lcudnn
+CFLAGS+= -DCUDNN -I/opt/apps/cuda/9.2/include  #-I/usr/local/cuda/include
+LDFLAGS+= -L/opt/apps/cuda/9.2/lib -lcudnn  #-L/usr/local/cuda/lib -lcudnn
 else
-CFLAGS+= -DCUDNN -I/usr/local/cudnn/include
-LDFLAGS+= -L/usr/local/cudnn/lib64 -lcudnn
+CFLAGS+= -DCUDNN -I/opt/apps/cuda9_2/cudnn/7.4.2/include  #-I/usr/local/cudnn/include
+LDFLAGS+= -L/opt/apps/cuda9_2/cudnn/7.4.2/lib64 -lcudnn #-L/usr/local/cudnn/lib64 -lcudnn
 endif
 endif
 
