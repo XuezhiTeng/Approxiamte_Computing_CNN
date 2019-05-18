@@ -18,7 +18,7 @@
 #define maskbit 4
 //approx_multiplier
 #define NO_OF_BITS 16
-#define kk_mul 6
+#define k_mul 6
 //subblock
 
 #define min(a,b) (((a)<(b))?(a):(b))
