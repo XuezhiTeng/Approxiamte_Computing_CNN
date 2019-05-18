@@ -1,1 +1,0 @@
-time -v lib1 adder.v wallace_16bit.v wallace_16bit_tb.v

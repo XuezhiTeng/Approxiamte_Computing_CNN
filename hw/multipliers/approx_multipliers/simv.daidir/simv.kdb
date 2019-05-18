@@ -1,9 +1,0 @@
-rc file Version 1.0
-
-[Design]
-COMPILE_PATH=/misc/scratch/abhat1/lowpower/project/Approxiamte_Computing_CNN/hw/multipliers/approx_multipliers
-SystemC=FALSE
-UUM=FALSE
-KDB=FALSE
-USE_NOVAS_HOME=FALSE
-TOP=timeunit DRUM_tb 
