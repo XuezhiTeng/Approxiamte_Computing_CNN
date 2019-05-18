@@ -1,0 +1,21 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /home/ecelrc/students/xteng/vlsi1/lab3/rtl/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpk1kwFj
+synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP1_Full64" -sync_file /tmp/vcs_dve_rpc.xteng.70665}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.xteng.70665}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+synopsys::dump -add {TOP.ARM.addressBus TOP.ARM.clear TOP.ARM.dataBus TOP.ARM.en_buses_bar TOP.ARM.mem_req_bar TOP.ARM.mem_word_byte TOP.ARM.mem_write_read TOP.ARM.memoryRead TOP.ARM.memoryWrite TOP.ARM.mode_bar TOP.ARM.phi1 TOP.ARM.phi2 TOP.ARM.scanin TOP.ARM.scanout TOP.ARM.test } -aggregates  -fid VPD0

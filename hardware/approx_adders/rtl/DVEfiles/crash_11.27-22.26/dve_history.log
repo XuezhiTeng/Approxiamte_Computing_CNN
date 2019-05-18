@@ -1,0 +1,74 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+gui_create_pref_category -category {schem_obj_name}
+gui_create_pref_key -category {schem_obj_name} -key {show_cell_and_pin_with_symbol_name} -value_type {bool} -value {false}
+gui_create_pref_key -category {schem_pin_hc} -key {textExtFont} -value_type {string} -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_sessions -value {{gui_load_session -ignore_errors -file /home/ecelrc/students/xteng/vlsi1/lab3/rtl/DVEfiles//crash_11.27-22.16/dve_session11.27-22.16.tcl} {gui_load_session -ignore_errors -file /home/ecelrc/students/xteng/vlsi1/lab3/rtl/DVEfiles//crash_11.27-22.15/dve_session11.27-22.15.tcl} {gui_load_session -ignore_errors -file /home/ecelrc/students/xteng/vlsi1/lab3/rtl/DVEfiles//crash_11.27-22.07/dve_session11.27-22.07.tcl} {gui_load_session -ignore_errors -file /home/ecelrc/students/xteng/vlsi1/lab3/rtl/DVEfiles//crash_11.27-22.04/dve_session11.27-22.04.tcl} {gui_load_session -ignore_errors -file /home/ecelrc/students/xteng/vlsi1/lab3/rtl/DVEfiles//crash_11.27-22.03/dve_session11.27-22.03.tcl}}
+gui_set_state_value -category Layout -key child_console_size_x -value 1535
+gui_set_state_value -category Layout -key child_console_size_y -value 172
+gui_set_state_value -category Layout -key child_data_size_x -value 207
+gui_set_state_value -category Layout -key child_data_size_y -value 705
+gui_set_state_value -category Layout -key child_driver_size_x -value 909
+gui_set_state_value -category Layout -key child_driver_size_y -value 179
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_size_x -value 129
+gui_set_state_value -category Layout -key child_hier_size_y -value 705
+gui_set_state_value -category Layout -key child_schematic_docknewline -value false
+gui_set_state_value -category Layout -key child_schematic_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_schematic_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_schematic_size_x -value 1222
+gui_set_state_value -category Layout -key child_schematic_size_y -value 521
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 1202
+gui_set_state_value -category Layout -key child_source_size_y -value 700
+gui_set_state_value -category Layout -key child_wave_colname -value 220
+gui_set_state_value -category Layout -key child_wave_colvalue -value 220
+gui_set_state_value -category Layout -key child_wave_left -value 445
+gui_set_state_value -category Layout -key child_wave_right -value 1085
+gui_set_state_value -category Layout -key main_pos_x -value 0
+gui_set_state_value -category Layout -key main_pos_y -value 23
+gui_set_state_value -category Layout -key main_size_x -value 1535
+gui_set_state_value -category Layout -key main_size_y -value 823
+gui_set_state_value -category Layout -key stand_source_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_source_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_source_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_source_child_size_x -value 914
+gui_set_state_value -category Layout -key stand_source_child_size_y -value 209
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1540
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 700
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 0
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 23
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1535
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 823
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_create_state_key -category Widget_History -key Find|m_pFindFrame|m_pFindCombo -value_type string -value recent
+gui_create_state_key -category Widget_History -key TopLevel.1|qt_top_dock|&Edit|FindCombo -value_type string -value recent
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_VPDCombo} -value_type string -value inter.vpd
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_argsCombo} -value_type string -value {{-ucligui } { -ucligui}}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value {/home/ecelrc/students/xteng/vlsi1/lab3/rtl /home/ecelrc/students/xteng/vlsi1/lab3 /home/ecelrc/students/xteng/vlsi1/lab3tutorial}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value {/home/ecelrc/students/xteng/vlsi1/lab3/rtl/simv ./simv /home/ecelrc/students/xteng/vlsi1/lab3/simv /home/ecelrc/students/xteng/vlsi1/lab3tutorial/simv}
+gui_state_default_create -off
+
+# Begin command logging
+gui_sim_run Ucli -exe ./simv -args {-ucligui  } -dir .
+gui_list_expand -id Hier.1   TOP
+gui_list_action -id  Hier.1 TOP
+gui_list_select -id Hier.1 -current_item_name TOP.MASTER -current_item_type Scope  -selected  { TOP.MASTER   }
+gui_list_select -id Data.1 -selected  { TOP.MASTER.rst_i   }
+gui_list_select -id Data.1 -selected  {  }
+gui_list_select -id Data.1 -selected  { TOP.MASTER.rst_i   }
+gui_list_select -id Data.1 { TOP.MASTER.clk_i  TOP.MASTER.mem_req  TOP.MASTER.memoryRead  TOP.MASTER.memoryWrite  TOP.MASTER.ack_i  {TOP.MASTER.addressBus[25:0]}  {TOP.MASTER.dat_i[31:0]}  {TOP.MASTER.adr_o[25:0]}  {TOP.MASTER.dat_o[31:0]}  TOP.MASTER.we_o  TOP.MASTER.stb_o  TOP.MASTER.cyc_o  {TOP.MASTER.dataBus[31:0]}  TOP.MASTER.taga_o  {TOP.MASTER.state[1:0]}  {TOP.MASTER.next_state[1:0]}  {TOP.MASTER.dat_i_temp[31:0]}   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { TOP.MASTER.rst_i TOP.MASTER.clk_i TOP.MASTER.mem_req TOP.MASTER.memoryRead TOP.MASTER.memoryWrite TOP.MASTER.ack_i {TOP.MASTER.addressBus[25:0]} {TOP.MASTER.dat_i[31:0]} {TOP.MASTER.adr_o[25:0]} {TOP.MASTER.dat_o[31:0]} TOP.MASTER.we_o TOP.MASTER.stb_o TOP.MASTER.cyc_o {TOP.MASTER.dataBus[31:0]} TOP.MASTER.taga_o {TOP.MASTER.state[1:0]} {TOP.MASTER.next_state[1:0]} {TOP.MASTER.dat_i_temp[31:0]} } -insertionbar

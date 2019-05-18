@@ -1,0 +1,4 @@
+=======================DVE Context and Call Stack=========================
+Command line: /usr/local/packages/synopsys_2015/vcs-mx//gui/dve/linux64/bin/dve.exe -full64 -ucliplatform=linux64 -toolargs "-ucligui -toolexe ./simv  -pid 45708" -toolin /tmp/vcs_20181125214436_45707_xteng..stdin -toolout /tmp/vcs_20181125214436_45707_xteng..stdout
+
+--- Stack trace follows:

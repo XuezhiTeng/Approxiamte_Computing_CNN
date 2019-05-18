@@ -1,0 +1,158 @@
+{
+    "CompileStatus": "Successful",
+    "MlibObjs": {},
+    "NameTable": {
+        "timeunit": [
+            "timeunit",
+            "H0Y6L",
+            "module"
+        ],
+        "fa": [
+            "fa",
+            "JpRWQ",
+            "module"
+        ],
+        "rca_pg_3b": [
+            "rca_pg_3b",
+            "LuMqn",
+            "module"
+        ],
+        "TOP": [
+            "TOP",
+            "ThQKx",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_nivcsw": 23,
+            "ru_utime_sec": 0.066989000000000007,
+            "ru_stime_sec": 0.035993999999999998,
+            "ru_nvcsw": 275,
+            "ru_majflt": 0,
+            "ru_maxrss_kb": 50312,
+            "ru_minflt": 11604
+        },
+        "ru_childs_cgstart": {
+            "ru_nivcsw": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_nvcsw": 0,
+            "ru_majflt": 0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0
+        },
+        "nMops": 2614,
+        "mopSpeed": 68798.526121858158,
+        "CodeGen(%)": 36.19122913967842,
+        "nQuads": 1137,
+        "outputSizePerQuad": 150.0,
+        "totalObjSize": 171048,
+        "ru_self_end": {
+            "ru_nivcsw": 56,
+            "ru_utime_sec": 0.10498399999999999,
+            "ru_stime_sec": 0.051991999999999997,
+            "ru_nvcsw": 381,
+            "ru_majflt": 0,
+            "ru_maxrss_kb": 57840,
+            "ru_minflt": 13900
+        },
+        "ru_childs_end": {
+            "ru_nivcsw": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_nvcsw": 0,
+            "ru_majflt": 0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0
+        },
+        "quadSpeed": 29924.990130280312,
+        "mop/quad": 2.2990325417766053,
+        "Frontend(%)": 63.808770860321587
+    },
+    "PrevCompiledModules": {
+        "rca_pg_3b": {
+            "LuMqn_d": {
+                "bytes": 26419,
+                "mod": "rca_pg_3b",
+                "out": "LuMqn_d.o",
+                "mode": 4,
+                "archive": "archive.6/_10751_archive_1.a",
+                "checksum": 4294967295
+            }
+        },
+        "fa": {
+            "JpRWQ_d": {
+                "bytes": 15812,
+                "mod": "fa",
+                "mode": 4,
+                "archive": "archive.6/_10751_archive_1.a",
+                "checksum": 4294967295,
+                "out": "JpRWQ_d.o"
+            }
+        },
+        "TOP": {
+            "ThQKx_d": {
+                "bytes": 24893,
+                "mod": "TOP",
+                "mode": 4,
+                "archive": "archive.6/_10751_archive_1.a",
+                "checksum": 4294967295,
+                "out": "ThQKx_d.o"
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "bytes": 7231,
+                "mod": "...MASTER...",
+                "out": "objs/amcQw_d.o",
+                "mode": 4,
+                "checksum": 4294967295
+            }
+        },
+        "timeunit": {
+            "H0Y6L_d": {
+                "bytes": 7559,
+                "mod": "timeunit",
+                "mode": 4,
+                "archive": "archive.6/_10751_archive_1.a",
+                "checksum": 4294967295,
+                "out": "H0Y6L_d.o"
+            }
+        }
+    },
+    "CompileProcesses": [
+        "cgproc.10751.json"
+    ],
+    "CompileStrategy": "fullobj",
+    "CurCompileUdps": {},
+    "LVLData": [
+        "SIM"
+    ],
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 89134
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "timeunit",
+        "fa",
+        "rca_pg_3b",
+        "TOP"
+    ],
+    "PEModules": [],
+    "Misc": {
+        "cwd": "/misc/scratch/abhat1/lowpower/Approxiamte_Computing_CNN/hw",
+        "csrc": "csrc",
+        "csrc_abs": "/misc/scratch/abhat1/lowpower/Approxiamte_Computing_CNN/hw/csrc",
+        "daidir": "simv.daidir",
+        "default_output_dir": "csrc",
+        "daidir_abs": "/misc/scratch/abhat1/lowpower/Approxiamte_Computing_CNN/hw/simv.daidir",
+        "archive_dir": "archive.6"
+    }
+}

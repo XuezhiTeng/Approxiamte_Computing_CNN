@@ -1,0 +1,40 @@
+{
+    "reusePaths": {},
+    "Modules": {
+        "...MASTER...": {},
+        "fifo_test": {
+            "Compiled": "Yes",
+            "Compiled Times": 6
+        },
+        "timeunit": {}
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "out": "objs/amcQw_d.o",
+            "mod": "...MASTER...",
+            "bytes": 7239,
+            "mode": 4,
+            "checksum": 4294967295
+        },
+        "E2Tre_d": {
+            "out": "E2Tre_d.o",
+            "mod": "fifo_test",
+            "bytes": 19842,
+            "mode": 4,
+            "checksum": 4294967295,
+            "archive": "archive.144/_32022_archive_1.a"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.144/_32022_archive_1.a",
+            "objects": [
+                [
+                    "E2Tre_d.o",
+                    19842
+                ]
+            ],
+            "size": 19842
+        }
+    ]
+}

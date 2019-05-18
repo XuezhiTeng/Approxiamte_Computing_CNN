@@ -1,0 +1,155 @@
+{
+    "MlibObjs": {},
+    "stat": {
+        "totalObjSize": 122408,
+        "ru_self_cgstart": {
+            "ru_minflt": 11603,
+            "ru_utime_sec": 0.083987000000000006,
+            "ru_stime_sec": 0.031995000000000003,
+            "ru_nvcsw": 256,
+            "ru_maxrss_kb": 50296,
+            "ru_majflt": 0,
+            "ru_nivcsw": 27
+        },
+        "ru_childs_cgstart": {
+            "ru_minflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_nvcsw": 0,
+            "ru_maxrss_kb": 0,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0
+        },
+        "ru_self_end": {
+            "ru_minflt": 13668,
+            "ru_utime_sec": 0.107983,
+            "ru_stime_sec": 0.042993000000000003,
+            "ru_nvcsw": 340,
+            "ru_maxrss_kb": 57184,
+            "ru_majflt": 0,
+            "ru_nivcsw": 48
+        },
+        "nMops": 1130,
+        "outputSizePerQuad": 240.0,
+        "ru_childs_end": {
+            "ru_minflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_nvcsw": 0,
+            "ru_maxrss_kb": 0,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0
+        },
+        "Frontend(%)": 77.777983571488107,
+        "nQuads": 508,
+        "mopSpeed": 47091.181863643964,
+        "CodeGen(%)": 22.222016428511889,
+        "mop/quad": 2.2244094488188977,
+        "quadSpeed": 21170.195032505428
+    },
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 88758
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "rca_pg_3b"
+    ],
+    "PrevCompiledModules": {
+        "timeunit": {
+            "H0Y6L_d": {
+                "checksum": 4294967295,
+                "bytes": 7559,
+                "mod": "timeunit",
+                "out": "H0Y6L_d.o",
+                "mode": 4,
+                "archive": "archive.5/_prev_archive_1.a"
+            }
+        },
+        "rca_pg_3b": {
+            "LuMqn_d": {
+                "checksum": 4294967295,
+                "bytes": 26331,
+                "mod": "rca_pg_3b",
+                "mode": 4,
+                "out": "LuMqn_d.o",
+                "archive": "archive.5/_19888_archive_1.a"
+            }
+        },
+        "fa": {
+            "JpRWQ_d": {
+                "checksum": 4294967295,
+                "bytes": 15812,
+                "mod": "fa",
+                "mode": 4,
+                "out": "JpRWQ_d.o",
+                "archive": "archive.5/_prev_archive_1.a"
+            }
+        },
+        "TOP": {
+            "ThQKx_d": {
+                "checksum": 4294967295,
+                "bytes": 24893,
+                "mod": "TOP",
+                "mode": 4,
+                "out": "ThQKx_d.o",
+                "archive": "archive.5/_prev_archive_1.a"
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "checksum": 4294967295,
+                "bytes": 7231,
+                "mod": "...MASTER...",
+                "mode": 4,
+                "out": "objs/amcQw_d.o"
+            }
+        }
+    },
+    "NameTable": {
+        "rca_pg_3b": [
+            "rca_pg_3b",
+            "LuMqn",
+            "module"
+        ],
+        "timeunit": [
+            "timeunit",
+            "H0Y6L",
+            "module"
+        ],
+        "fa": [
+            "fa",
+            "JpRWQ",
+            "module"
+        ],
+        "TOP": [
+            "TOP",
+            "ThQKx",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "CompileStrategy": "fullobj",
+    "CurCompileUdps": {},
+    "LVLData": [
+        "SIM"
+    ],
+    "CompileStatus": "Successful",
+    "PEModules": [],
+    "Misc": {
+        "daidir_abs": "/misc/scratch/abhat1/lowpower/project/simv.daidir",
+        "csrc_abs": "/misc/scratch/abhat1/lowpower/project/csrc",
+        "cwd": "/misc/scratch/abhat1/lowpower/project",
+        "csrc": "csrc",
+        "daidir": "simv.daidir",
+        "default_output_dir": "csrc",
+        "archive_dir": "archive.5"
+    },
+    "CompileProcesses": [
+        "cgproc.19888.json"
+    ]
+}

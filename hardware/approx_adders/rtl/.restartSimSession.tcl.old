@@ -1,0 +1,229 @@
+# Begin_DVE_Session_Save_Info
+# DVE restart session
+# Saved on Fri Nov 30 13:29:53 2018
+# Designs open: 1
+#   Sim: /home/ecelrc/students/xteng/vlsi1/lab3/rtl/simv
+# Toplevel windows open: 2
+# 	TopLevel.1
+# 	TopLevel.2
+#   Source.1: TOP
+#   Wave.1: 77 signals
+#   Group count = 5
+#   Group R0-R6 signal count = 7
+#   Group master signal count = 18
+#   Group slave signal count = 21
+#   Group txfifo signal count = 23
+#   Group cmu signal count = 8
+# End_DVE_Session_Save_Info
+
+# DVE version: K-2015.09-SP1_Full64
+# DVE build date: Nov 24 2015 21:15:24
+
+
+#<Session mode="Restart" path=".restartSimSession.tcl" type="Debug">
+
+gui_set_loading_session_type Restart
+gui_continuetime_set -value 2000
+gui_clear_window -type Wave
+gui_clear_window -type List
+
+# Application preferences
+gui_set_pref_value -key app_default_font -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+gui_src_preferences -tabstop 8 -maxbits 24 -windownumber 1
+#<WindowLayout>
+
+# DVE top-level session
+
+
+# Create and position top-level window: TopLevel.1
+
+set TopLevel.1 TopLevel.1
+
+# Docked window settings
+set HSPane.1 HSPane.1
+set Hier.1 Hier.1
+set DLPane.1 DLPane.1
+set Data.1 Data.1
+set Console.1 Console.1
+gui_sync_global -id ${TopLevel.1} -option true
+
+# MDI window settings
+set Source.1 Source.1
+gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
+
+# End MDI window settings
+
+
+# Create and position top-level window: TopLevel.2
+
+set TopLevel.2 TopLevel.2
+
+# Docked window settings
+gui_sync_global -id ${TopLevel.2} -option true
+
+# MDI window settings
+set Wave.1 Wave.1
+gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 278} {child_wave_right 1252} {child_wave_colname 137} {child_wave_colvalue 137} {child_wave_col1 0} {child_wave_col2 1}}
+
+# End MDI window settings
+
+
+#</WindowLayout>
+
+#<Database>
+
+gui_set_precision 1s
+gui_set_time_units 1s
+#</Database>
+
+# DVE Global setting session: 
+
+
+# Global: Breakpoints
+
+# Global: Bus
+
+# Global: Expressions
+
+# Global: Signal Time Shift
+
+# Global: Signal Compare
+
+# Global: Signal Groups
+gui_load_child_values {TOP.SLAVE}
+gui_load_child_values {TOP.CMU}
+gui_load_child_values {TOP.MASTER}
+gui_load_child_values {TOP}
+gui_load_child_values {TOP.ssp.TxFIFO_tester}
+
+
+set _session_group_11 R0-R6
+gui_sg_create "$_session_group_11"
+set R0-R6 "$_session_group_11"
+
+gui_sg_addsignal -group "$_session_group_11" { TOP.R0_U TOP.R1_U TOP.R2_U TOP.R3_U TOP.R4_U TOP.R5_U TOP.R6_U }
+
+set _session_group_12 master
+gui_sg_create "$_session_group_12"
+set master "$_session_group_12"
+
+gui_sg_addsignal -group "$_session_group_12" { TOP.MASTER.rst_i TOP.MASTER.clk_i TOP.MASTER.mem_req TOP.MASTER.memoryRead TOP.MASTER.memoryWrite TOP.MASTER.ack_i TOP.MASTER.addressBus TOP.MASTER.dat_i TOP.MASTER.adr_o TOP.MASTER.dat_o TOP.MASTER.we_o TOP.MASTER.stb_o TOP.MASTER.cyc_o TOP.MASTER.dataBus TOP.MASTER.taga_o TOP.MASTER.state TOP.MASTER.next_state TOP.MASTER.dat_i_temp }
+
+set _session_group_13 slave
+gui_sg_create "$_session_group_13"
+set slave "$_session_group_13"
+
+gui_sg_addsignal -group "$_session_group_13" { TOP.SLAVE.rst_i TOP.SLAVE.clk_i TOP.SLAVE.taga_i TOP.SLAVE.we_i TOP.SLAVE.stb_i TOP.SLAVE.cyc_i TOP.SLAVE.dat_i TOP.SLAVE.adr_i TOP.SLAVE.mem_adr_o TOP.SLAVE.mem_r_o TOP.SLAVE.mem_w_o TOP.SLAVE.ssp_sel_o TOP.SLAVE.ssp_w_o TOP.SLAVE.ack_o TOP.SLAVE.tagd_o TOP.SLAVE.dat_o TOP.SLAVE.dataBus TOP.SLAVE.state TOP.SLAVE.next_state TOP.SLAVE.dat_i_temp TOP.SLAVE.dataBus_temp }
+
+set _session_group_14 txfifo
+gui_sg_create "$_session_group_14"
+set txfifo "$_session_group_14"
+
+gui_sg_addsignal -group "$_session_group_14" { TOP.ssp.TxFIFO_tester.PSEL TOP.ssp.TxFIFO_tester.PWRITE TOP.ssp.TxFIFO_tester.CLEAR_B TOP.ssp.TxFIFO_tester.PCLK TOP.ssp.TxFIFO_tester.SENT TOP.ssp.TxFIFO_tester.PWDATA TOP.ssp.TxFIFO_tester.TxDATA TOP.ssp.TxFIFO_tester.SSPTXINTR TOP.ssp.TxFIFO_tester.VALID TOP.ssp.TxFIFO_tester.full TOP.ssp.TxFIFO_tester.empty TOP.ssp.TxFIFO_tester.wre TOP.ssp.TxFIFO_tester.rde TOP.ssp.TxFIFO_tester.wp TOP.ssp.TxFIFO_tester.rp TOP.ssp.TxFIFO_tester.mcell0 TOP.ssp.TxFIFO_tester.mcell1 TOP.ssp.TxFIFO_tester.mcell2 TOP.ssp.TxFIFO_tester.mcell3 TOP.ssp.TxFIFO_tester.flag0 TOP.ssp.TxFIFO_tester.flag1 TOP.ssp.TxFIFO_tester.flag2 TOP.ssp.TxFIFO_tester.flag3 }
+
+set _session_group_15 cmu
+gui_sg_create "$_session_group_15"
+set cmu "$_session_group_15"
+
+gui_sg_addsignal -group "$_session_group_15" { TOP.CMU.clk_i TOP.CMU.clear_i TOP.CMU.ssp_intr_i TOP.CMU.phi1 TOP.CMU.phi2 TOP.CMU.clk_o TOP.CMU.clear_o TOP.CMU.cnt }
+
+# Global: Highlighting
+
+# Global: Stack
+gui_change_stack_mode -mode list
+
+# Post database loading setting...
+
+# Save global setting...
+
+# Wave/List view global setting
+gui_list_create_group_when_add -wave -enable
+gui_cov_show_value -switch false
+
+# Close all empty TopLevel windows
+foreach __top [gui_ekki_get_window_ids -type TopLevel] {
+    if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {
+        gui_close_window -window $__top
+    }
+}
+gui_set_loading_session_type noSession
+# DVE View/pane content session: 
+
+
+# Hier 'Hier.1'
+gui_show_window -window ${Hier.1}
+gui_list_set_filter -id ${Hier.1} -list { {Package 1} {All 0} {Process 1} {VirtPowSwitch 0} {UnnamedProcess 1} {UDP 0} {Function 1} {Block 1} {SrsnAndSpaCell 0} {OVA Unit 1} {LeafScCell 1} {LeafVlgCell 1} {Interface 1} {LeafVhdCell 1} {$unit 1} {NamedBlock 1} {Task 1} {VlgPackage 1} {ClassDef 1} {VirtIsoCell 0} }
+gui_list_set_filter -id ${Hier.1} -text {*}
+gui_change_design -id ${Hier.1} -design Sim
+catch {gui_list_expand -id ${Hier.1} TOP}
+catch {gui_list_select -id ${Hier.1} {TOP.CMU}}
+gui_view_scroll -id ${Hier.1} -vertical -set 0
+gui_view_scroll -id ${Hier.1} -horizontal -set 0
+
+# Data 'Data.1'
+gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+gui_list_set_filter -id ${Data.1} -text {*}
+gui_list_show_data -id ${Data.1} {TOP.CMU}
+gui_show_window -window ${Data.1}
+catch { gui_list_select -id ${Data.1} {TOP.CMU.clk_i TOP.CMU.clear_i TOP.CMU.ssp_intr_i TOP.CMU.phi1 TOP.CMU.phi2 TOP.CMU.clk_o TOP.CMU.clear_o TOP.CMU.cnt }}
+gui_view_scroll -id ${Data.1} -vertical -set 0
+gui_view_scroll -id ${Data.1} -horizontal -set 0
+gui_view_scroll -id ${Hier.1} -vertical -set 0
+gui_view_scroll -id ${Hier.1} -horizontal -set 0
+
+# Source 'Source.1'
+gui_src_value_annotate -id ${Source.1} -switch false
+gui_set_env TOGGLE::VALUEANNOTATE 0
+gui_open_source -id ${Source.1}  -replace -active TOP /home/ecelrc/students/xteng/vlsi1/lab3/rtl/main.v
+gui_view_scroll -id ${Source.1} -vertical -set 720
+gui_src_set_reusable -id ${Source.1}
+
+# View 'Wave.1'
+gui_wv_sync -id ${Wave.1} -switch false
+set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+gui_set_pref_value -category Wave -key exclusiveSG -value {false}
+set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+gui_list_set_height -id Wave -height 25
+set origGroupCreationState [gui_list_create_group_when_add -wave]
+gui_list_create_group_when_add -wave -disable
+gui_wv_zoom_timerange -id ${Wave.1} 24724 27277
+gui_list_add_group -id ${Wave.1} -after {New Group} {R0-R6}
+gui_list_add_group -id ${Wave.1} -after {New Group} {master}
+gui_list_add_group -id ${Wave.1} -after {New Group} {slave}
+gui_list_add_group -id ${Wave.1} -after {New Group} {txfifo}
+gui_list_add_group -id ${Wave.1} -after {New Group} {cmu}
+gui_list_collapse -id ${Wave.1} master
+gui_list_collapse -id ${Wave.1} slave
+gui_list_collapse -id ${Wave.1} txfifo
+gui_seek_criteria -id ${Wave.1} {Any Edge}
+
+
+
+gui_set_env TOGGLE::DEFAULT_WAVE_WINDOW ${Wave.1}
+gui_set_pref_value -category Wave -key exclusiveSG -value $groupExD
+gui_list_set_height -id Wave -height $origWaveHeight
+if {$origGroupCreationState} {
+	gui_list_create_group_when_add -wave -enable
+}
+if { $groupExD } {
+ gui_msg_report -code DVWW028
+}
+gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+gui_list_set_filter -id ${Wave.1} -text {*}
+gui_list_set_insertion_bar  -id ${Wave.1} -group cmu  -position in
+
+gui_view_scroll -id ${Wave.1} -vertical -set 0
+gui_show_grid -id ${Wave.1} -enable false
+# Restore toplevel window zorder
+# The toplevel window could be closed if it has no view/pane
+if {[gui_exist_window -window ${TopLevel.1}]} {
+	gui_set_active_window -window ${TopLevel.1}
+	gui_set_active_window -window ${Source.1}
+	gui_set_active_window -window ${DLPane.1}
+}
+if {[gui_exist_window -window ${TopLevel.2}]} {
+	gui_set_active_window -window ${TopLevel.2}
+	gui_set_active_window -window ${Wave.1}
+}
+#</Session>
+

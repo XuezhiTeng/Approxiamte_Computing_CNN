@@ -1,0 +1,124 @@
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP1_Full64; Runtime version K-2015.09-SP1_Full64;  Nov 27 22:27 2018
+VCD+ Writer K-2015.09-SP1_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/ecelrc/students/xteng/vlsi1/lab3/rtl/inter.vpd' was opened successfully.
+---------------------------------------------
+
+The tool has just detected a severe internal error:
+
+SEGV exception handled in internal functions.
+
+
+Release = 'K-2015.09-SP1_Full64'  Architecture = 'amd64'  Program = 'DVE'
+
+'33090154 33127706 33129758 255412348272'
+
+---------------------------------------------
+=======================DVE Context and Call Stack=========================
+
+An unexpected termination has occurred in /usr/local/packages/synopsys_2015/vcs-mx//gui/dve/linux64/bin/dve.exeHostname koopa
+
+VPD API Function hfGetReadObj Handle1="TOP.SLAVE.adr_i" 
+Command line: /usr/local/packages/synopsys_2015/vcs-mx//gui/dve/linux64/bin/dve.exe -full64 -ucliplatform=linux64 -toolargs "-ucligui -toolexe ./simv  -pid 25117" -toolin /tmp/vcs_20181128042713_25116_xteng..stdin -toolout /tmp/vcs_20181128042713_25116_xteng..stdout
+
+--- Stack trace follows:
+[New LWP 25534]
+[New LWP 25496]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000003b77cac8dd in waitpid () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7fa7608ed700 (LWP 25496)):
+#0  0x0000003b7880ba5e in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000028b422b in ?? ()
+#2  0x00000000028b46be in QThread::msleep(unsigned long) ()
+#3  0x00000000010d9ee6 in ag::dveXThread::run() ()
+#4  0x00000000028b43ba in QThreadInstance::start(void*) ()
+#5  0x0000003b78807aa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x0000003b77ce8c4d in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7fa75feec700 (LWP 25534)):
+#0  0x0000003b77cdb80d in read () from /lib64/libc.so.6
+#1  0x0000003b77c71bc8 in _IO_new_file_underflow () from /lib64/libc.so.6
+#2  0x0000003b77c736ce in _IO_default_uflow_internal () from /lib64/libc.so.6
+#3  0x0000003b77c67daa in _IO_getline_info_internal () from /lib64/libc.so.6
+#4  0x0000003b77c66c09 in fgets () from /lib64/libc.so.6
+#5  0x00000000011f26b3 in ag::dveSmlSocket::run() ()
+#6  0x00000000028b43ba in QThreadInstance::start(void*) ()
+#7  0x0000003b78807aa1 in start_thread () from /lib64/libpthread.so.0
+#8  0x0000003b77ce8c4d in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7fa760f21800 (LWP 25131)):
+#0  0x0000003b77cac8dd in waitpid () from /lib64/libc.so.6
+#1  0x0000003b77c3e4e9 in do_system () from /lib64/libc.so.6
+#2  0x0000003b77c3e820 in system () from /lib64/libc.so.6
+#3  0x00007fa762a0dfd8 in SNPSle_10ee25eff68cd8461c9146fa1d0b35e87067f3c8015b313e639d2928478c79b3f673f99203bcf8be64600612100082236bffb2007f1e0ef9 () from /usr/local/packages/synopsys_2015/vcs-mx//linux64/lib/liberrorinf.so
+#4  0x00007fa762a0e56d in SNPSle_10ee25eff68cd8461c9146fa1d0b35e87067f3c8015b313e81c34e9ac4c8988ef4a6e067b3aa9271e9f15440f9e8f69ebc77e2fd65860faa () from /usr/local/packages/synopsys_2015/vcs-mx//linux64/lib/liberrorinf.so
+#5  0x00007fa762a0f87b in SNPSle_10ee25eff68cd8461c9146fa1d0b35e87067f3c8015b313efba706aab251478fa49e66610e453774633a6c152e7ef778f2202cda681f3d4e () from /usr/local/packages/synopsys_2015/vcs-mx//linux64/lib/liberrorinf.so
+#6  0x00007fa762a08645 in SNPSle_d35ca1ff70d465c2b9b1a72eee90a506fdd009d3de3db1de () from /usr/local/packages/synopsys_2015/vcs-mx//linux64/lib/liberrorinf.so
+#7  0x0000000001f97cc5 in ag::logErrorMessage(ag::errorType, QString const&, bool) ()
+#8  0x0000000001f9851e in ?? ()
+#9  <signal handler called>
+#10 0x00007fa762d5c8f8 in SNPSle_2d2fd458016b40097d0688eee77b7402178a6ba9744a41493c9afd8a78f4a4d152b6e1a6ec18d33e652faadf2b1ec82418a4e12ed335a47ea0c3d0d965a5f0e9e573a3886a4c0e943e2eb226ea2fbaf5 () from /usr/local/packages/synopsys_2015/vcs-mx//linux64/lib/libhflib.so
+#11 0x00007fa762d59ba3 in SNPSle_2d2fd458016b400992fd9ab2a0fdb32ce4260519f2267c0d75f1fd6ba959e1cfb909613bd638ab7454046259df32282dba17b966373529eb8c60bafa79304086d6d3c5102adcc02c () from /usr/local/packages/synopsys_2015/vcs-mx//linux64/lib/libhflib.so
+#12 0x00007fa762d5b661 in SNPSle_2d2fd458016b400992fd9ab2a0fdb32c6f2b844c48b17d83df25b9e183b1601bee55d6829cbd16f320fdd5ef41ed8b40507b3cd523561a430ea48b1012386f73ade201d47d2de403c79c27cf7a97e1669573370d35e1857d () from /usr/local/packages/synopsys_2015/vcs-mx//linux64/lib/libhflib.so
+#13 0x00007fa762d5b772 in SNPSle_2d2fd458016b40091440d223d498268aa254c09b6b8ebd2c85f663914c00ec949387b982aa59f5ddeee03769aa003a27 () from /usr/local/packages/synopsys_2015/vcs-mx//linux64/lib/libhflib.so
+#14 0x00007fa762d54a3a in SNPSle_2d2fd458016b4009011b4e28906103fefb0bf8c59f9eac831695bab6bbd4fc7469a06e026c65e15b192fa0f4252c87c0 () from /usr/local/packages/synopsys_2015/vcs-mx//linux64/lib/libhflib.so
+#15 0x00007fa762d4252e in SNPSle_2d2fd458016b4009cc77f49b0e43bc98da027ad471f98d879130cc234e82f2e2a790519a38a3163a () from /usr/local/packages/synopsys_2015/vcs-mx//linux64/lib/libhflib.so
+#16 0x00007fa762d6a65a in SNPSle_8d1b2179acedd1750d9ea76e91c880e6697d0235e2188a318e4307e320e143a0 () from /usr/local/packages/synopsys_2015/vcs-mx//linux64/lib/libhflib.so
+#17 0x00007fa762d819d4 in SNPSle_e67072563947ded775fb6688f9bb34d7 () from /usr/local/packages/synopsys_2015/vcs-mx//linux64/lib/libhflib.so
+#18 0x0000000001b836c8 in ag::valLoaderList::getLoaderID(ag::metaParentObj const&, ag::infLoader*&, bool&) const ()
+#19 0x0000000001b83913 in ag::valLoaderList::getLoader(ag::metaParentObj const&) const ()
+#20 0x0000000001bf66f5 in ag::metaDbObj::createLoader(ag::infLoaderList&) const ()
+#21 0x0000000001c440d0 in ag::metaParentObj::createLoader() const ()
+#22 0x0000000001931b69 in ag::fieldViewWaveItem::initializeItem() ()
+#23 0x000000000199c3d9 in ag::waveListView::evaluateVisibleItems() ()
+#24 0x000000000199298f in ag::waveListView::processViewportChanged() ()
+#25 0x00000000019a6cd4 in ag::waveListView::drawContentsOffset(QPainter*, int, int, int, int, int, int) ()
+#26 0x00000000029e3469 in QScrollView::viewportPaintEvent(QPaintEvent*) ()
+#27 0x00000000029e7816 in QScrollView::eventFilter(QObject*, QEvent*) ()
+#28 0x00000000029c7166 in QListView::eventFilter(QObject*, QEvent*) ()
+#29 0x00000000018aef32 in ag::baseListView::eventFilter(QObject*, QEvent*) ()
+#30 0x00000000019a360b in ag::waveListView::eventFilter(QObject*, QEvent*) ()
+#31 0x00000000029061a0 in QObject::activate_filters(QEvent*) ()
+#32 0x0000000002906229 in QObject::event(QEvent*) ()
+#33 0x000000000293205a in QWidget::event(QEvent*) ()
+#34 0x00000000028ba975 in QApplication::internalNotify(QObject*, QEvent*) ()
+#35 0x00000000028bab7f in QApplication::notify(QObject*, QEvent*) ()
+#36 0x000000000200b7b6 in EkExtQtApp::notify(QObject*, QEvent*) ()
+#37 0x0000000001fdde1d in ag::baseQtApp::notify(QObject*, QEvent*) ()
+#38 0x00000000028986b5 in QWidget::repaint(int, int, int, int, bool) ()
+#39 0x0000000002898ab3 in QWidget::scroll(int, int, QRect const&) ()
+#40 0x0000000002898c5d in QWidget::scroll(int, int) ()
+#41 0x00000000029e55e0 in QScrollView::moveContents(int, int) ()
+#42 0x00000000029e569c in QScrollView::setContentsPos(int, int) ()
+#43 0x00000000018957db in ag::baseListView::processVerticalScroll(int) ()
+#44 0x0000000001a73adb in ag::baseListView::qt_invoke(int, QUObject*) ()
+#45 0x0000000001a7b714 in ag::metaListView::qt_invoke(int, QUObject*) ()
+#46 0x0000000001a762f1 in ag::dataView::qt_invoke(int, QUObject*) ()
+#47 0x0000000001a7dc9c in ag::waveListView::qt_invoke(int, QUObject*) ()
+#48 0x0000000002908012 in QObject::activate_signal(QConnectionList*, QUObject*) ()
+#49 0x00000000029081f0 in QObject::activate_signal(int, int) ()
+#50 0x00000000014bd67f in ag::wvScrollView::verticalPixelScroll(int) ()
+#51 0x000000000146b0e1 in ag::wvScrollView::doVerticalScroll(int, bool) ()
+#52 0x000000000146b875 in ag::wvScrollView::processVScrollTimeOut() ()
+#53 0x00000000014bd8b6 in ag::wvScrollView::qt_invoke(int, QUObject*) ()
+#54 0x0000000002908012 in QObject::activate_signal(QConnectionList*, QUObject*) ()
+#55 0x0000000002b7609c in QSignal::signal(QVariant const&) ()
+#56 0x0000000002918c7f in QSignal::activate() ()
+#57 0x000000000291e861 in QSingleShotTimer::event(QEvent*) ()
+#58 0x00000000028ba975 in QApplication::internalNotify(QObject*, QEvent*) ()
+#59 0x00000000028bab7f in QApplication::notify(QObject*, QEvent*) ()
+#60 0x000000000200b7b6 in EkExtQtApp::notify(QObject*, QEvent*) ()
+#61 0x0000000001fdde1d in ag::baseQtApp::notify(QObject*, QEvent*) ()
+#62 0x00000000028b0db4 in QEventLoop::activateTimers() ()
+#63 0x000000000287d4ee in QEventLoop::processEvents(unsigned int) ()
+#64 0x000000000111b751 in ag::ovaEventLoop::processEvents(unsigned int) ()
+#65 0x00000000028cab69 in QEventLoop::enterLoop() ()
+#66 0x00000000028caaca in QEventLoop::exec() ()
+#67 0x000000000111b0bf in run_cci_event_loop ()
+#68 0x00000000010daab4 in ag::ovaAppInst::enterEventLoop(int, char**) ()
+#69 0x0000000000de3aa9 in main ()
+Completed context dump data 'VPD API Function'
+==========================================================================

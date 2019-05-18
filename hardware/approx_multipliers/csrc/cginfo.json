@@ -1,0 +1,135 @@
+{
+    "MlibObjs": {},
+    "PrevCompiledModules": {
+        "DRUMk_M_N_s": {
+            "abyaB_d": {
+                "mod": "DRUMk_M_N_s",
+                "bytes": 31671,
+                "mode": 4,
+                "checksum": 4294967295,
+                "out": "abyaB_d.o",
+                "archive": "archive.14/_prev_archive_1.a"
+            }
+        },
+        "DRUM_tb": {
+            "mVaJS_d": {
+                "mod": "DRUM_tb",
+                "bytes": 11860,
+                "archive": "archive.14/_prev_archive_1.a",
+                "out": "mVaJS_d.o",
+                "mode": 4,
+                "checksum": 4294967295
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "mod": "...MASTER...",
+                "bytes": 7231,
+                "out": "objs/amcQw_d.o",
+                "mode": 4,
+                "checksum": 4294967295
+            }
+        },
+        "timeunit": {
+            "H0Y6L_d": {
+                "mod": "timeunit",
+                "bytes": 7559,
+                "mode": 4,
+                "checksum": 4294967295,
+                "out": "H0Y6L_d.o",
+                "archive": "archive.14/_prev_archive_1.a"
+            }
+        }
+    },
+    "CompileStrategy": "fullobj",
+    "CurCompileUdps": {},
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 90956
+    },
+    "NameTable": {
+        "timeunit": [
+            "timeunit",
+            "H0Y6L",
+            "module"
+        ],
+        "DRUMk_M_N_s": [
+            "DRUMk_M_N_s",
+            "abyaB",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ],
+        "DRUM_tb": [
+            "DRUM_tb",
+            "mVaJS",
+            "module"
+        ]
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "stat": {
+        "Frontend(%)": 87.879798148176206,
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.057991000000000001,
+            "ru_nvcsw": 214,
+            "ru_stime_sec": 0.025995999999999998,
+            "ru_maxrss_kb": 51852,
+            "ru_minflt": 11983,
+            "ru_majflt": 0,
+            "ru_nivcsw": 16
+        },
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.0,
+            "ru_nvcsw": 0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0
+        },
+        "ru_self_end": {
+            "ru_utime_sec": 0.065989000000000006,
+            "ru_nvcsw": 275,
+            "ru_stime_sec": 0.031995000000000003,
+            "ru_maxrss_kb": 54868,
+            "ru_minflt": 13132,
+            "ru_majflt": 0,
+            "ru_nivcsw": 35
+        },
+        "nMops": 0,
+        "nQuads": 0,
+        "totalObjSize": 98187,
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0,
+            "ru_nvcsw": 0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0
+        },
+        "CodeGen(%)": 12.120201851823795
+    },
+    "CurCompileModules": [
+        "...MASTER..."
+    ],
+    "PEModules": [],
+    "CompileProcesses": [
+        "cgproc.20367.json"
+    ],
+    "Misc": {
+        "cwd": "/misc/scratch/abhat1/lowpower/project/Approxiamte_Computing_CNN/hw/multipliers/approx_multipliers",
+        "csrc": "csrc",
+        "csrc_abs": "/misc/scratch/abhat1/lowpower/project/Approxiamte_Computing_CNN/hw/multipliers/approx_multipliers/csrc",
+        "archive_dir": "archive.14",
+        "daidir": "simv.daidir",
+        "daidir_abs": "/misc/scratch/abhat1/lowpower/project/Approxiamte_Computing_CNN/hw/multipliers/approx_multipliers/simv.daidir",
+        "default_output_dir": "csrc"
+    },
+    "CompileStatus": "Successful"
+}

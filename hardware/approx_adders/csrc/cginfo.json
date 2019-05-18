@@ -1,0 +1,125 @@
+{
+    "Misc": {
+        "cwd": "/home/ecelrc/students/xteng/vlsi1/lab3",
+        "csrc": "csrc",
+        "archive_dir": "archive.144",
+        "daidir_abs": "/home/ecelrc/students/xteng/vlsi1/lab3/simv.daidir",
+        "csrc_abs": "/home/ecelrc/students/xteng/vlsi1/lab3/csrc",
+        "daidir": "simv.daidir",
+        "default_output_dir": "csrc"
+    },
+    "MlibObjs": {},
+    "PrevCompiledModules": {
+        "timeunit": {
+            "H0Y6L_d": {
+                "bytes": 7559,
+                "out": "H0Y6L_d.o",
+                "mod": "timeunit",
+                "mode": 4,
+                "checksum": 4294967295,
+                "archive": "archive.144/_prev_archive_1.a"
+            }
+        },
+        "fifo_test": {
+            "E2Tre_d": {
+                "bytes": 19870,
+                "out": "E2Tre_d.o",
+                "mod": "fifo_test",
+                "mode": 4,
+                "checksum": 4294967295,
+                "archive": "archive.144/_32022_archive_1.a"
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "bytes": 7239,
+                "out": "objs/amcQw_d.o",
+                "mod": "...MASTER...",
+                "mode": 4,
+                "checksum": 4294967295
+            }
+        }
+    },
+    "NameTable": {
+        "fifo_test": [
+            "fifo_test",
+            "E2Tre",
+            "module"
+        ],
+        "timeunit": [
+            "timeunit",
+            "H0Y6L",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "fifo_test"
+    ],
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_nivcsw": 23,
+            "ru_utime_sec": 0.062990000000000004,
+            "ru_majflt": 0,
+            "ru_stime_sec": 0.041993000000000003,
+            "ru_maxrss_kb": 50112,
+            "ru_minflt": 11535,
+            "ru_nvcsw": 241
+        },
+        "ru_self_end": {
+            "ru_nivcsw": 45,
+            "ru_utime_sec": 0.075988,
+            "ru_majflt": 0,
+            "ru_stime_sec": 0.060990000000000003,
+            "ru_maxrss_kb": 58108,
+            "ru_minflt": 13924,
+            "ru_nvcsw": 330
+        },
+        "ru_childs_cgstart": {
+            "ru_nivcsw": 0,
+            "ru_utime_sec": 0.0,
+            "ru_majflt": 0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0,
+            "ru_nvcsw": 0
+        },
+        "totalObjSize": 117211,
+        "ru_childs_end": {
+            "ru_nivcsw": 0,
+            "ru_utime_sec": 0.0,
+            "ru_majflt": 0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0,
+            "ru_nvcsw": 0
+        },
+        "CodeGen(%)": 17.10533242090856,
+        "nMops": 1089,
+        "outputSizePerQuad": 257.0,
+        "mop/quad": 2.3934065934065933,
+        "nQuads": 455,
+        "mopSpeed": 83782.120326204065,
+        "quadSpeed": 35005.385443914463,
+        "Frontend(%)": 82.894667579091447
+    },
+    "CompileStrategy": "fullobj",
+    "CurCompileUdps": {},
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 90130
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "PEModules": [],
+    "CompileProcesses": [
+        "cgproc.32022.json"
+    ],
+    "CompileStatus": "Successful"
+}

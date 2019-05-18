@@ -1,0 +1,631 @@
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP1_Full64; Runtime version K-2015.09-SP1_Full64;  Nov 30 12:35 2018
+VCD+ Writer K-2015.09-SP1_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/ecelrc/students/xteng/vlsi1/lab3/rtl/inter.vpd' was opened successfully.
+  0: e3a0207a
+  1: e3a00000
+  2: e3a06010
+  3: e3a07001
+  4: e0808617
+  5: e0879008
+  6: e3a00000
+  7: e4882000
+  8: e3a03028
+  9: e4883000
+ 10: e3a040ff
+ 11: e3a050b7
+ 12: e4884000
+ 13: e4885000
+ 14: e4882000
+ 15: e4883000
+ 16: e4884000
+ 17: e3a07000
+ 18: e3a07000
+ 19: e3a07000
+ 20: e3a07000
+ 21: e4990000
+ 22: e3a07000
+ 23: e3a07000
+ 24: e3a07000
+ 25: e3a07000
+ 26: e3a07000
+ 27: e3a07000
+ 28: e3a07000
+ 29: e3a07000
+ 30: e4991000
+ 31: e3a07000
+ 32: e3a07000
+ 33: e3a07000
+ 34: e3a07000
+ 35: e3a07000
+ 36: e3a07000
+ 37: e3a07000
+ 38: e3a07000
+ 39: e4992000
+ 40: e3a07000
+ 41: e3a07000
+ 42: e3a07000
+ 43: e3a07000
+ 44: e3a07000
+ 45: e3a07000
+ 46: e3a07000
+ 47: e3a07000
+ 48: e3a07000
+ 49: e3a07000
+ 50: e3a07000
+ 51: e3a07000
+ 52: e3a07000
+ 53: e3a07000
+ 54: e4993000
+ 55: e3a07000
+ 56: e3a07000
+ 57: e3a07000
+ 58: e3a07000
+ 59: e3a07000
+ 60: e3a07000
+ 61: e3a07000
+ 62: e3a07000
+ 63: e3a07000
+2000 s
+4000 s
+6000 s
+8000 s
+10000 s
+12000 s
+14000 s
+16000 s
+18000 s
+20000 s
+22000 s
+24000 s
+26000 s
+28000 s
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 28000
+CPU Time:      0.560 seconds;       Data structure size:   0.8Mb
+Fri Nov 30 12:40:18 2018
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS release 6.10 (Final)' is not supported on 'x86_64' 
+  officially, assuming linux compatibility by default. Set VCS_ARCH_OVERRIDE 
+  to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+                         Chronologic VCS (TM)
+       Version K-2015.09-SP1_Full64 -- Fri Nov 30 12:40:19 2018
+               Copyright (c) 1991-2015 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[UNK_COMP_ARG] Unknown compile time plus argument used
+  Unknown compile time plus argument 'speedup' is ignored.
+
+ + use `+plusarg_save' to bind in runtime plusargs;
+ + use `+plusarg_ignore' to suppress this message.
+Parsing design file 'detect_skip.v'
+Parsing design file 'forward.v'
+Parsing design file 'exc.v'
+Parsing design file 'din.v'
+Parsing design file 'dout.v'
+Parsing design file 'ar.v'
+Parsing design file 'ir.v'
+Parsing design file 'aop.v'
+Parsing design file 'bop.v'
+Parsing design file 'count.v'
+Parsing design file 'getregfromlist.v'
+Parsing design file 'getreg.v'
+Parsing design file 'regfile_struct.v'
+Parsing design file 'decode_addresses.v'
+Parsing design file 'regfile.v'
+Parsing design file 'mapaluops.v'
+Parsing design file 'aluflags.v'
+Parsing design file 'arm_alu.v'
+Parsing design file 'shift_carry.v'
+Parsing design file 'shift.v'
+Parsing design file 'arm_ctrl_struct.v'
+
+Warning-[TMR] Text macro redefined
+arm_ctrl_struct.v, 12
+  Text macro (group_alu) is redefined. The last definition will override 
+  previous ones.
+  In arm_alu.v, 14, it was defined as "group_main"
+
+Parsing design file 'arm_ctrl_comb.v'
+Parsing design file 'arm_dp.v'
+
+Warning-[TMR] Text macro redefined
+arm_dp.v, 15
+  Text macro (group_stat) is redefined. The last definition will override 
+  previous ones.
+  In regfile_struct.v, 12, it was defined as "group_stat"
+
+Parsing design file 'arm.v'
+
+Warning-[TMR] Text macro redefined
+arm.v, 11
+  Text macro (dptype) is redefined. The last definition will override previous
+  ones.
+  In arm_dp.v, 9, it was defined as 1
+
+Parsing design file 'main.v'
+Parsing included file 'test.config'.
+Back to file 'main.v'.
+Parsing included file 'signal.defs'.
+Back to file 'main.v'.
+Parsing included file 'signals2.defs'.
+Back to file 'main.v'.
+Parsing design file 'mem2.v'
+Parsing included file 'test.config'.
+Back to file 'mem2.v'.
+Parsing design file 'SSP.v'
+Parsing design file 'TxFIFO.v'
+Parsing design file 'TxLogic.v'
+Parsing design file 'RxFIFO.v'
+Parsing design file 'RxLogic.v'
+Parsing design file 'cmu.v'
+Parsing design file 'w_master.v'
+Parsing design file 'w_slave.v'
+Parsing library directory file 'models2/aluv.v'
+Parsing library directory file 'models2/and2.v'
+Parsing library directory file 'models2/barrelfun.v'
+Parsing library directory file 'models2/buff.v'
+Parsing library directory file 'models2/compl.v'
+Parsing library directory file 'models2/dff_c.v'
+Parsing library directory file 'models2/dffs_c.v'
+Parsing library directory file 'models2/dffs_cq.v'
+Parsing library directory file 'models2/inc.v'
+Parsing library directory file 'models2/incbar.v'
+Parsing library directory file 'models2/latch_c.v'
+Parsing library directory file 'models2/mux2.v'
+Parsing library directory file 'models2/mux3.v'
+Parsing library directory file 'models2/mux4.v'
+Parsing library directory file 'models2/nor2.v'
+Parsing library directory file 'models2/or2.v'
+Parsing library directory file 'models2/regfile2r.v'
+Parsing library directory file 'models2/stdadd.v'
+Parsing library directory file 'models2/stdaddh.v'
+Parsing library directory file 'models2/stdand2.v'
+Parsing library directory file 'models2/stdand3.v'
+Parsing library directory file 'models2/stdand4.v'
+Parsing library directory file 'models2/stdao222.v'
+Parsing library directory file 'models2/stdbuf.v'
+Parsing library directory file 'models2/stdbufinv.v'
+Parsing library directory file 'models2/stddff.v'
+Parsing library directory file 'models2/stddff_c.v'
+Parsing library directory file 'models2/stddff_cq.v'
+Parsing library directory file 'models2/stddff_p.v'
+Parsing library directory file 'models2/stdinv.v'
+Parsing library directory file 'models2/stdlatch.v'
+Parsing library directory file 'models2/stdlatch_c.v'
+Parsing library directory file 'models2/stdmux2.v'
+Parsing library directory file 'models2/stdmux3.v'
+Parsing library directory file 'models2/stdmux4.v'
+Parsing library directory file 'models2/stdnand2.v'
+Parsing library directory file 'models2/stdnor2.v'
+Parsing library directory file 'models2/stdnor3.v'
+Parsing library directory file 'models2/stdoa21.v'
+Parsing library directory file 'models2/stdor2.v'
+Parsing library directory file 'models2/stdxor2.v'
+Parsing library directory file 'models2/tribuf.v'
+Parsing library directory file 'models2/xor2.v'
+Parsing library directory file 'models2/zero.v'
+Parsing library directory file 'models2/alu_generic.v'
+Parsing library directory file 'models2/dff_generic.v'
+Parsing library directory file 'models2/dff_leaf_generic.v'
+Top Level Modules:
+       TOP
+No TimeScale specified
+
+Warning-[TFIPC] Too few instance port connections
+shift.v, 172
+"compl #(6, 1, "group_shift6") complement( .COMP (vss),  .IN0 (left_amount[5:0]),  .Y (right_amount[5:0]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+shift.v, 220
+"incbar #(5, 0, "group_shift6") decrement( .EN (vdd),  .IN0 (left_amount[4:0]),  .Y (shift1));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+count.v, 50
+"incbar #(4, 0, "group_count") decrement( .EN (vdd),  .IN0 (cnt[3:0]),  .Y (cnt1));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+arm_dp.v, 239
+"inc #(24, 1, "group_pc") aINC( .EN (vdd),  .IN0 (addressRegister[25:2]),  .Y (incAddress[25:2]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+arm_dp.v, 245
+"regfile regfile( .phi1 (phi1),  .phi2 (phi2),  .clear (clear),  .test (test),  .rA (rA),  .rB (rB),  .wA (wA),  .W (Wport),  .INCin (incAddress),  .MODEin (MODEw),  .MASKin (MASKw),  .CONDin (aluFlagsOut),  .enW (enW),  .enINC (enINC),  .enMODE (enMODE),  .enMASK (enMASK),  .enCOND (writeStatus),  .A (Aport),  .B (Bport),  .PCaddr (pcAddr),  .MODEout (mode),  .MASKout (mask),  .CONDout (dpStat));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+main.v, 240
+"arm ARM( .phi1 (phi1new),  .phi2 (phi2new),  .clear (rst_i),  .test (test),  .scanin (scanin),  .scanout (scanout),  .addressBus (addbusam),  .dataBus (databusam),  .memoryRead (memread),  .memoryWrite (memwrite),  .mem_req_bar (mem_req));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+Starting vcs inline pass...
+Notice: Ports coerced to inout, use -notice for details
+35 modules and 0 UDP read.
+	However, due to incremental compilation, no re-compilation is necessary.
+rm -f _csrc*.so linux64_scvhdl_*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _prev_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libzerosoft_rt_stubs.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvirsim.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/liberrorinf.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libsnpsmalloc.so    /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvcsnew.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libsimprofile.so /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/libvcsucli.so -Wl,-no-whole-archive          /usr/local/packages/synopsys_2015/vcs-mx/linux64/lib/vcs_save_restore_new.o -ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+CPU time: .746 seconds to compile + .519 seconds to elab + .179 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP1_Full64; Runtime version K-2015.09-SP1_Full64;  Nov 30 12:40 2018
+VCD+ Writer K-2015.09-SP1_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/ecelrc/students/xteng/vlsi1/lab3/rtl/inter.vpd' was opened successfully.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 0
+CPU Time:      0.140 seconds;       Data structure size:   0.8Mb
+Fri Nov 30 12:41:00 2018
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS release 6.10 (Final)' is not supported on 'x86_64' 
+  officially, assuming linux compatibility by default. Set VCS_ARCH_OVERRIDE 
+  to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+                         Chronologic VCS (TM)
+       Version K-2015.09-SP1_Full64 -- Fri Nov 30 12:41:01 2018
+               Copyright (c) 1991-2015 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[UNK_COMP_ARG] Unknown compile time plus argument used
+  Unknown compile time plus argument 'speedup' is ignored.
+
+ + use `+plusarg_save' to bind in runtime plusargs;
+ + use `+plusarg_ignore' to suppress this message.
+The design hasn't changed and need not be recompiled. 
+If you really want to, delete file simv.daidir/.vcs.timestamp and
+run VCS again.
+
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP1_Full64; Runtime version K-2015.09-SP1_Full64;  Nov 30 12:41 2018
+VCD+ Writer K-2015.09-SP1_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/ecelrc/students/xteng/vlsi1/lab3/rtl/inter.vpd' was opened successfully.
+  0: e3a0207a
+  1: e3a00000
+  2: e3a06010
+  3: e3a07001
+  4: e0808617
+  5: e0879008
+  6: e3a00000
+  7: e4882000
+  8: e3a03028
+  9: e4883000
+ 10: e3a040ff
+ 11: e3a050b7
+ 12: e4884000
+ 13: e4885000
+ 14: e4882000
+ 15: e4883000
+ 16: e4884000
+ 17: e3a07000
+ 18: e3a07000
+ 19: e3a07000
+ 20: e3a07000
+ 21: e4990000
+ 22: e3a07000
+ 23: e3a07000
+ 24: e3a07000
+ 25: e3a07000
+ 26: e3a07000
+ 27: e3a07000
+ 28: e3a07000
+ 29: e3a07000
+ 30: e4991000
+ 31: e3a07000
+ 32: e3a07000
+ 33: e3a07000
+ 34: e3a07000
+ 35: e3a07000
+ 36: e3a07000
+ 37: e3a07000
+ 38: e3a07000
+ 39: e4992000
+ 40: e3a07000
+ 41: e3a07000
+ 42: e3a07000
+ 43: e3a07000
+ 44: e3a07000
+ 45: e3a07000
+ 46: e3a07000
+ 47: e3a07000
+ 48: e3a07000
+ 49: e3a07000
+ 50: e3a07000
+ 51: e3a07000
+ 52: e3a07000
+ 53: e3a07000
+ 54: e4993000
+ 55: e3a07000
+ 56: e3a07000
+ 57: e3a07000
+ 58: e3a07000
+ 59: e3a07000
+ 60: e3a07000
+ 61: e3a07000
+ 62: e3a07000
+ 63: e3a07000
+2000 s
+4000 s
+6000 s
+8000 s
+10000 s
+12000 s
+14000 s
+16000 s
+18000 s
+20000 s
+22000 s
+24000 s
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 24000
+CPU Time:      0.370 seconds;       Data structure size:   0.8Mb
+Fri Nov 30 12:44:56 2018
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS release 6.10 (Final)' is not supported on 'x86_64' 
+  officially, assuming linux compatibility by default. Set VCS_ARCH_OVERRIDE 
+  to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+                         Chronologic VCS (TM)
+       Version K-2015.09-SP1_Full64 -- Fri Nov 30 12:44:57 2018
+               Copyright (c) 1991-2015 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[UNK_COMP_ARG] Unknown compile time plus argument used
+  Unknown compile time plus argument 'speedup' is ignored.
+
+ + use `+plusarg_save' to bind in runtime plusargs;
+ + use `+plusarg_ignore' to suppress this message.
+The design hasn't changed and need not be recompiled. 
+If you really want to, delete file simv.daidir/.vcs.timestamp and
+run VCS again.
+
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP1_Full64; Runtime version K-2015.09-SP1_Full64;  Nov 30 12:44 2018
+VCD+ Writer K-2015.09-SP1_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/ecelrc/students/xteng/vlsi1/lab3/rtl/inter.vpd' was opened successfully.
+  0: e3a0207a
+  1: e3a00000
+  2: e3a06010
+  3: e3a07001
+  4: e0808617
+  5: e0879008
+  6: e3a00000
+  7: e4882000
+  8: e3a03028
+  9: e4883000
+ 10: e3a040ff
+ 11: e3a050b7
+ 12: e4884000
+ 13: e4885000
+ 14: e4882000
+ 15: e4883000
+ 16: e4884000
+ 17: e3a07000
+ 18: e3a07000
+ 19: e3a07000
+ 20: e3a07000
+ 21: e4990000
+ 22: e3a07000
+ 23: e3a07000
+ 24: e3a07000
+ 25: e3a07000
+ 26: e3a07000
+ 27: e3a07000
+ 28: e3a07000
+ 29: e3a07000
+ 30: e4991000
+ 31: e3a07000
+ 32: e3a07000
+ 33: e3a07000
+ 34: e3a07000
+ 35: e3a07000
+ 36: e3a07000
+ 37: e3a07000
+ 38: e3a07000
+ 39: e4992000
+ 40: e3a07000
+ 41: e3a07000
+ 42: e3a07000
+ 43: e3a07000
+ 44: e3a07000
+ 45: e3a07000
+ 46: e3a07000
+ 47: e3a07000
+ 48: e3a07000
+ 49: e3a07000
+ 50: e3a07000
+ 51: e3a07000
+ 52: e3a07000
+ 53: e3a07000
+ 54: e4993000
+ 55: e3a07000
+ 56: e3a07000
+ 57: e3a07000
+ 58: e3a07000
+ 59: e3a07000
+ 60: e3a07000
+ 61: e3a07000
+ 62: e3a07000
+ 63: e3a07000
+2000 s
+4000 s
+6000 s
+8000 s
+10000 s
+12000 s
+14000 s
+16000 s
+18000 s
+20000 s
+22000 s
+24000 s
+26000 s
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 26000
+CPU Time:      0.340 seconds;       Data structure size:   0.8Mb
+Fri Nov 30 13:29:53 2018
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS release 6.10 (Final)' is not supported on 'x86_64' 
+  officially, assuming linux compatibility by default. Set VCS_ARCH_OVERRIDE 
+  to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+                         Chronologic VCS (TM)
+       Version K-2015.09-SP1_Full64 -- Fri Nov 30 13:29:54 2018
+               Copyright (c) 1991-2015 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[UNK_COMP_ARG] Unknown compile time plus argument used
+  Unknown compile time plus argument 'speedup' is ignored.
+
+ + use `+plusarg_save' to bind in runtime plusargs;
+ + use `+plusarg_ignore' to suppress this message.
+The design hasn't changed and need not be recompiled. 
+If you really want to, delete file simv.daidir/.vcs.timestamp and
+run VCS again.
+
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP1_Full64; Runtime version K-2015.09-SP1_Full64;  Nov 30 13:29 2018
+VCD+ Writer K-2015.09-SP1_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/ecelrc/students/xteng/vlsi1/lab3/rtl/inter.vpd' was opened successfully.
+  0: e3a0207a
+  1: e3a00000
+  2: e3a06010
+  3: e3a07001
+  4: e0808617
+  5: e0879008
+  6: e3a00000
+  7: e4882000
+  8: e3a03028
+  9: e4883000
+ 10: e3a040ff
+ 11: e3a050b7
+ 12: e4884000
+ 13: e4885000
+ 14: e4882000
+ 15: e4883000
+ 16: e4884000
+ 17: e3a07000
+ 18: e3a07000
+ 19: e3a07000
+ 20: e3a07000
+ 21: e4990000
+ 22: e3a07000
+ 23: e3a07000
+ 24: e3a07000
+ 25: e3a07000
+ 26: e3a07000
+ 27: e3a07000
+ 28: e3a07000
+ 29: e3a07000
+ 30: e4991000
+ 31: e3a07000
+ 32: e3a07000
+ 33: e3a07000
+ 34: e3a07000
+ 35: e3a07000
+ 36: e3a07000
+ 37: e3a07000
+ 38: e3a07000
+ 39: e4992000
+ 40: e3a07000
+ 41: e3a07000
+ 42: e3a07000
+ 43: e3a07000
+ 44: e3a07000
+ 45: e3a07000
+ 46: e3a07000
+ 47: e3a07000
+ 48: e3a07000
+ 49: e3a07000
+ 50: e3a07000
+ 51: e3a07000
+ 52: e3a07000
+ 53: e3a07000
+ 54: e4993000
+ 55: e3a07000
+ 56: e3a07000
+ 57: e3a07000
+ 58: e3a07000
+ 59: e3a07000
+ 60: e3a07000
+ 61: e3a07000
+ 62: e3a07000
+ 63: e3a07000
+2000 s
+4000 s
+6000 s
+8000 s
+10000 s
+12000 s
+14000 s
+16000 s
+18000 s
+20000 s
+22000 s
+24000 s
+26000 s
+28000 s
+30000 s
+32000 s
+34000 s
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 34000
+CPU Time:      0.240 seconds;       Data structure size:   0.8Mb
+Fri Nov 30 15:18:30 2018
